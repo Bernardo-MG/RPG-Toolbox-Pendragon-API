@@ -1,11 +1,9 @@
 package com.wandrell.tabletop.rpg.pendragon.character;
 
-import com.wandrell.tabletop.rpg.dice.RollTable;
 import com.wandrell.tabletop.rpg.pendragon.character.background.FamilyCharacteristic;
 import com.wandrell.tabletop.rpg.pendragon.character.background.FatherClass;
 import com.wandrell.tabletop.rpg.pendragon.character.background.Homeland;
 import com.wandrell.tabletop.rpg.pendragon.character.background.culture.Culture;
-import com.wandrell.tabletop.rpg.pendragon.inventory.AdditionalBelongingsSetData;
 
 public interface PendragonChargenCharacter extends PendragonPlayerCharacter {
 
@@ -14,8 +12,6 @@ public interface PendragonChargenCharacter extends PendragonPlayerCharacter {
     public FatherClass getFatherClassData();
 
     public Homeland getHomelandData();
-
-    public RollTable<AdditionalBelongingsSetData> getInitialLuckTable();
 
     public boolean isKnightChosen();
 
