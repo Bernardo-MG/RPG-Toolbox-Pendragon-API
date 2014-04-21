@@ -22,13 +22,4 @@ public interface HorseCharacter extends PendragonBaseCharacter {
 
     public Boolean hasSecondaryAttribute(final String secAttribute);
 
-    public void setFlag(final String name, final Boolean value);
-
-    public void setFlags(final Collection<String> flags);
-
-    public void setHorseType(final String type);
-
-    public void setSecondaryAttributes(
-	    final Collection<ValueHandler<Integer>> secondaryAttributes);
-
 }

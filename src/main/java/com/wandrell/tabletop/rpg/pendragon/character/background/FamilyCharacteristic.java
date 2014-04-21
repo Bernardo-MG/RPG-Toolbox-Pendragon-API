@@ -6,6 +6,8 @@ import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonAttribute;
 import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonSkill;
 
 public interface FamilyCharacteristic {
+    
+    public String getName();
 
     public PendragonAttribute getAttribute(final String name);
 
