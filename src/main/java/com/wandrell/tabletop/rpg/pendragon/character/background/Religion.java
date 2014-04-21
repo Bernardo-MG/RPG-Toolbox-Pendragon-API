@@ -4,8 +4,12 @@ import java.util.Collection;
 import java.util.Iterator;
 
 import com.wandrell.tabletop.rpg.valuehandler.ValueHandler;
+import com.wandrell.util.tag.NewInstantiable;
 
-public interface Religion {
+public interface Religion extends NewInstantiable {
+
+    @Override
+    public Religion createNewInstance();
 
     public ValueHandler<Integer> getArmorBonus();
 

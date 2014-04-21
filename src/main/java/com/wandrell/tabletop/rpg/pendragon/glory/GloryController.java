@@ -3,8 +3,12 @@ package com.wandrell.tabletop.rpg.pendragon.glory;
 import java.util.Collection;
 
 import com.wandrell.tabletop.rpg.valuehandler.ValueHandler;
+import com.wandrell.util.tag.NewInstantiable;
 
-public interface GloryController {
+public interface GloryController extends NewInstantiable {
+
+    @Override
+    public GloryController createNewInstance();
 
     public ValueHandler<Integer> getAnnualGlorySource(final String name);
 

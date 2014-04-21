@@ -4,8 +4,12 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonTrait;
 import com.wandrell.tabletop.rpg.valuehandler.ValueHandler;
+import com.wandrell.util.tag.NewInstantiable;
 
-public interface TraitsBonusSwitchsData {
+public interface TraitsBonusSwitchsData extends NewInstantiable {
+
+    @Override
+    public TraitsBonusSwitchsData createNewInstance();
 
     public ValueHandler<Integer> getBonusSwitch(final String name);
 
