@@ -12,31 +12,11 @@ import com.wandrell.tabletop.rpg.pendragon.inventory.PendragonItem;
 import com.wandrell.tabletop.rpg.pendragon.inventory.PendragonMoneyData;
 import com.wandrell.tabletop.rpg.pendragon.manor.ManorAnimal;
 import com.wandrell.tabletop.rpg.pendragon.util.TextValue;
+import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonAppearanceFeature;
 import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonSkill;
 import com.wandrell.tabletop.rpg.valuehandler.ValueHandler;
 
 public interface PendragonPlayerCharacter extends PendragonSimpleCharacter {
-
-    public void addExclusiveSkill(final PendragonSkill vhExcSkill);
-
-    public void addFeature(final ValueHandler<Integer> vhFeature);
-
-    public void addFollower(final Follower follower);
-
-    public void addHoldingAtHome(final PendragonItem item);
-
-    public void addHoldingCarried(final PendragonItem item);
-
-    public void addHorse(final HorseCharacter horse);
-
-    public void addPet(final ManorAnimal pet);
-
-    public void addTextValue(final String key, final String value);
-
-    public void addValueHandler(final ValueHandler<Integer> vh);
-
-    public void addWife(final Wife wife);
-
     public ArmorData getArmorData();
 
     public PendragonSkill getExclusiveSkill(final String name,
@@ -44,7 +24,7 @@ public interface PendragonPlayerCharacter extends PendragonSimpleCharacter {
 
     public Collection<PendragonSkill> getExclusiveSkills();
 
-    public Collection<ValueHandler<Integer>> getFeatures();
+    public Collection<PendragonAppearanceFeature> getFeatures();
 
     public Boolean getFlag(final String flag);
 

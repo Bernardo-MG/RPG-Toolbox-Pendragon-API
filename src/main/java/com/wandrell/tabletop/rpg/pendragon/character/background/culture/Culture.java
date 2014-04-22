@@ -11,11 +11,12 @@ import com.wandrell.util.tag.NewInstantiable;
 
 public interface Culture extends NewInstantiable {
 
+    @Override
+    public Culture createNewInstance();
+
     public Path getFamilyCharacteristicFile(final Gender gender);
 
     public CultureCharacterTemplate getFemaleRandomTemplate();
-    
-    public Culture createNewInstance();
 
     public CultureCharacterTemplate getFemaleTemplate();
 

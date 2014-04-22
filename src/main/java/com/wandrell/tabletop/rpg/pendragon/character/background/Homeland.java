@@ -4,8 +4,9 @@ import com.wandrell.util.tag.NewInstantiable;
 
 public interface Homeland extends NewInstantiable {
 
-    public String getName();
-    
+    @Override
     public Homeland createNewInstance();
+
+    public String getName();
 
 }
