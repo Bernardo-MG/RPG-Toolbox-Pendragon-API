@@ -10,6 +10,4 @@ public interface Follower {
 
     public String getJob();
 
-    public void setJob(final String job);
-
 }
