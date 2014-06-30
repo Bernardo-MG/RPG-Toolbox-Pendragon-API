@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.wandrell.tabletop.rpg</groupId>
-	<artifactId>pendragon-api</artifactId>
+	<artifactId>tabletop-pendragon-api</artifactId>
 	<version>alpha</version>
 	<packaging>jar</packaging>
 
@@ -54,8 +54,8 @@
 		<java.version.target>${java.version.source}</java.version.target>
 		<!-- Dependencies versions -->
 		<junit.version>4.11</junit.version>
-		<rpg.version>alpha</rpg.version>
 		<slf4j.version>1.7.7</slf4j.version>
+		<tabletop.version>alpha</tabletop.version>
 		<!-- Plugins versions -->
 		<plugin.cobertura.version>2.6</plugin.cobertura.version>
 		<plugin.compiler.version>3.1</plugin.compiler.version>
@@ -74,12 +74,6 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<!-- RPG API -->
-			<groupId>com.wandrell.tabletop.rpg</groupId>
-			<artifactId>rpg-api</artifactId>
-			<version>${rpg.version}</version>
-		</dependency>
-		<dependency>
 			<!-- SLF4J API -->
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
@@ -91,6 +85,12 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>${slf4j.version}</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<!-- Tabletop API -->
+			<groupId>com.wandrell.tabletop.rpg</groupId>
+			<artifactId>tabletop-api</artifactId>
+			<version>${tabletop.version}</version>
 		</dependency>
 	</dependencies>
 
