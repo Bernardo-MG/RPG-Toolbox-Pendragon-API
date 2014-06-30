@@ -1,6 +1,7 @@
 package com.wandrell.tabletop.rpg.pendragon.character.background;
 
 import java.util.Collection;
+
 import com.wandrell.tabletop.rpg.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 
@@ -21,8 +22,8 @@ public interface Religion extends NewInstantiable {
 
     public Collection<String> getReligiousTraits();
 
-    public boolean hasDerivedAttributeBonus(final String name);
+    public Boolean hasDerivedAttributeBonus(final String name);
 
-    public boolean hasTrait(final String trait);
+    public Boolean hasTrait(final String name);
 
 }

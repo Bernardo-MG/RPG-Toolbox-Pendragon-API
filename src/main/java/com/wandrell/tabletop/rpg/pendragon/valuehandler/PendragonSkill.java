@@ -8,14 +8,14 @@ public interface PendragonSkill extends ValueHandler<Integer>, Annotated {
     @Override
     public PendragonSkill createNewInstance();
 
-    public boolean isCombatSkill();
+    public Boolean isCombatSkill();
 
-    public boolean isCourtlySkill();
+    public Boolean isCourtlySkill();
 
-    public boolean isKnightlySkill();
+    public Boolean isKnightlySkill();
 
-    public boolean isKnowledgeSkill();
+    public Boolean isKnowledgeSkill();
 
-    public boolean isRepeteable();
+    public Boolean isRepeteable();
 
 }

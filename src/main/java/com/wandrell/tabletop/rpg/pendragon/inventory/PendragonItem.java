@@ -4,6 +4,9 @@ import com.wandrell.tabletop.rpg.inventory.ItemData;
 
 public interface PendragonItem extends ItemData {
 
-    public PendragonMoneyData getMoneyData();
+    @Override
+    public PendragonItem createNewInstance();
+
+    public PendragonMoney getMoney();
 
 }

@@ -7,19 +7,23 @@ import com.wandrell.tabletop.rpg.pendragon.character.background.culture.Culture;
 
 public interface PendragonChargenCharacter extends PendragonPlayerCharacter {
 
-    public Culture getCultureData();
+    @Override
+    public PendragonChargenCharacter createNewInstance();
 
-    public FatherClass getFatherClassData();
+    public Culture getCulture();
 
-    public Homeland getHomelandData();
+    public FatherClass getFatherClass();
 
-    public boolean isKnightChosen();
+    public Homeland getHomeland();
 
-    public void setCultureData(final Culture culture);
+    public Boolean isKnightChosen();
 
-    public void setFamilyCharacteristic(final FamilyCharacteristic familyChar);
+    public void setCulture(final Culture culture);
 
-    public void setFatherClassData(final FatherClass fatherClassTemplate);
+    public void setFamilyCharacteristic(
+	    final FamilyCharacteristic characteristic);
+
+    public void setFatherClassData(final FatherClass fatherClass);
 
     public void setHomelandData(final Homeland homeland);
 

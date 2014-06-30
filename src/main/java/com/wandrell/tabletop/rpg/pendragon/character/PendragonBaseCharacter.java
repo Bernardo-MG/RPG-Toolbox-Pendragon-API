@@ -4,18 +4,20 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonAttribute;
 import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonDerivedAttribute;
+import com.wandrell.util.tag.NewInstantiable;
 
-public interface PendragonBaseCharacter {
+public interface PendragonBaseCharacter extends NewInstantiable {
 
-    public void addDerivedAttribute(
-	    final PendragonDerivedAttribute vhDerAttribute);
+    public void addDerivedAttribute(final PendragonDerivedAttribute attribute);
+
+    @Override
+    public PendragonBaseCharacter createNewInstance();
 
     public PendragonAttribute getAttribute(final String attribute);
 
     public Collection<PendragonAttribute> getAttributes();
 
-    public PendragonDerivedAttribute getDerivedAttribute(
-	    final String derAttribute);
+    public PendragonDerivedAttribute getDerivedAttribute(final String name);
 
     public Collection<PendragonDerivedAttribute> getDerivedAttributes();
 

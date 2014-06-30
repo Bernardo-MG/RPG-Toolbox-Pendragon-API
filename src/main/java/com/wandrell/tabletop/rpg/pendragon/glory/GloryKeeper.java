@@ -5,16 +5,16 @@ import java.util.Collection;
 import com.wandrell.tabletop.rpg.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 
-public interface GloryController extends NewInstantiable {
+public interface GloryKeeper extends NewInstantiable {
 
     @Override
-    public GloryController createNewInstance();
+    public GloryKeeper createNewInstance();
 
     public ValueHandler<Integer> getAnnualGlorySource(final String name);
 
     public Collection<ValueHandler<Integer>> getAnnualGlorySources();
 
-    public Collection<GloryEvent> getGloryEvents();
+    public Collection<GloryEvent> getHistory();
 
     public Boolean hasAnnualGlorySource(final String name);
 

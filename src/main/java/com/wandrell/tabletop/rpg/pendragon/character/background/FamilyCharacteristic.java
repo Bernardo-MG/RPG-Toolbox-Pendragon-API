@@ -4,8 +4,12 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonAttribute;
 import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonSkill;
+import com.wandrell.util.tag.NewInstantiable;
 
-public interface FamilyCharacteristic {
+public interface FamilyCharacteristic extends NewInstantiable {
+
+    @Override
+    public FamilyCharacteristic createNewInstance();
 
     public PendragonAttribute getAttribute(final String name);
 
@@ -17,8 +21,8 @@ public interface FamilyCharacteristic {
 
     public Collection<PendragonSkill> getSkills();
 
-    public boolean hasAttribute(final String name);
+    public Boolean hasAttribute(final String name);
 
-    public boolean hasSkill(final String name, final String annotation);
+    public Boolean hasSkill(final String name, final String annotation);
 
 }

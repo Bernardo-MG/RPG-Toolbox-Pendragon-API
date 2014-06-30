@@ -2,15 +2,19 @@ package com.wandrell.tabletop.rpg.pendragon.character.background;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.rpg.pendragon.inventory.PendragonMoneyData;
+import com.wandrell.tabletop.rpg.pendragon.inventory.PendragonMoney;
 import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonSkill;
 import com.wandrell.tabletop.rpg.valuehandler.ValueHandler;
+import com.wandrell.util.tag.NewInstantiable;
 
-public interface FatherClass {
+public interface FatherClass extends NewInstantiable {
 
     public void addSkillsPoints(final ValueHandler<Integer> vhValue);
 
-    public PendragonMoneyData getMoneyData();
+    @Override
+    public FatherClass createNewInstance();
+
+    public PendragonMoney getMoney();
 
     public String getName();
 
@@ -22,6 +26,6 @@ public interface FatherClass {
 
     public ValueHandler<Integer> getSkillsPoints(final String name);
 
-    public boolean hasSkillsPoints(final String name);
+    public Boolean hasSkillsPoints(final String name);
 
 }

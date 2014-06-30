@@ -6,10 +6,10 @@ import com.wandrell.tabletop.rpg.pendragon.character.background.Religion;
 import com.wandrell.tabletop.rpg.pendragon.character.follower.Follower;
 import com.wandrell.tabletop.rpg.pendragon.character.follower.Wife;
 import com.wandrell.tabletop.rpg.pendragon.character.module.TraitsBonusSwitchsData;
-import com.wandrell.tabletop.rpg.pendragon.glory.GloryController;
+import com.wandrell.tabletop.rpg.pendragon.glory.GloryKeeper;
 import com.wandrell.tabletop.rpg.pendragon.inventory.ArmorData;
 import com.wandrell.tabletop.rpg.pendragon.inventory.PendragonItem;
-import com.wandrell.tabletop.rpg.pendragon.inventory.PendragonMoneyData;
+import com.wandrell.tabletop.rpg.pendragon.inventory.PendragonMoney;
 import com.wandrell.tabletop.rpg.pendragon.manor.ManorAnimal;
 import com.wandrell.tabletop.rpg.pendragon.util.TextValue;
 import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonAppearanceFeature;
@@ -17,7 +17,11 @@ import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonSkill;
 import com.wandrell.tabletop.rpg.valuehandler.ValueHandler;
 
 public interface PendragonPlayerCharacter extends PendragonSimpleCharacter {
-    public ArmorData getArmorData();
+
+    @Override
+    public PendragonPlayerCharacter createNewInstance();
+
+    public ArmorData getArmor();
 
     public PendragonSkill getExclusiveSkill(final String name,
 	    final String annotation);
@@ -26,13 +30,13 @@ public interface PendragonPlayerCharacter extends PendragonSimpleCharacter {
 
     public Collection<PendragonAppearanceFeature> getFeatures();
 
-    public Boolean getFlag(final String flag);
+    public Boolean getFlag(final String name);
 
     public Collection<String> getFlags();
 
     public Collection<Follower> getFollowers();
 
-    public GloryController getGloryData();
+    public GloryKeeper getGlory();
 
     public Collection<PendragonItem> getHoldingsAtHome();
 
@@ -42,7 +46,7 @@ public interface PendragonPlayerCharacter extends PendragonSimpleCharacter {
 
     public String getKnightKind();
 
-    public PendragonMoneyData getMoney();
+    public PendragonMoney getMoney();
 
     public Collection<ManorAnimal> getPets();
 
@@ -56,7 +60,7 @@ public interface PendragonPlayerCharacter extends PendragonSimpleCharacter {
 
     public TraitsBonusSwitchsData getTraitsBonusSwitchsData();
 
-    public ValueHandler<Integer> getValueHandler(final String value);
+    public ValueHandler<Integer> getValueHandler(final String name);
 
     public Collection<ValueHandler<Integer>> getValueHandlers();
 
@@ -64,10 +68,10 @@ public interface PendragonPlayerCharacter extends PendragonSimpleCharacter {
 
     public Boolean hasExclusiveSkill(final String name, final String annotation);
 
-    public Boolean hasTextValue(final String textValue);
+    public Boolean hasTextValue(final String name);
 
-    public Boolean hasValueHandler(final String value);
+    public Boolean hasValueHandler(final String name);
 
-    public boolean isKnight();
+    public Boolean isKnight();
 
 }

@@ -5,14 +5,18 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.rpg.pendragon.util.FileNameWrapper;
 import com.wandrell.tabletop.rpg.valuehandler.ValueHandler;
+import com.wandrell.util.tag.NewInstantiable;
 
-public interface AnimalYearResult {
+public interface AnimalYearResult extends NewInstantiable {
+
+    @Override
+    public AnimalYearResult createNewInstance();
 
     public Path getFile(final String name);
 
     public Collection<FileNameWrapper> getFiles();
 
-    public boolean getFlag(final String name);
+    public Boolean getFlag(final String name);
 
     public Collection<String> getFlags();
 
@@ -22,8 +26,8 @@ public interface AnimalYearResult {
 
     public Collection<ValueHandler<Integer>> getValues();
 
-    public boolean hasFile(final String name);
+    public Boolean hasFile(final String name);
 
-    public boolean hasValue(final String name);
+    public Boolean hasValue(final String name);
 
 }

@@ -3,19 +3,16 @@ package com.wandrell.tabletop.rpg.pendragon.character.background.culture;
 import java.util.Collection;
 
 import com.wandrell.tabletop.rpg.interval.Interval;
-import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonAggregatedSkill;
 import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonAttribute;
 import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonDirectedTrait;
 import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonPassion;
 import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonSkill;
+import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonSpecialtySkill;
 import com.wandrell.tabletop.rpg.pendragon.valuehandler.PendragonTrait;
 import com.wandrell.tabletop.rpg.valuehandler.ValueHandler;
+import com.wandrell.util.tag.NewInstantiable;
 
-public interface CultureCharacterTemplate {
-
-    public PendragonAggregatedSkill getAdvancedSkill(final String name);
-
-    public Collection<PendragonAggregatedSkill> getAdvancedSkills();
+public interface CultureCharacterTemplate extends NewInstantiable {
 
     public PendragonAttribute getAttribute(final String name);
 
@@ -48,28 +45,32 @@ public interface CultureCharacterTemplate {
 
     public Collection<PendragonSkill> getSkills();
 
+    public PendragonSpecialtySkill getSpecialtySkill(final String name);
+
+    public Collection<PendragonSpecialtySkill> getSpecialtySkills();
+
     public PendragonTrait getTrait(final String name);
 
     public Collection<PendragonTrait> getTraits();
 
     public String getValuesText();
 
-    public boolean hasAdvancedSkill(final String name);
+    public Boolean hasAttribute(final String name);
 
-    public boolean hasAttribute(final String name);
+    public Boolean hasAttributeInterval(final String name);
 
-    public boolean hasAttributeInterval(final String name);
+    public Boolean hasDerivedAttribute(final String name);
 
-    public boolean hasDerivedAttribute(final String name);
+    public Boolean hasDirectedTrait(final String name, final String annotation);
 
-    public boolean hasDirectedTrait(final String name, final String annotation);
+    public Boolean hasExclusiveSkill(final String name, final String annotation);
 
-    public boolean hasExclusiveSkill(final String name, final String annotation);
+    public Boolean hasPassion(final String name, final String annotation);
 
-    public boolean hasPassion(final String name, final String annotation);
+    public Boolean hasSkill(final String name, final String annotation);
 
-    public boolean hasSkill(final String name, final String annotation);
+    public Boolean hasSpecialtySkill(final String name);
 
-    public boolean hasTrait(final String name);
+    public Boolean hasTrait(final String name);
 
 }

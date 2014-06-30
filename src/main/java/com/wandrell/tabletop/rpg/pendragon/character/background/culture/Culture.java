@@ -5,7 +5,7 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.rpg.character.Gender;
 import com.wandrell.tabletop.rpg.dice.RollTable;
-import com.wandrell.tabletop.rpg.pendragon.inventory.AdditionalBelongingsSetData;
+import com.wandrell.tabletop.rpg.pendragon.inventory.AdditionalBelongings;
 import com.wandrell.tabletop.rpg.pendragon.util.FileNameWrapper;
 import com.wandrell.util.tag.NewInstantiable;
 
@@ -24,7 +24,7 @@ public interface Culture extends NewInstantiable {
 
     public Collection<FileNameWrapper> getFiles();
 
-    public RollTable<AdditionalBelongingsSetData> getInitialLuckTable(
+    public RollTable<AdditionalBelongings> getInitialLuckTable(
 	    final Gender gender);
 
     public CultureCharacterTemplate getMaleRandomTemplate();

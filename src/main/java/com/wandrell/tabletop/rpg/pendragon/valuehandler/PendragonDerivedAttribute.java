@@ -6,6 +6,9 @@ import com.wandrell.tabletop.rpg.valuehandler.ValueHandler;
 
 public interface PendragonDerivedAttribute extends ValueHandler<Integer> {
 
-    public Collection<ValueHandler<Integer>> getParentAttributes();
+    @Override
+    public PendragonDerivedAttribute createNewInstance();
+
+    public Collection<PendragonAttribute> getParentAttributes();
 
 }

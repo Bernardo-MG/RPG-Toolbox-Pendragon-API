@@ -3,14 +3,18 @@ package com.wandrell.tabletop.rpg.pendragon.inventory;
 import java.util.Collection;
 
 import com.wandrell.tabletop.rpg.valuehandler.ValueHandler;
+import com.wandrell.util.tag.NewInstantiable;
 
-public interface AdditionalBelongingsSetData {
+public interface AdditionalBelongings extends NewInstantiable {
+
+    @Override
+    public AdditionalBelongings createNewInstance();
 
     public Collection<String> getEquipableItemsFiles();
 
     public Collection<String> getHorsesFiles();
 
-    public PendragonMoneyData getMoneyData();
+    public PendragonMoney getMoney();
 
     public String getMoneyName();
 

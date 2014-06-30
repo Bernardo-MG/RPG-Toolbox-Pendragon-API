@@ -1,9 +1,13 @@
 package com.wandrell.tabletop.rpg.pendragon.inventory;
 
 import java.util.Collection;
+
 import com.wandrell.tabletop.rpg.valuehandler.ValueHandler;
 
 public interface PendragonEquipment extends PendragonItem {
+
+    @Override
+    public PendragonEquipment createNewInstance();
 
     public Boolean getFlag(final String name);
 

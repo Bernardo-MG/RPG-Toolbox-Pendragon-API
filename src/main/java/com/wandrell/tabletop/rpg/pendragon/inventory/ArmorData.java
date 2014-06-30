@@ -10,10 +10,10 @@ public interface ArmorData extends NewInstantiable {
     @Override
     public ArmorData createNewInstance();
 
-    public ValueHandler<Integer> getArmorPiece(final String name);
+    public ValueHandler<Integer> getArmorValue(final String name);
 
-    public Collection<ValueHandler<Integer>> getArmorPieces();
+    public Collection<ValueHandler<Integer>> getArmorValues();
 
-    public Boolean hasArmorPiece(final String name);
+    public Boolean hasArmorValue(final String name);
 
 }
