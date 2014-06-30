@@ -1,5 +1,5 @@
-## RPG Toolbox Pendragon's API library
-API defining an extension to use the RPG Toolbox libraries for the RPG Pendragon.
+## Tabletop's Pendragon API library
+API defining an extension to use the Tabletop project for the RPG Pendragon.
 
 ### Version
 The project is still under development, so expect a certain degree of instability. Class paths and names may change, and classes keep receiving enhancements which make them change with frequency.
@@ -21,12 +21,12 @@ The list of projects which need to be manually downloaded and installed are:
 * [RPG Toolbox API library][]
 
 ### Getting the code
-The GitHub project is found at https://github.com/Bernardo-MG/RPG-Toolbox-Pendragon-Swing, and it includes the git clone uri.
+The GitHub project is found at http://github.com/Bernardo-MG/Tabletop-Pendragon-API, and it includes the git clone uri.
 
 ## License
 The project is released under version 2.0 of the [Apache License][].
 
 [Apache License]: http://www.apache.org/licenses/LICENSE-2.0
-[RPG Toolbox API library]: https://github.com/Bernardo-MG/RPG-Toolbox-API
-[Wandrell's Core library]: https://github.com/Bernardo-MG/Wandrell-Core
-[Wandrell's Framework library]: https://github.com/Bernardo-MG/Wandrell-Framework
+[RPG Toolbox API library]: http://github.com/Bernardo-MG/Tabletop-API
+[Wandrell's Core library]: http://github.com/Bernardo-MG/Wandrell-Core
+[Wandrell's Framework library]: http://github.com/Bernardo-MG/Wandrell-Framework
