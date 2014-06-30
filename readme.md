@@ -18,7 +18,7 @@ But currently my projects lack a Maven repository, and so can't be handled autom
 The list of projects which need to be manually downloaded and installed are:
 * [Wandrell's Core library][]
 * [Wandrell's Framework library][]
-* [RPG Toolbox API library][]
+* [Tabletop API library][]
 
 ### Getting the code
 The GitHub project is found at http://github.com/Bernardo-MG/Tabletop-Pendragon-API, and it includes the git clone uri.
