@@ -8,9 +8,9 @@
 	<version>alpha</version>
 	<packaging>jar</packaging>
 
-	<name>Pendragon API</name>
-	<description>API library for Pendragon</description>
-	<url>https://github.com/Bernardo-MG/RPG-Toolbox-Pendragon-API</url>
+	<name>Tabletop's Pendragon API</name>
+	<url></url>
+	<description>API library for the RPG Pendragon, part of the Tabletop project.</description>
 
 	<licenses>
 		<license>
