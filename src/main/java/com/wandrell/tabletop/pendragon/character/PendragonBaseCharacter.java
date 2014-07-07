@@ -13,15 +13,31 @@ public interface PendragonBaseCharacter extends NewInstantiable {
     @Override
     public PendragonBaseCharacter createNewInstance();
 
-    public PendragonAttribute getAttribute(final String attribute);
+    public PendragonAttribute getAppearance();
 
     public Collection<PendragonAttribute> getAttributes();
 
-    public PendragonDerivedAttribute getDerivedAttribute(final String name);
+    public PendragonAttribute getConstitution();
+
+    public PendragonAttribute getDamage();
 
     public Collection<PendragonDerivedAttribute> getDerivedAttributes();
 
+    public PendragonAttribute getDexterity();
+
+    public PendragonAttribute getHealingRate();
+
+    public PendragonAttribute getHitPoints();
+
+    public PendragonAttribute getMoveRate();
+
     public String getName();
+
+    public PendragonAttribute getSize();
+
+    public PendragonAttribute getStrength();
+
+    public PendragonAttribute getUnconsciousTreshold();
 
     public Boolean hasAttribute(final String name);
 

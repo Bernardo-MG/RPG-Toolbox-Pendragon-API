@@ -46,14 +46,14 @@ public interface PendragonSimpleCharacter extends PendragonBaseCharacter {
 
     public Collection<PendragonTrait> getTraits();
 
-    public boolean hasDirectedTrait(final String name, final String annotation);
+    public Boolean hasDirectedTrait(final String name, final String annotation);
 
-    public boolean hasPassion(final String name, final String annotation);
+    public Boolean hasPassion(final String name, final String annotation);
 
-    public boolean hasSkill(final String name, final String annotation);
+    public Boolean hasSkill(final String name, final String annotation);
 
     public Boolean hasSpecialtySkill(final String name);
 
-    public boolean hasTrait(final String name);
+    public Boolean hasTrait(final String name);
 
 }
