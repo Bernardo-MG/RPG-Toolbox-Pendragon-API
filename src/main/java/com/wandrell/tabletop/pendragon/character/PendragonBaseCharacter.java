@@ -19,25 +19,31 @@ public interface PendragonBaseCharacter extends NewInstantiable {
 
     public PendragonAttribute getConstitution();
 
-    public PendragonAttribute getDamage();
+    public PendragonDerivedAttribute getDamage();
 
     public Collection<PendragonDerivedAttribute> getDerivedAttributes();
 
     public PendragonAttribute getDexterity();
 
-    public PendragonAttribute getHealingRate();
+    public PendragonDerivedAttribute getDexterityRoll();
 
-    public PendragonAttribute getHitPoints();
+    public PendragonDerivedAttribute getHealingRate();
 
-    public PendragonAttribute getMoveRate();
+    public PendragonDerivedAttribute getHitPoints();
+
+    public PendragonDerivedAttribute getMajorWoundTreshold();
+
+    public PendragonDerivedAttribute getMovementRate();
 
     public String getName();
 
-    public PendragonAttribute getSize();
+    public PendragonDerivedAttribute getSize();
 
     public PendragonAttribute getStrength();
 
-    public PendragonAttribute getUnconsciousTreshold();
+    public PendragonDerivedAttribute getUnconsciousTreshold();
+
+    public PendragonDerivedAttribute getWeight();
 
     public Boolean hasAttribute(final String name);
 

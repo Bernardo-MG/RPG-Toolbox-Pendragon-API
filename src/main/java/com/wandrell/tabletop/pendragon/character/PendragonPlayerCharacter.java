@@ -13,6 +13,7 @@ import com.wandrell.tabletop.pendragon.inventory.PendragonMoney;
 import com.wandrell.tabletop.pendragon.manor.ManorAnimal;
 import com.wandrell.tabletop.pendragon.util.TextValue;
 import com.wandrell.tabletop.pendragon.valuehandler.PendragonAppearanceFeature;
+import com.wandrell.tabletop.pendragon.valuehandler.PendragonDerivedAttribute;
 import com.wandrell.tabletop.pendragon.valuehandler.PendragonSkill;
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 
@@ -23,12 +24,14 @@ public interface PendragonPlayerCharacter extends PendragonSimpleCharacter {
 
     public ArmorData getArmor();
 
+    public Collection<PendragonAppearanceFeature> getDistinctiveFeatures();
+
+    public PendragonDerivedAttribute getDistinctiveFeaturesCount();
+
     public PendragonSkill getExclusiveSkill(final String name,
 	    final String annotation);
 
     public Collection<PendragonSkill> getExclusiveSkills();
-
-    public Collection<PendragonAppearanceFeature> getFeatures();
 
     public Boolean getFlag(final String name);
 
