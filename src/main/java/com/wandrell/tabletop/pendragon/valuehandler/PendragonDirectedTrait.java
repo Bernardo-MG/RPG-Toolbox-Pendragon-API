@@ -1,10 +1,10 @@
 package com.wandrell.tabletop.pendragon.valuehandler;
 
-import com.wandrell.tabletop.valuehandler.Annotated;
+import com.wandrell.tabletop.valuehandler.Descriptor;
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 
 public interface PendragonDirectedTrait extends ValueHandler<Integer>,
-	Annotated {
+	Descriptor {
 
     @Override
     public PendragonDirectedTrait createNewInstance();
