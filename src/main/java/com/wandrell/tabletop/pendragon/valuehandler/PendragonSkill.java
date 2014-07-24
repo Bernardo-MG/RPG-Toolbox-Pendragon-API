@@ -16,6 +16,6 @@ public interface PendragonSkill extends ValueHandler<Integer>, Descriptor {
 
     public Boolean isKnowledgeSkill();
 
-    public Boolean isRepeteable();
+    public Boolean isRepeatable();
 
 }
