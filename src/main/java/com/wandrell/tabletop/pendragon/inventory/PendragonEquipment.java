@@ -6,9 +6,6 @@ import com.wandrell.tabletop.valuehandler.ValueHandler;
 
 public interface PendragonEquipment extends PendragonItem {
 
-    @Override
-    public PendragonEquipment createNewInstance();
-
     public Boolean getFlag(final String name);
 
     public Collection<String> getFlags();

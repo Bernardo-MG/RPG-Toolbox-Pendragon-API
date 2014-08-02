@@ -10,9 +10,8 @@ import com.wandrell.tabletop.pendragon.valuehandler.Skill;
 import com.wandrell.tabletop.pendragon.valuehandler.SpecialtySkill;
 import com.wandrell.tabletop.pendragon.valuehandler.Trait;
 import com.wandrell.tabletop.valuehandler.ValueHandler;
-import com.wandrell.util.tag.NewInstantiable;
 
-public interface CultureCharacterTemplate extends NewInstantiable {
+public interface CultureCharacterTemplate {
 
     public Attribute getAttribute(final String name);
 

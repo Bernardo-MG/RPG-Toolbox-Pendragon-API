@@ -5,14 +5,10 @@ import java.util.Collection;
 import com.wandrell.tabletop.pendragon.inventory.PendragonMoney;
 import com.wandrell.tabletop.pendragon.valuehandler.Skill;
 import com.wandrell.tabletop.valuehandler.ValueHandler;
-import com.wandrell.util.tag.NewInstantiable;
 
-public interface FatherClass extends NewInstantiable {
+public interface FatherClass {
 
     public void addSkillsPoints(final ValueHandler<Integer> vhValue);
-
-    @Override
-    public FatherClass createNewInstance();
 
     public PendragonMoney getMoney();
 

@@ -2,12 +2,7 @@ package com.wandrell.tabletop.pendragon.character.background;
 
 import java.util.Collection;
 
-import com.wandrell.util.tag.NewInstantiable;
-
-public interface Religion extends NewInstantiable {
-
-    @Override
-    public Religion createNewInstance();
+public interface Religion {
 
     public Integer getArmorBonus();
 

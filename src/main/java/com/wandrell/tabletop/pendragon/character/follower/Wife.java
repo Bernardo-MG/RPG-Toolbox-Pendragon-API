@@ -3,12 +3,8 @@ package com.wandrell.tabletop.pendragon.character.follower;
 import java.util.Collection;
 
 import com.wandrell.tabletop.pendragon.character.PendragonBaseCharacter;
-import com.wandrell.util.tag.NewInstantiable;
 
-public interface Wife extends NewInstantiable {
-
-    @Override
-    public Wife createNewInstance();
+public interface Wife {
 
     public PendragonBaseCharacter getCharacter();
 

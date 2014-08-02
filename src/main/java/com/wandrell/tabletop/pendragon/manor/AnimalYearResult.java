@@ -5,12 +5,8 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.pendragon.util.PathNameWrapper;
 import com.wandrell.tabletop.valuehandler.ValueHandler;
-import com.wandrell.util.tag.NewInstantiable;
 
-public interface AnimalYearResult extends NewInstantiable {
-
-    @Override
-    public AnimalYearResult createNewInstance();
+public interface AnimalYearResult {
 
     public Path getFile(final String name);
 

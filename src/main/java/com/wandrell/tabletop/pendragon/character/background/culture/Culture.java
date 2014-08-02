@@ -7,12 +7,8 @@ import com.wandrell.tabletop.character.Gender;
 import com.wandrell.tabletop.dice.RollTable;
 import com.wandrell.tabletop.pendragon.inventory.AdditionalBelongings;
 import com.wandrell.tabletop.pendragon.util.PathNameWrapper;
-import com.wandrell.util.tag.NewInstantiable;
 
-public interface Culture extends NewInstantiable {
-
-    @Override
-    public Culture createNewInstance();
+public interface Culture {
 
     public Path getFamilyCharacteristicFile(final Gender gender);
 

@@ -1,12 +1,8 @@
 package com.wandrell.tabletop.pendragon.character.follower;
 
 import com.wandrell.tabletop.pendragon.character.PendragonBaseCharacter;
-import com.wandrell.util.tag.NewInstantiable;
 
-public interface Follower extends NewInstantiable {
-
-    @Override
-    public Follower createNewInstance();
+public interface Follower {
 
     public PendragonBaseCharacter getCharacter();
 

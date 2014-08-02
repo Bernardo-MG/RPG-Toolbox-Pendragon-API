@@ -3,12 +3,8 @@ package com.wandrell.tabletop.pendragon.inventory;
 import java.util.Collection;
 
 import com.wandrell.tabletop.valuehandler.ValueHandler;
-import com.wandrell.util.tag.NewInstantiable;
 
-public interface AdditionalBelongings extends NewInstantiable {
-
-    @Override
-    public AdditionalBelongings createNewInstance();
+public interface AdditionalBelongings {
 
     public Collection<String> getEquipableItemsFiles();
 
