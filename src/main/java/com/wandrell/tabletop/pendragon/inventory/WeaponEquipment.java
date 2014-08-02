@@ -9,6 +9,4 @@ public interface WeaponEquipment extends PendragonEquipment {
 
     public Boolean isDamageOverriden();
 
-    public void setSkill(final String skill);
-
 }

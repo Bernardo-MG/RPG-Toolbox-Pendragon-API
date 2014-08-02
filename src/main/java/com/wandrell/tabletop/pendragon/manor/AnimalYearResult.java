@@ -3,7 +3,7 @@ package com.wandrell.tabletop.pendragon.manor;
 import java.nio.file.Path;
 import java.util.Collection;
 
-import com.wandrell.tabletop.pendragon.util.FileNameWrapper;
+import com.wandrell.tabletop.pendragon.util.PathNameWrapper;
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 
@@ -14,7 +14,7 @@ public interface AnimalYearResult extends NewInstantiable {
 
     public Path getFile(final String name);
 
-    public Collection<FileNameWrapper> getFiles();
+    public Collection<PathNameWrapper> getFiles();
 
     public Boolean getFlag(final String name);
 

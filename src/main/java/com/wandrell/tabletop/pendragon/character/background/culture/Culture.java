@@ -6,7 +6,7 @@ import java.util.Collection;
 import com.wandrell.tabletop.character.Gender;
 import com.wandrell.tabletop.dice.RollTable;
 import com.wandrell.tabletop.pendragon.inventory.AdditionalBelongings;
-import com.wandrell.tabletop.pendragon.util.FileNameWrapper;
+import com.wandrell.tabletop.pendragon.util.PathNameWrapper;
 import com.wandrell.util.tag.NewInstantiable;
 
 public interface Culture extends NewInstantiable {
@@ -22,7 +22,7 @@ public interface Culture extends NewInstantiable {
 
     public Path getFile(final String name);
 
-    public Collection<FileNameWrapper> getFiles();
+    public Collection<PathNameWrapper> getFiles();
 
     public RollTable<AdditionalBelongings> getInitialLuckTable(
 	    final Gender gender);
