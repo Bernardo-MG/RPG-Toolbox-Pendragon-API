@@ -4,15 +4,15 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 
-public interface PendragonSpecialtySkill extends ValueHandler<Integer> {
+public interface SpecialtySkill extends ValueHandler<Integer> {
 
     @Override
-    public PendragonSpecialtySkill createNewInstance();
+    public SpecialtySkill createNewInstance();
 
     public Collection<String> getSurrogatedSkills();
 
     public Boolean isSkillContained(final String name);
 
-    public void registerSkill(final PendragonSkill skill);
+    public void registerSkill(final Skill skill);
 
 }

@@ -4,10 +4,10 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 
-public interface PendragonAttribute extends ValueHandler<Integer> {
+public interface Attribute extends ValueHandler<Integer> {
 
     @Override
-    public PendragonAttribute createNewInstance();
+    public Attribute createNewInstance();
 
     public Collection<ValueHandler<Integer>> getDerivedAttributes();
 

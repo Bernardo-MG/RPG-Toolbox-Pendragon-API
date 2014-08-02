@@ -3,7 +3,7 @@ package com.wandrell.tabletop.pendragon.character.background;
 import java.util.Collection;
 
 import com.wandrell.tabletop.pendragon.inventory.PendragonMoney;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonSkill;
+import com.wandrell.tabletop.pendragon.valuehandler.Skill;
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 
@@ -18,7 +18,7 @@ public interface FatherClass extends NewInstantiable {
 
     public String getName();
 
-    public Collection<PendragonSkill> getSkillsGroup();
+    public Collection<Skill> getSkillsGroup();
 
     public ValueHandler<Integer> getSkillsGroupPoints();
 

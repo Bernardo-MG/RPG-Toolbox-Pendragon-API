@@ -2,12 +2,12 @@ package com.wandrell.tabletop.pendragon.valuehandler;
 
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 
-public interface PendragonTrait extends ValueHandler<Integer> {
+public interface Trait extends ValueHandler<Integer> {
 
     @Override
-    public PendragonTrait createNewInstance();
+    public Trait createNewInstance();
 
-    public PendragonTrait getMirrorTrait();
+    public Trait getMirrorTrait();
 
     public Boolean isGoodTrait();
 

@@ -12,9 +12,9 @@ import com.wandrell.tabletop.pendragon.inventory.PendragonItem;
 import com.wandrell.tabletop.pendragon.inventory.PendragonMoney;
 import com.wandrell.tabletop.pendragon.manor.ManorAnimal;
 import com.wandrell.tabletop.pendragon.util.TextValue;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonAppearanceFeature;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonDerivedAttribute;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonSkill;
+import com.wandrell.tabletop.pendragon.valuehandler.AppearanceFeature;
+import com.wandrell.tabletop.pendragon.valuehandler.DerivedAttribute;
+import com.wandrell.tabletop.pendragon.valuehandler.Skill;
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 
 public interface PendragonPlayerCharacter extends PendragonSimpleCharacter {
@@ -24,14 +24,13 @@ public interface PendragonPlayerCharacter extends PendragonSimpleCharacter {
 
     public ArmorData getArmor();
 
-    public Collection<PendragonAppearanceFeature> getDistinctiveFeatures();
+    public Collection<AppearanceFeature> getDistinctiveFeatures();
 
-    public PendragonDerivedAttribute getDistinctiveFeaturesCount();
+    public DerivedAttribute getDistinctiveFeaturesCount();
 
-    public PendragonSkill getExclusiveSkill(final String name,
-	    final String annotation);
+    public Skill getExclusiveSkill(final String name, final String annotation);
 
-    public Collection<PendragonSkill> getExclusiveSkills();
+    public Collection<Skill> getExclusiveSkills();
 
     public Boolean getFlag(final String name);
 

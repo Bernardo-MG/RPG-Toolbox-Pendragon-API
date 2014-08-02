@@ -3,55 +3,53 @@ package com.wandrell.tabletop.pendragon.character.background.culture;
 import java.util.Collection;
 
 import com.wandrell.tabletop.interval.Interval;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonAttribute;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonDirectedTrait;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonPassion;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonSkill;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonSpecialtySkill;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonTrait;
+import com.wandrell.tabletop.pendragon.valuehandler.Attribute;
+import com.wandrell.tabletop.pendragon.valuehandler.DirectedTrait;
+import com.wandrell.tabletop.pendragon.valuehandler.Passion;
+import com.wandrell.tabletop.pendragon.valuehandler.Skill;
+import com.wandrell.tabletop.pendragon.valuehandler.SpecialtySkill;
+import com.wandrell.tabletop.pendragon.valuehandler.Trait;
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 
 public interface CultureCharacterTemplate extends NewInstantiable {
 
-    public PendragonAttribute getAttribute(final String name);
+    public Attribute getAttribute(final String name);
 
     public Interval<Integer> getAttributeInterval(final String name);
 
     public Collection<Interval<Integer>> getAttributeIntervals();
 
-    public Collection<PendragonAttribute> getAttributes();
+    public Collection<Attribute> getAttributes();
 
     public ValueHandler<Integer> getDerivedAttribute(final String name);
 
     public Collection<ValueHandler<Integer>> getDerivedAttributes();
 
-    public PendragonDirectedTrait getDirectedTrait(final String name,
+    public DirectedTrait getDirectedTrait(final String name,
 	    final String annotation);
 
-    public Collection<PendragonDirectedTrait> getDirectedTraits();
+    public Collection<DirectedTrait> getDirectedTraits();
 
-    public PendragonSkill getExclusiveSkill(final String name,
-	    final String annotation);
+    public Skill getExclusiveSkill(final String name, final String annotation);
 
-    public Collection<PendragonSkill> getExclusiveSkills();
+    public Collection<Skill> getExclusiveSkills();
 
-    public PendragonPassion getPassion(final String name,
-	    final String annotation);
+    public Passion getPassion(final String name, final String annotation);
 
-    public Collection<PendragonPassion> getPassions();
+    public Collection<Passion> getPassions();
 
-    public PendragonSkill getSkill(final String name, final String annotation);
+    public Skill getSkill(final String name, final String annotation);
 
-    public Collection<PendragonSkill> getSkills();
+    public Collection<Skill> getSkills();
 
-    public PendragonSpecialtySkill getSpecialtySkill(final String name);
+    public SpecialtySkill getSpecialtySkill(final String name);
 
-    public Collection<PendragonSpecialtySkill> getSpecialtySkills();
+    public Collection<SpecialtySkill> getSpecialtySkills();
 
-    public PendragonTrait getTrait(final String name);
+    public Trait getTrait(final String name);
 
-    public Collection<PendragonTrait> getTraits();
+    public Collection<Trait> getTraits();
 
     public String getValuesText();
 

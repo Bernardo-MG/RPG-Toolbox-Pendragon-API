@@ -2,48 +2,48 @@ package com.wandrell.tabletop.pendragon.character;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonAttribute;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonDerivedAttribute;
+import com.wandrell.tabletop.pendragon.valuehandler.Attribute;
+import com.wandrell.tabletop.pendragon.valuehandler.DerivedAttribute;
 import com.wandrell.util.tag.NewInstantiable;
 
 public interface PendragonBaseCharacter extends NewInstantiable {
 
-    public void addDerivedAttribute(final PendragonDerivedAttribute attribute);
+    public void addDerivedAttribute(final DerivedAttribute attribute);
 
     @Override
     public PendragonBaseCharacter createNewInstance();
 
-    public PendragonAttribute getAppearance();
+    public Attribute getAppearance();
 
-    public Collection<PendragonAttribute> getAttributes();
+    public Collection<Attribute> getAttributes();
 
-    public PendragonAttribute getConstitution();
+    public Attribute getConstitution();
 
-    public PendragonDerivedAttribute getDamage();
+    public DerivedAttribute getDamage();
 
-    public Collection<PendragonDerivedAttribute> getDerivedAttributes();
+    public Collection<DerivedAttribute> getDerivedAttributes();
 
-    public PendragonAttribute getDexterity();
+    public Attribute getDexterity();
 
-    public PendragonDerivedAttribute getDexterityRoll();
+    public DerivedAttribute getDexterityRoll();
 
-    public PendragonDerivedAttribute getHealingRate();
+    public DerivedAttribute getHealingRate();
 
-    public PendragonDerivedAttribute getHitPoints();
+    public DerivedAttribute getHitPoints();
 
-    public PendragonDerivedAttribute getMajorWoundTreshold();
+    public DerivedAttribute getMajorWoundTreshold();
 
-    public PendragonDerivedAttribute getMovementRate();
+    public DerivedAttribute getMovementRate();
 
     public String getName();
 
-    public PendragonDerivedAttribute getSize();
+    public DerivedAttribute getSize();
 
-    public PendragonAttribute getStrength();
+    public Attribute getStrength();
 
-    public PendragonDerivedAttribute getUnconsciousTreshold();
+    public DerivedAttribute getUnconsciousTreshold();
 
-    public PendragonDerivedAttribute getWeight();
+    public DerivedAttribute getWeight();
 
     public Boolean hasAttribute(final String name);
 

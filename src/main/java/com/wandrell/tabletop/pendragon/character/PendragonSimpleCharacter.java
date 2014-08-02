@@ -3,48 +3,47 @@ package com.wandrell.tabletop.pendragon.character;
 import java.util.Collection;
 
 import com.wandrell.tabletop.character.Gender;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonDirectedTrait;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonPassion;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonSkill;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonSpecialtySkill;
-import com.wandrell.tabletop.pendragon.valuehandler.PendragonTrait;
+import com.wandrell.tabletop.pendragon.valuehandler.DirectedTrait;
+import com.wandrell.tabletop.pendragon.valuehandler.Passion;
+import com.wandrell.tabletop.pendragon.valuehandler.Skill;
+import com.wandrell.tabletop.pendragon.valuehandler.SpecialtySkill;
+import com.wandrell.tabletop.pendragon.valuehandler.Trait;
 
 public interface PendragonSimpleCharacter extends PendragonBaseCharacter {
 
-    public void addDirectedTrait(final PendragonDirectedTrait directedTrait);
+    public void addDirectedTrait(final DirectedTrait directedTrait);
 
-    public void addPassion(final PendragonPassion passion);
+    public void addPassion(final Passion passion);
 
-    public void addSkill(final PendragonSkill skill);
+    public void addSkill(final Skill skill);
 
-    public void addSpecialtySkill(final PendragonSpecialtySkill skill);
+    public void addSpecialtySkill(final SpecialtySkill skill);
 
     @Override
     public PendragonSimpleCharacter createNewInstance();
 
-    public PendragonDirectedTrait getDirectedTrait(final String name,
+    public DirectedTrait getDirectedTrait(final String name,
 	    final String annotation);
 
-    public Collection<PendragonDirectedTrait> getDirectedTraits();
+    public Collection<DirectedTrait> getDirectedTraits();
 
     public Gender getGender();
 
-    public PendragonPassion getPassion(final String name,
-	    final String annotation);
+    public Passion getPassion(final String name, final String annotation);
 
-    public Collection<PendragonPassion> getPassions();
+    public Collection<Passion> getPassions();
 
-    public PendragonSkill getSkill(final String name, final String annotation);
+    public Skill getSkill(final String name, final String annotation);
 
-    public Collection<PendragonSkill> getSkills();
+    public Collection<Skill> getSkills();
 
-    public PendragonSpecialtySkill getSpecialtySkill(final String name);
+    public SpecialtySkill getSpecialtySkill(final String name);
 
-    public Collection<PendragonSpecialtySkill> getSpecialtySkills();
+    public Collection<SpecialtySkill> getSpecialtySkills();
 
-    public PendragonTrait getTrait(final String name);
+    public Trait getTrait(final String name);
 
-    public Collection<PendragonTrait> getTraits();
+    public Collection<Trait> getTraits();
 
     public Boolean hasDirectedTrait(final String name, final String annotation);
 
