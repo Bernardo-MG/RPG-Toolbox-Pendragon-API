@@ -2,7 +2,6 @@ package com.wandrell.tabletop.pendragon.character.background;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.valuehandler.ValueHandler;
 import com.wandrell.util.tag.NewInstantiable;
 
 public interface Religion extends NewInstantiable {
@@ -10,13 +9,11 @@ public interface Religion extends NewInstantiable {
     @Override
     public Religion createNewInstance();
 
-    public ValueHandler<Integer> getArmorBonus();
+    public Integer getArmorBonus();
 
-    public ValueHandler<Integer> getDamageBonus();
+    public Integer getDamageBonus();
 
-    public ValueHandler<Integer> getDerivedAttributeBonus(final String name);
-
-    public Collection<ValueHandler<Integer>> getDerivedAttributesBonus();
+    public Integer getDerivedAttributeBonus(final String name);
 
     public String getName();
 
