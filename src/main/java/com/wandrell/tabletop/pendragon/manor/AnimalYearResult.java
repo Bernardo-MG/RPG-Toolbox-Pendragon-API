@@ -2,9 +2,9 @@ package com.wandrell.tabletop.pendragon.manor;
 
 import java.nio.file.Path;
 import java.util.Collection;
+import java.util.Map;
 
 import com.wandrell.tabletop.pendragon.util.PathNameWrapper;
-import com.wandrell.tabletop.valuehandler.ValueHandler;
 
 public interface AnimalYearResult {
 
@@ -18,12 +18,8 @@ public interface AnimalYearResult {
 
     public String getName();
 
-    public ValueHandler<Integer> getValue(final String name);
-
-    public Collection<ValueHandler<Integer>> getValues();
+    public Map<String, Integer> getValues();
 
     public Boolean hasFile(final String name);
-
-    public Boolean hasValue(final String name);
 
 }

@@ -1,9 +1,11 @@
 package com.wandrell.tabletop.pendragon.inventory;
 
-import com.wandrell.tabletop.inventory.ItemData;
+public interface PendragonItem {
 
-public interface PendragonItem extends ItemData {
+    public String getDescription();
 
     public PendragonMoney getMoney();
+
+    public String getName();
 
 }

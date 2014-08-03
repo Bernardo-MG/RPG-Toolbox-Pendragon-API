@@ -2,7 +2,7 @@ package com.wandrell.tabletop.pendragon.inventory;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.valuehandler.ValueHandler;
+import com.wandrell.tabletop.dice.Dice;
 
 public interface AdditionalBelongings {
 
@@ -16,7 +16,7 @@ public interface AdditionalBelongings {
 
     public Collection<String> getPetsFiles();
 
-    public Collection<ValueHandler<Integer>> getRerolls();
+    public Collection<Dice> getRerolls();
 
     public Collection<String> getShieldsFiles();
 
