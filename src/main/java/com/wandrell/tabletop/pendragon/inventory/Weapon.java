@@ -1,6 +1,6 @@
 package com.wandrell.tabletop.pendragon.inventory;
 
-public interface WeaponEquipment extends PendragonEquipment {
+public interface Weapon extends Equipment {
 
     public String getSkill();
 

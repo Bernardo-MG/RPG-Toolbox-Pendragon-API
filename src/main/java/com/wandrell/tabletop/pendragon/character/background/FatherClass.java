@@ -3,11 +3,11 @@ package com.wandrell.tabletop.pendragon.character.background;
 import java.util.Collection;
 import java.util.Map;
 
-import com.wandrell.tabletop.pendragon.inventory.PendragonMoney;
+import com.wandrell.tabletop.pendragon.inventory.Money;
 
 public interface FatherClass {
 
-    public PendragonMoney getMoney();
+    public Money getMoney();
 
     public String getName();
 

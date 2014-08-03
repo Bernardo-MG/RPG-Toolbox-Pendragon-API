@@ -7,8 +7,8 @@ import com.wandrell.tabletop.pendragon.character.follower.Follower;
 import com.wandrell.tabletop.pendragon.character.follower.Wife;
 import com.wandrell.tabletop.pendragon.character.module.TraitsBonusSwitchsData;
 import com.wandrell.tabletop.pendragon.glory.GloryKeeper;
-import com.wandrell.tabletop.pendragon.inventory.PendragonItem;
-import com.wandrell.tabletop.pendragon.inventory.PendragonMoney;
+import com.wandrell.tabletop.pendragon.inventory.Item;
+import com.wandrell.tabletop.pendragon.inventory.Money;
 import com.wandrell.tabletop.pendragon.manor.ManorAnimal;
 import com.wandrell.tabletop.pendragon.util.TextValue;
 import com.wandrell.tabletop.pendragon.valuehandler.DerivedAttribute;
@@ -24,9 +24,9 @@ public interface PendragonPlayerCharacter extends PendragonSimpleCharacter {
 
     public void addFollower(final Follower follower);
 
-    public void addHoldingAtHome(final PendragonItem item);
+    public void addHoldingAtHome(final Item item);
 
-    public void addHoldingCarried(final PendragonItem item);
+    public void addHoldingCarried(final Item item);
 
     public void addHorse(final HorseCharacter horse);
 
@@ -59,13 +59,13 @@ public interface PendragonPlayerCharacter extends PendragonSimpleCharacter {
 
     public GloryKeeper getGlory();
 
-    public Collection<PendragonItem> getHoldingsAtHome();
+    public Collection<Item> getHoldingsAtHome();
 
-    public Collection<PendragonItem> getHoldingsCarried();
+    public Collection<Item> getHoldingsCarried();
 
     public Collection<HorseCharacter> getHorses();
 
-    public PendragonMoney getMoney();
+    public Money getMoney();
 
     public Collection<ManorAnimal> getPets();
 

@@ -1,10 +1,10 @@
 package com.wandrell.tabletop.pendragon.inventory;
 
-public interface PendragonItem {
+public interface Item {
 
     public String getDescription();
 
-    public PendragonMoney getMoney();
+    public Money getMoney();
 
     public String getName();
 

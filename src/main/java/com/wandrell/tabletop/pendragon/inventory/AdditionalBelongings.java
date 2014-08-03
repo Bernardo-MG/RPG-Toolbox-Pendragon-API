@@ -10,7 +10,7 @@ public interface AdditionalBelongings {
 
     public Collection<String> getHorsesFiles();
 
-    public PendragonMoney getMoney();
+    public Money getMoney();
 
     public String getMoneyName();
 

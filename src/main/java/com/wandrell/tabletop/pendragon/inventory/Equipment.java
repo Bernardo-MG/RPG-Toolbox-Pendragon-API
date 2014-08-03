@@ -3,7 +3,7 @@ package com.wandrell.tabletop.pendragon.inventory;
 import java.util.Collection;
 import java.util.Map;
 
-public interface PendragonEquipment extends PendragonItem {
+public interface Equipment extends Item {
 
     public Boolean getFlag(final String name);
 
