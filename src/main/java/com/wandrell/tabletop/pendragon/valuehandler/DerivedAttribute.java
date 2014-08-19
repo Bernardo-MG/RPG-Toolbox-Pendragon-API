@@ -4,7 +4,7 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 
-public interface DerivedAttribute extends ValueHandler<Integer> {
+public interface DerivedAttribute extends ValueHandler {
 
     @Override
     public DerivedAttribute createNewInstance();

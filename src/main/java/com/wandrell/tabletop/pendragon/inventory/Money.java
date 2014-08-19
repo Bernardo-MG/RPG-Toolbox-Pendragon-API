@@ -8,8 +8,8 @@ public interface Money extends NewInstantiable {
     @Override
     public Money createNewInstance();
 
-    public ValueHandler<Integer> getDenarii();
+    public ValueHandler getDenarii();
 
-    public ValueHandler<Integer> getLibra();
+    public ValueHandler getLibra();
 
 }

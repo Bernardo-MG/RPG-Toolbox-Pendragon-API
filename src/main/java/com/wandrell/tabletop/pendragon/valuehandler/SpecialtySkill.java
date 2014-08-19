@@ -4,7 +4,7 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 
-public interface SpecialtySkill extends ValueHandler<Integer> {
+public interface SpecialtySkill extends ValueHandler {
 
     @Override
     public SpecialtySkill createNewInstance();

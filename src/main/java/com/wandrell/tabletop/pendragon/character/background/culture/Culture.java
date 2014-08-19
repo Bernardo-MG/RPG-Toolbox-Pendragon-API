@@ -21,7 +21,7 @@ public interface Culture {
     public Collection<PathNameWrapper> getFiles();
 
     public RollTable<AdditionalBelongings> getInitialLuckTable(
-	    final Gender gender);
+            final Gender gender);
 
     public CultureCharacterTemplate getMaleRandomTemplate();
 

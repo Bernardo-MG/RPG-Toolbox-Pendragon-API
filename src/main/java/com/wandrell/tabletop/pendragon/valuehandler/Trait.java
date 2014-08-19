@@ -2,7 +2,7 @@ package com.wandrell.tabletop.pendragon.valuehandler;
 
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 
-public interface Trait extends ValueHandler<Integer> {
+public interface Trait extends ValueHandler {
 
     @Override
     public Trait createNewInstance();

@@ -6,7 +6,7 @@ import com.wandrell.tabletop.valuehandler.ValueHandler;
 
 public interface HorseCharacter extends PendragonBaseCharacter {
 
-    public void addSecondaryAttribute(final ValueHandler<Integer> vhSecAttribute);
+    public void addSecondaryAttribute(final ValueHandler attribute);
 
     @Override
     public HorseCharacter createNewInstance();
@@ -17,9 +17,9 @@ public interface HorseCharacter extends PendragonBaseCharacter {
 
     public String getHorseType();
 
-    public ValueHandler<Integer> getSecondaryAttribute(final String name);
+    public ValueHandler getSecondaryAttribute(final String name);
 
-    public Collection<ValueHandler<Integer>> getSecondaryAttributes();
+    public Collection<ValueHandler> getSecondaryAttributes();
 
     public Boolean hasFlag(final String name);
 

@@ -8,7 +8,7 @@ public interface TraitsBonusSwitchsData extends NewInstantiable {
     @Override
     public TraitsBonusSwitchsData createNewInstance();
 
-    public ValueHandler<Integer> getBonusSwitch(final String name);
+    public ValueHandler getBonusSwitch(final String name);
 
     public Boolean hasBonusSwitch(final String name);
 

@@ -34,14 +34,14 @@ public interface PendragonPlayerCharacter extends PendragonSimpleCharacter {
 
     public void addTextValue(final String key, final String value);
 
-    public void addValueHandler(final ValueHandler<Integer> value);
+    public void addValueHandler(final ValueHandler value);
 
     public void addWife(final Wife wife);
 
     @Override
     public PendragonPlayerCharacter createNewInstance();
 
-    public ValueHandler<Integer> getArmor();
+    public ValueHandler getArmor();
 
     public Collection<DistinctiveFeature> getDistinctiveFeatures();
 
@@ -79,13 +79,14 @@ public interface PendragonPlayerCharacter extends PendragonSimpleCharacter {
 
     public TraitsBonusSwitchsData getTraitsBonusSwitchsData();
 
-    public ValueHandler<Integer> getValueHandler(final String name);
+    public ValueHandler getValueHandler(final String name);
 
-    public Collection<ValueHandler<Integer>> getValueHandlers();
+    public Collection<ValueHandler> getValueHandlers();
 
     public Collection<Wife> getWives();
 
-    public Boolean hasExclusiveSkill(final String name, final String annotation);
+    public Boolean
+            hasExclusiveSkill(final String name, final String annotation);
 
     public Boolean hasTextValue(final String name);
 

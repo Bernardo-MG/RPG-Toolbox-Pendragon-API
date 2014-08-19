@@ -6,9 +6,9 @@ import com.wandrell.tabletop.valuehandler.ValueHandler;
 
 public interface GloryKeeper {
 
-    public ValueHandler<Integer> getAnnualGlorySource(final String name);
+    public ValueHandler getAnnualGlorySource(final String name);
 
-    public Collection<ValueHandler<Integer>> getAnnualGlorySources();
+    public Collection<ValueHandler> getAnnualGlorySources();
 
     public Collection<GloryEvent> getHistory();
 

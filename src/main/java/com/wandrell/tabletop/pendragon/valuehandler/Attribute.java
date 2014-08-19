@@ -4,11 +4,11 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.valuehandler.ValueHandler;
 
-public interface Attribute extends ValueHandler<Integer> {
+public interface Attribute extends ValueHandler {
 
     @Override
     public Attribute createNewInstance();
 
-    public Collection<ValueHandler<Integer>> getDerivedAttributes();
+    public Collection<ValueHandler> getDerivedAttributes();
 
 }

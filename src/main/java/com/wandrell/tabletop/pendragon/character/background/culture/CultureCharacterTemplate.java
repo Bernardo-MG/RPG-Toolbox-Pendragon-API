@@ -15,18 +15,18 @@ public interface CultureCharacterTemplate {
 
     public Attribute getAttribute(final String name);
 
-    public Interval<Integer> getAttributeInterval(final String name);
+    public Interval getAttributeInterval(final String name);
 
-    public Collection<Interval<Integer>> getAttributeIntervals();
+    public Collection<Interval> getAttributeIntervals();
 
     public Collection<Attribute> getAttributes();
 
-    public ValueHandler<Integer> getDerivedAttribute(final String name);
+    public ValueHandler getDerivedAttribute(final String name);
 
-    public Collection<ValueHandler<Integer>> getDerivedAttributes();
+    public Collection<ValueHandler> getDerivedAttributes();
 
     public DirectedTrait getDirectedTrait(final String name,
-	    final String annotation);
+            final String annotation);
 
     public Collection<DirectedTrait> getDirectedTraits();
 
@@ -60,7 +60,8 @@ public interface CultureCharacterTemplate {
 
     public Boolean hasDirectedTrait(final String name, final String annotation);
 
-    public Boolean hasExclusiveSkill(final String name, final String annotation);
+    public Boolean
+            hasExclusiveSkill(final String name, final String annotation);
 
     public Boolean hasPassion(final String name, final String annotation);
 

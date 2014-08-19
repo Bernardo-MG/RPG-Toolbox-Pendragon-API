@@ -23,7 +23,7 @@ public interface PendragonSimpleCharacter extends PendragonBaseCharacter {
     public PendragonSimpleCharacter createNewInstance();
 
     public DirectedTrait getDirectedTrait(final String name,
-	    final String annotation);
+            final String annotation);
 
     public Collection<DirectedTrait> getDirectedTraits();
 

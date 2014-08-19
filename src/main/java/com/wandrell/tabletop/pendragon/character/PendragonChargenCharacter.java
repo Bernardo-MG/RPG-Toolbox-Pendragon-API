@@ -21,7 +21,7 @@ public interface PendragonChargenCharacter extends PendragonPlayerCharacter {
     public void setCulture(final Culture culture);
 
     public void setFamilyCharacteristic(
-	    final FamilyCharacteristic characteristic);
+            final FamilyCharacteristic characteristic);
 
     public void setFatherClassData(final FatherClass fatherClass);
 
