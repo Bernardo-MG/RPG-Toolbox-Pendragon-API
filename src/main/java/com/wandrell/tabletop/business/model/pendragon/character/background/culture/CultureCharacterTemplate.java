@@ -1,31 +1,23 @@
 package com.wandrell.tabletop.business.model.pendragon.character.background.culture;
 
-import java.util.Collection;
-
-import com.wandrell.tabletop.business.model.pendragon.valuehandler.Attribute;
-import com.wandrell.tabletop.business.model.pendragon.valuehandler.DirectedTrait;
-import com.wandrell.tabletop.business.model.pendragon.valuehandler.Passion;
-import com.wandrell.tabletop.business.model.pendragon.valuehandler.Skill;
-import com.wandrell.tabletop.business.model.pendragon.valuehandler.SpecialtySkill;
-import com.wandrell.tabletop.business.model.pendragon.valuehandler.Trait;
-import com.wandrell.tabletop.business.model.valuehandler.EditableValueHandler;
+import java.util.Map;
 
 public interface CultureCharacterTemplate {
 
-    public Collection<Attribute> getAttributes();
+    public Map<String, Integer> getAttributes();
 
-    public Collection<EditableValueHandler> getDerivedAttributes();
+    public Map<String, Integer> getDerivedAttributes();
 
-    public Collection<DirectedTrait> getDirectedTraits();
+    public Map<String, Integer> getDirectedTraits();
 
-    public Collection<Skill> getExclusiveSkills();
+    public Map<String, Integer> getExclusiveSkills();
 
-    public Collection<Passion> getPassions();
+    public Map<String, Integer> getPassions();
 
-    public Collection<Skill> getSkills();
+    public Map<String, Integer> getSkills();
 
-    public Collection<SpecialtySkill> getSpecialtySkills();
+    public Map<String, Integer> getSpecialtySkills();
 
-    public Collection<Trait> getTraits();
+    public Map<String, Integer> getTraits();
 
 }
