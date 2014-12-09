@@ -8,6 +8,6 @@ public interface DirectedTrait extends EditableValueHandler, Descriptor {
     @Override
     public DirectedTrait createNewInstance();
 
-    public EditableValueHandler getTrait();
+    public Trait getTrait();
 
 }

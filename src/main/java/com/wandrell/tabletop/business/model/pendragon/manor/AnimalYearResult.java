@@ -1,25 +1,19 @@
 package com.wandrell.tabletop.business.model.pendragon.manor;
 
-import java.nio.file.Path;
-import java.util.Collection;
-import java.util.Map;
-
-import com.wandrell.tabletop.business.model.pendragon.util.PathNameWrapper;
+import com.wandrell.tabletop.business.model.pendragon.inventory.Money;
 
 public interface AnimalYearResult {
 
-    public Path getFile(final String name);
-
-    public Collection<PathNameWrapper> getFiles();
-
-    public Boolean getFlag(final String name);
-
-    public Collection<String> getFlags();
+    public Money getMoney();
 
     public String getName();
 
-    public Map<String, Integer> getValues();
+    public Pet getPuppy();
 
-    public Boolean hasFile(final String name);
+    public Boolean isDying();
+
+    public Boolean isHavingPuppies();
+
+    public Boolean isProducingMoney();
 
 }

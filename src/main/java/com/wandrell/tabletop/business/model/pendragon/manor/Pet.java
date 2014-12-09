@@ -2,7 +2,7 @@ package com.wandrell.tabletop.business.model.pendragon.manor;
 
 import com.wandrell.tabletop.business.model.dice.RollTable;
 
-public interface ManorAnimal {
+public interface Pet {
 
     public RollTable<AnimalYearResult> getAnnualCheckMap();
 

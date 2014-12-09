@@ -7,24 +7,18 @@ import com.wandrell.tabletop.business.model.pendragon.character.background.cultu
 
 public interface PendragonChargenCharacter extends PendragonPlayerCharacter {
 
+    // TODO: This maybe can be removed
+
     @Override
     public PendragonChargenCharacter createNewInstance();
-
-    public Culture getCulture();
-
-    public FatherClass getFatherClass();
-
-    public Homeland getHomeland();
-
-    public Boolean isKnightChosen();
 
     public void setCulture(final Culture culture);
 
     public void setFamilyCharacteristic(
             final FamilyCharacteristic characteristic);
 
-    public void setFatherClassData(final FatherClass fatherClass);
+    public void setFatherClass(final FatherClass fatherClass);
 
-    public void setHomelandData(final Homeland homeland);
+    public void setHomeland(final Homeland homeland);
 
 }

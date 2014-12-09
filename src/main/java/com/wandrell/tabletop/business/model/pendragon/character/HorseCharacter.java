@@ -1,28 +1,24 @@
 package com.wandrell.tabletop.business.model.pendragon.character;
 
-import java.util.Collection;
-
-import com.wandrell.tabletop.business.model.valuehandler.EditableValueHandler;
+import com.wandrell.tabletop.business.model.valuehandler.ValueHandler;
 
 public interface HorseCharacter extends PendragonBaseCharacter {
-
-    public void addSecondaryAttribute(final EditableValueHandler attribute);
 
     @Override
     public HorseCharacter createNewInstance();
 
-    public Boolean getFlag(final String name);
-
-    public Collection<String> getFlags();
-
     public String getHorseType();
 
-    public EditableValueHandler getSecondaryAttribute(final String name);
+    public ValueHandler getNaturalArmor();
 
-    public Collection<EditableValueHandler> getSecondaryAttributes();
+    public Boolean isArmored();
 
-    public Boolean hasFlag(final String name);
+    public Boolean isCombatHorse();
 
-    public Boolean hasSecondaryAttribute(final String name);
+    public Boolean isHuntingHorse();
+
+    public Boolean isRuined();
+
+    public void setRuined(final Boolean ruined);
 
 }

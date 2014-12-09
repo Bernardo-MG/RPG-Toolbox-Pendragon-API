@@ -11,8 +11,8 @@ public interface SpecialtySkill extends EditableValueHandler {
 
     public Collection<String> getSurrogatedSkills();
 
-    public Boolean isSkillContained(final String name);
-
     public void registerSkill(final Skill skill);
+
+    public void unregisterSkill(final Skill skill);
 
 }

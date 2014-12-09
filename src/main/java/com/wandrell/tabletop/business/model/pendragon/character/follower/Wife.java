@@ -6,7 +6,7 @@ public interface Wife {
 
     public Collection<Child> getChildren();
 
-    public String getFile();
+    public String getName();
 
     public Integer getYearWed();
 

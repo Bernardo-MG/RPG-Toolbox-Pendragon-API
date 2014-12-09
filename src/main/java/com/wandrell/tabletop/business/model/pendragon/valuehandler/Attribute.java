@@ -9,6 +9,6 @@ public interface Attribute extends EditableValueHandler {
     @Override
     public Attribute createNewInstance();
 
-    public Collection<EditableValueHandler> getDerivedAttributes();
+    public Collection<DerivedAttribute> getDerivedAttributes();
 
 }
