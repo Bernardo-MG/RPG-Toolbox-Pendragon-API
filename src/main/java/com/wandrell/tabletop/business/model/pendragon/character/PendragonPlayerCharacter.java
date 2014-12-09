@@ -3,7 +3,6 @@ package com.wandrell.tabletop.business.model.pendragon.character;
 import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.pendragon.character.background.DistinctiveFeature;
-import com.wandrell.tabletop.business.model.pendragon.character.background.Religion;
 import com.wandrell.tabletop.business.model.pendragon.character.follower.Follower;
 import com.wandrell.tabletop.business.model.pendragon.character.follower.Wife;
 import com.wandrell.tabletop.business.model.pendragon.glory.GloryManager;
@@ -88,7 +87,7 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
 
     public String getPlayerName();
 
-    public Religion getReligion();
+    public String getReligion();
 
     public EditableValueHandler getValueHandler(final String name);
 

@@ -104,14 +104,6 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public Trait getWordly();
 
-    public Boolean hasDirectedTrait(final String name, final String annotation);
-
-    public Boolean hasPassion(final String name, final String annotation);
-
-    public Boolean hasSkill(final String name, final String annotation);
-
-    public Boolean hasSpecialtySkill(final String name);
-
     public void removeDirectedTrait(final String directedTrait);
 
     public void removePassion(final String passion);
