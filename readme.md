@@ -8,7 +8,7 @@ The project is still under development, so expect a certain degree of instabilit
 The application was coded using Java, and dependencies are handled through Maven.
 
 ### JDK
-Coded with JDK 7.
+Coded with JDK 8.
 
 ### Dependencies
 All dependencies are handled through Maven, and noted on the pom file.
