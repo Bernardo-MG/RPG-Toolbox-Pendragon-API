@@ -9,9 +9,7 @@ import com.wandrell.tabletop.business.model.pendragon.glory.GloryManager;
 import com.wandrell.tabletop.business.model.pendragon.inventory.Item;
 import com.wandrell.tabletop.business.model.pendragon.inventory.Money;
 import com.wandrell.tabletop.business.model.pendragon.manor.Pet;
-import com.wandrell.tabletop.business.model.pendragon.valuehandler.DerivedAttribute;
 import com.wandrell.tabletop.business.model.pendragon.valuehandler.Skill;
-import com.wandrell.tabletop.business.model.valuehandler.EditableValueHandler;
 import com.wandrell.tabletop.business.model.valuehandler.ValueHandler;
 
 public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
@@ -42,7 +40,7 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
 
     public void clearHoldingsCarried();
 
-    public void clearHorse();
+    public void clearHorses();
 
     public void clearPet();
 
@@ -57,17 +55,9 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
 
     public Collection<DistinctiveFeature> getDistinctiveFeatures();
 
-    public DerivedAttribute getDistinctiveFeaturesCount();
-
-    public Skill getExclusiveSkill(final String name, final String annotation);
-
     public Collection<Skill> getExclusiveSkills();
 
     public String getFatherClass();
-
-    public Boolean getFlag(final String name);
-
-    public Collection<String> getFlags();
 
     public Collection<Follower> getFollowers();
 
@@ -89,34 +79,15 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
 
     public String getReligion();
 
-    public EditableValueHandler getValueHandler(final String name);
-
-    public Collection<EditableValueHandler> getValueHandlers();
-
     public Collection<Wife> getWives();
-
-    public Boolean hasDistinctiveFeature(final String feature);
-
-    public Boolean
-            hasExclusiveSkill(final String name, final String annotation);
-
-    public Boolean hasFollower(final String follower);
-
-    public Boolean hasHoldingAtHome(final Item item);
-
-    public Boolean hasHoldingCarried(final Item item);
-
-    public Boolean hasHorse(final HorseCharacter horse);
-
-    public Boolean hasValueHandler(final String name);
 
     public Boolean isKnight();
 
-    public void removeDistinctiveFeature(final String feature);
+    public void removeDistinctiveFeature(final DistinctiveFeature feature);
 
-    public void removeExclusiveSkill(final String skill);
+    public void removeExclusiveSkill(final Skill skill);
 
-    public void removeFollower(final String follower);
+    public void removeFollower(final Follower follower);
 
     public void removeHoldingAtHome(final Item item);
 
@@ -139,11 +110,9 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
 
     public void setHoldingsCarried(final Collection<Item> items);
 
-    public void setHorse(final Collection<HorseCharacter> horses);
+    public void setHorses(final Collection<HorseCharacter> horses);
 
-    public void setKnight(final Boolean isKnight);
-
-    public void setPet(final Collection<Pet> pets);
+    public void setPets(final Collection<Pet> pets);
 
     public void setWives(final Collection<Wife> wive);
 

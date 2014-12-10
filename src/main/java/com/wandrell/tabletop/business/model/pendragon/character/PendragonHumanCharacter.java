@@ -43,9 +43,6 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public Trait getDeceitful();
 
-    public DirectedTrait getDirectedTrait(final String name,
-            final String annotation);
-
     public Collection<DirectedTrait> getDirectedTraits();
 
     public Trait getEnergetic();
@@ -70,8 +67,6 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public Trait getModest();
 
-    public Passion getPassion(final String name, final String annotation);
-
     public Collection<Passion> getPassions();
 
     public Trait getPious();
@@ -84,11 +79,7 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public Trait getSelfish();
 
-    public Skill getSkill(final String name, final String annotation);
-
     public Collection<Skill> getSkills();
-
-    public SpecialtySkill getSpecialtySkill(final String name);
 
     public Collection<SpecialtySkill> getSpecialtySkills();
 
@@ -104,13 +95,13 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public Trait getWordly();
 
-    public void removeDirectedTrait(final String directedTrait);
+    public void removeDirectedTrait(final DirectedTrait directedTrait);
 
-    public void removePassion(final String passion);
+    public void removePassion(final Passion passion);
 
-    public void removeSkill(final String skill);
+    public void removeSkill(final Skill skill);
 
-    public void removeSpecialtySkill(final String skill);
+    public void removeSpecialtySkill(final SpecialtySkill skill);
 
     public void
             setDirectedTraits(final Collection<DirectedTrait> directedTraits);
