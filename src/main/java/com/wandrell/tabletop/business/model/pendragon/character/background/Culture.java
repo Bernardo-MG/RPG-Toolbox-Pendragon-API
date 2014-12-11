@@ -1,8 +1,7 @@
-package com.wandrell.tabletop.business.model.pendragon.character.background.culture;
+package com.wandrell.tabletop.business.model.pendragon.character.background;
 
 import com.wandrell.tabletop.business.model.character.Gender;
 import com.wandrell.tabletop.business.model.dice.RollTable;
-import com.wandrell.tabletop.business.model.pendragon.character.background.FamilyCharacteristic;
 import com.wandrell.tabletop.business.model.pendragon.inventory.AdditionalBelongings;
 
 public interface Culture {

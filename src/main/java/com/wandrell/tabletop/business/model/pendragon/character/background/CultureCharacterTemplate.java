@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.business.model.pendragon.character.background.culture;
+package com.wandrell.tabletop.business.model.pendragon.character.background;
 
 import java.util.Map;
 
