@@ -1,10 +1,10 @@
 package com.wandrell.tabletop.business.model.pendragon.manor;
 
-import com.wandrell.tabletop.business.model.dice.RollTable;
+import com.wandrell.tabletop.business.model.interval.IntervalTable;
 
 public interface Pet {
 
-    public RollTable<AnimalYearResult> getAnnualCheckMap();
+    public IntervalTable<AnimalYearResult> getAnnualCheckMap();
 
     public String getName();
 
