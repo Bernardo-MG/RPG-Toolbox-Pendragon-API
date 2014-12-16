@@ -1,7 +1,7 @@
 package com.wandrell.tabletop.business.model.pendragon.character;
 
-import com.wandrell.tabletop.business.model.pendragon.valuehandler.Attribute;
-import com.wandrell.tabletop.business.model.pendragon.valuehandler.DerivedAttribute;
+import com.wandrell.tabletop.business.model.pendragon.stats.Attribute;
+import com.wandrell.tabletop.business.model.pendragon.stats.DerivedAttribute;
 import com.wandrell.util.tag.NewInstantiable;
 
 public interface PendragonBaseCharacter extends NewInstantiable {

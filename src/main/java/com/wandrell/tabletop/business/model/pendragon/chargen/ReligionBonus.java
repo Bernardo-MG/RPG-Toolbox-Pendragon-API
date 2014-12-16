@@ -1,9 +1,9 @@
-package com.wandrell.tabletop.business.model.pendragon.character.background;
+package com.wandrell.tabletop.business.model.pendragon.chargen;
 
 import java.util.Collection;
 import java.util.Map;
 
-public interface Religion {
+public interface ReligionBonus {
 
     public Integer getArmorBonus();
 
@@ -11,7 +11,7 @@ public interface Religion {
 
     public Map<String, Integer> getDerivedAttributeBonus();
 
-    public String getName();
+    public String getReligion();
 
     public Collection<String> getReligiousTraits();
 

@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.business.model.pendragon.valuehandler;
+package com.wandrell.tabletop.business.model.pendragon.stats;
 
 import com.wandrell.tabletop.business.model.valuehandler.EditableValueHandler;
 

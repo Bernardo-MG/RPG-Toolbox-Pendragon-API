@@ -1,14 +1,14 @@
-package com.wandrell.tabletop.business.model.pendragon.character.background;
+package com.wandrell.tabletop.business.model.pendragon.chargen;
 
 import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.pendragon.inventory.Money;
 
-public interface FatherClass {
+public interface FatherClassBonus {
+
+    public String getFatherClass();
 
     public Money getMoney();
-
-    public String getName();
 
     public Integer getNonCombatSkillsPoints();
 

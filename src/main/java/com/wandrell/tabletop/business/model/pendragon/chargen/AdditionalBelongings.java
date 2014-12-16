@@ -1,10 +1,14 @@
-package com.wandrell.tabletop.business.model.pendragon.inventory;
+package com.wandrell.tabletop.business.model.pendragon.chargen;
 
 import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.dice.Dice;
 import com.wandrell.tabletop.business.model.interval.IntervalTable;
 import com.wandrell.tabletop.business.model.pendragon.character.HorseCharacter;
+import com.wandrell.tabletop.business.model.pendragon.inventory.Equipment;
+import com.wandrell.tabletop.business.model.pendragon.inventory.Money;
+import com.wandrell.tabletop.business.model.pendragon.inventory.Shield;
+import com.wandrell.tabletop.business.model.pendragon.inventory.Weapon;
 import com.wandrell.tabletop.business.model.pendragon.manor.Pet;
 
 public interface AdditionalBelongings {

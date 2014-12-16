@@ -2,14 +2,13 @@ package com.wandrell.tabletop.business.model.pendragon.character;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.pendragon.character.background.DistinctiveFeature;
 import com.wandrell.tabletop.business.model.pendragon.character.follower.Follower;
 import com.wandrell.tabletop.business.model.pendragon.character.follower.Wife;
 import com.wandrell.tabletop.business.model.pendragon.glory.GloryManager;
 import com.wandrell.tabletop.business.model.pendragon.inventory.Item;
 import com.wandrell.tabletop.business.model.pendragon.inventory.Money;
 import com.wandrell.tabletop.business.model.pendragon.manor.Pet;
-import com.wandrell.tabletop.business.model.pendragon.valuehandler.Skill;
+import com.wandrell.tabletop.business.model.pendragon.stats.Skill;
 import com.wandrell.tabletop.business.model.valuehandler.ValueHandler;
 
 public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
