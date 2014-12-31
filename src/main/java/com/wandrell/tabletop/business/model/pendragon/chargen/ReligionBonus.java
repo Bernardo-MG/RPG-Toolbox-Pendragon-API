@@ -9,6 +9,8 @@ public interface ReligionBonus {
 
     public Integer getDamageBonus();
 
+    public Integer getDamageDiceBonus();
+
     public Map<String, Integer> getDerivedAttributeBonus();
 
     public String getReligion();

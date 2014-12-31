@@ -2,12 +2,9 @@ package com.wandrell.tabletop.business.model.pendragon.stats;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.valuehandler.ValueHandler;
+import com.wandrell.tabletop.business.model.valuebox.ValueBox;
 
-public interface DerivedAttribute extends ValueHandler {
-
-    @Override
-    public DerivedAttribute createNewInstance();
+public interface DerivedAttribute extends ValueBox {
 
     public Collection<Attribute> getParentAttributes();
 

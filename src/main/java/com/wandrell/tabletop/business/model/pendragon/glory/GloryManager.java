@@ -2,22 +2,22 @@ package com.wandrell.tabletop.business.model.pendragon.glory;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.business.model.valuehandler.ValueHandler;
+import com.wandrell.tabletop.business.model.valuebox.ValueBox;
 
 public interface GloryManager {
 
-    public ValueHandler getChivaldryGlory();
+    public ValueBox getChivaldryGlory();
 
     public Collection<GloryEvent> getEvents();
 
-    public ValueHandler getGentlewomanGlory();
+    public ValueBox getGentlewomanGlory();
 
-    public ValueHandler getPassionsGlory();
+    public ValueBox getPassionsGlory();
 
-    public ValueHandler getReligiousGlory();
+    public ValueBox getReligiousGlory();
 
-    public ValueHandler getTraitsGlory();
+    public ValueBox getTraitsGlory();
 
-    public ValueHandler getYearlyGlory();
+    public ValueBox getYearlyGlory();
 
 }

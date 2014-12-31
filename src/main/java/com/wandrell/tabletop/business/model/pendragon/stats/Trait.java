@@ -1,8 +1,8 @@
 package com.wandrell.tabletop.business.model.pendragon.stats;
 
-import com.wandrell.tabletop.business.model.valuehandler.EditableValueHandler;
+import com.wandrell.tabletop.business.model.valuebox.EditableValueBox;
 
-public interface Trait extends EditableValueHandler {
+public interface Trait extends EditableValueBox {
 
     @Override
     public Trait createNewInstance();

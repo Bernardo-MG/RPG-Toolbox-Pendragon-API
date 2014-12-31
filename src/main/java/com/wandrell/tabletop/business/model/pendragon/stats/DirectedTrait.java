@@ -1,9 +1,8 @@
 package com.wandrell.tabletop.business.model.pendragon.stats;
 
-import com.wandrell.tabletop.business.model.valuehandler.Descriptor;
-import com.wandrell.tabletop.business.model.valuehandler.EditableValueHandler;
+import com.wandrell.tabletop.business.model.valuebox.SkillBox;
 
-public interface DirectedTrait extends EditableValueHandler, Descriptor {
+public interface DirectedTrait extends SkillBox {
 
     @Override
     public DirectedTrait createNewInstance();
