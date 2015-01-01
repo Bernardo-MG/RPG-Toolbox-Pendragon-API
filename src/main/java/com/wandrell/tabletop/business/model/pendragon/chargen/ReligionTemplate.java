@@ -3,7 +3,7 @@ package com.wandrell.tabletop.business.model.pendragon.chargen;
 import java.util.Collection;
 import java.util.Map;
 
-public interface ReligionBonus {
+public interface ReligionTemplate {
 
     public Integer getArmorBonus();
 

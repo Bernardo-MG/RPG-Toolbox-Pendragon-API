@@ -4,7 +4,7 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.pendragon.inventory.Money;
 
-public interface FatherClassBonus {
+public interface FatherClassTemplate {
 
     public String getFatherClass();
 

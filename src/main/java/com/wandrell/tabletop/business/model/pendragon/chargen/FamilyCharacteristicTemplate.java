@@ -2,7 +2,7 @@ package com.wandrell.tabletop.business.model.pendragon.chargen;
 
 import java.util.Map;
 
-public interface FamilyCharacteristicBonus {
+public interface FamilyCharacteristicTemplate {
 
     public Map<String, Integer> getAttributes();
 
