@@ -4,8 +4,8 @@ public interface FatherClassGlory {
 
     public Integer getBaseGlory();
 
-    public Integer getGloryPerYear();
+    public String getFatherClass();
 
-    public String getName();
+    public Integer getYearlyGlory();
 
 }
