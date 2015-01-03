@@ -1,21 +1,31 @@
 package com.wandrell.tabletop.business.model.pendragon.chargen;
 
 import java.util.Collection;
+import java.util.Map;
 
-import com.wandrell.tabletop.business.model.pendragon.inventory.Money;
+import com.wandrell.tabletop.business.model.dice.Dice;
+import com.wandrell.tabletop.business.model.skill.NameAndDescriptor;
 
 public interface FatherClassTemplate {
 
-    public String getFatherClass();
+    public Map<NameAndDescriptor, Integer> getDirectedTraits();
 
-    public Money getMoney();
+    public Map<NameAndDescriptor, Integer> getDirectedTraitsBase();
 
-    public Integer getNonCombatSkillsPoints();
+    public Dice getMoney();
 
-    public Collection<String> getSkillsGroup();
+    public String getName();
 
-    public Integer getSkillsGroupPoints();
+    public Integer getNonCombatSkillBonus();
+
+    public Collection<NameAndDescriptor> getSkillsGroup();
+
+    public Integer getSkillsGroupBonusPoints();
+
+    public Integer getSkillsGroupDividePoints();
 
     public Integer getSkillsPoints();
+
+    public Map<String, Integer> getSpecialtySkills();
 
 }
