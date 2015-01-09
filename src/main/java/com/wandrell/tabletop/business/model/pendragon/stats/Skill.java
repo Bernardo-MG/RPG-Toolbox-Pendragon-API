@@ -15,6 +15,4 @@ public interface Skill extends SkillBox {
 
     public Boolean isKnowledgeSkill();
 
-    public Boolean isRepeatable();
-
 }
