@@ -4,11 +4,11 @@ import com.wandrell.tabletop.business.model.pendragon.inventory.Money;
 
 public interface AnimalYearResult {
 
+    public String getDescription();
+
     public Money getMoney();
 
-    public String getName();
-
-    public Pet getPuppy();
+    public String getPuppy();
 
     public Boolean isDying();
 
