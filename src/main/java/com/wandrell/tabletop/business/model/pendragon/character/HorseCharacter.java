@@ -1,7 +1,5 @@
 package com.wandrell.tabletop.business.model.pendragon.character;
 
-import com.wandrell.tabletop.business.model.valuebox.ValueBox;
-
 public interface HorseCharacter extends PendragonBaseCharacter {
 
     @Override
@@ -9,7 +7,7 @@ public interface HorseCharacter extends PendragonBaseCharacter {
 
     public String getHorseType();
 
-    public ValueBox getNaturalArmor();
+    public Integer getNaturalArmor();
 
     public Boolean isArmored();
 

@@ -1,7 +1,5 @@
 package com.wandrell.tabletop.business.model.pendragon.character;
 
-import com.wandrell.tabletop.business.model.pendragon.stats.Attribute;
-import com.wandrell.tabletop.business.model.pendragon.stats.DerivedAttribute;
 import com.wandrell.util.tag.NewInstantiable;
 
 public interface PendragonBaseCharacter extends NewInstantiable {
@@ -9,30 +7,30 @@ public interface PendragonBaseCharacter extends NewInstantiable {
     @Override
     public PendragonBaseCharacter createNewInstance();
 
-    public Attribute getConstitution();
+    public Integer getConstitution();
 
-    public DerivedAttribute getDamage();
+    public Integer getDamage();
 
-    public Attribute getDexterity();
+    public Integer getDexterity();
 
-    public DerivedAttribute getDexterityRoll();
+    public Integer getDexterityRoll();
 
-    public DerivedAttribute getHealingRate();
+    public Integer getHealingRate();
 
-    public DerivedAttribute getHitPoints();
+    public Integer getHitPoints();
 
-    public DerivedAttribute getMajorWoundTreshold();
+    public Integer getMajorWoundTreshold();
 
-    public DerivedAttribute getMovementRate();
+    public Integer getMovementRate();
 
     public String getName();
 
-    public Attribute getSize();
+    public Integer getSize();
 
-    public Attribute getStrength();
+    public Integer getStrength();
 
-    public DerivedAttribute getUnconsciousTreshold();
+    public Integer getUnconsciousTreshold();
 
-    public DerivedAttribute getWeight();
+    public Integer getWeight();
 
 }
