@@ -1,6 +1,5 @@
 package com.wandrell.tabletop.business.model.pendragon.inventory;
 
-import com.wandrell.tabletop.business.model.valuebox.EditableValueBox;
 import com.wandrell.util.tag.NewInstantiable;
 
 public interface Money extends NewInstantiable {
@@ -8,8 +7,12 @@ public interface Money extends NewInstantiable {
     @Override
     public Money createNewInstance();
 
-    public EditableValueBox getDenarii();
+    public Integer getDenarii();
 
-    public EditableValueBox getLibra();
+    public Integer getLibra();
+
+    public void setDenarii(final Integer denarii);
+
+    public void setLibra(final Integer libra);
 
 }
