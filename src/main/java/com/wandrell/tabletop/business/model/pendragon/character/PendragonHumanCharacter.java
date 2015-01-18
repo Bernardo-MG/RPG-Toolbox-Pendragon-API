@@ -90,7 +90,7 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public Integer getVengeful();
 
-    public Integer getWordly();
+    public Integer getWorldly();
 
     public void removeDirectedTrait(final SkillBox directedTrait);
 
