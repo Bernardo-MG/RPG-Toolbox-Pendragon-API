@@ -3,7 +3,6 @@ package com.wandrell.tabletop.business.model.pendragon.character;
 import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.character.Gender;
-import com.wandrell.tabletop.business.model.pendragon.stats.Attribute;
 import com.wandrell.tabletop.business.model.pendragon.stats.DirectedTrait;
 import com.wandrell.tabletop.business.model.pendragon.stats.Passion;
 import com.wandrell.tabletop.business.model.pendragon.stats.Skill;
@@ -31,7 +30,7 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
     @Override
     public PendragonHumanCharacter createNewInstance();
 
-    public Attribute getAppearance();
+    public Integer getAppearance();
 
     public Trait getArbitrary();
 
