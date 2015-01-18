@@ -33,4 +33,12 @@ public interface PendragonBaseCharacter extends NewInstantiable {
 
     public Integer getWeight();
 
+    public void setConstitution(final Integer constitution);
+
+    public void setDexterity(final Integer dexterity);
+
+    public void setSize(final Integer size);
+
+    public void setStrength(final Integer strength);
+
 }

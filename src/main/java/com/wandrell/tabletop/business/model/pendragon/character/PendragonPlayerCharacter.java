@@ -9,7 +9,6 @@ import com.wandrell.tabletop.business.model.pendragon.inventory.Item;
 import com.wandrell.tabletop.business.model.pendragon.inventory.Money;
 import com.wandrell.tabletop.business.model.pendragon.manor.Pet;
 import com.wandrell.tabletop.business.model.pendragon.stats.Skill;
-import com.wandrell.tabletop.business.model.valuebox.ValueBox;
 
 public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
 
@@ -48,7 +47,7 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
     @Override
     public PendragonPlayerCharacter createNewInstance();
 
-    public ValueBox getArmor();
+    public Integer getArmor();
 
     public String getCulture();
 
