@@ -13,7 +13,8 @@ public interface CultureTemplate {
     public IntervalTable<AdditionalBelongings> getInitialLuckTable(
             final Gender gender);
 
-    public CultureCharacterTemplate getRandomTemplate(final Gender gender);
+    public CultureCharacterRandomTemplate
+            getRandomTemplate(final Gender gender);
 
     public CultureCharacterTemplate getTemplate(final Gender gender);
 
