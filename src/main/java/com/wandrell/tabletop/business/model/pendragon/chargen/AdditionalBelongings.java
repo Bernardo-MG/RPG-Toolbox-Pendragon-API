@@ -3,7 +3,6 @@ package com.wandrell.tabletop.business.model.pendragon.chargen;
 import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.dice.Dice;
-import com.wandrell.tabletop.business.model.interval.IntervalTable;
 import com.wandrell.tabletop.business.model.pendragon.character.HorseCharacter;
 import com.wandrell.tabletop.business.model.pendragon.inventory.Item;
 import com.wandrell.tabletop.business.model.pendragon.inventory.Money;
@@ -25,9 +24,9 @@ public interface AdditionalBelongings {
 
     public Collection<Dice> getRerolls();
 
-    public Collection<Shield> getShields();
+    public String getRerollTable();
 
-    public IntervalTable<?> getTable();
+    public Collection<Shield> getShields();
 
     public Collection<Weapon> getWeapons();
 
