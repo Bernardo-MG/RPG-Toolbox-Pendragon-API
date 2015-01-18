@@ -3,17 +3,15 @@ package com.wandrell.tabletop.business.model.pendragon.character;
 import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.character.Gender;
-import com.wandrell.tabletop.business.model.pendragon.stats.DirectedTrait;
-import com.wandrell.tabletop.business.model.pendragon.stats.Passion;
 import com.wandrell.tabletop.business.model.pendragon.stats.Skill;
 import com.wandrell.tabletop.business.model.pendragon.stats.SpecialtySkill;
-import com.wandrell.tabletop.business.model.pendragon.stats.Trait;
+import com.wandrell.tabletop.business.model.valuebox.SkillBox;
 
 public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
-    public void addDirectedTrait(final DirectedTrait directedTrait);
+    public void addDirectedTrait(final SkillBox directedTrait);
 
-    public void addPassion(final Passion passion);
+    public void addPassion(final SkillBox passion);
 
     public void addSkill(final Skill skill);
 
@@ -32,80 +30,79 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public Integer getAppearance();
 
-    public Trait getArbitrary();
+    public Integer getArbitrary();
 
-    public Trait getChaste();
+    public Integer getChaste();
 
-    public Trait getCowardly();
+    public Integer getCowardly();
 
-    public Trait getCruel();
+    public Integer getCruel();
 
-    public Trait getDeceitful();
+    public Integer getDeceitful();
 
-    public Collection<DirectedTrait> getDirectedTraits();
+    public Collection<SkillBox> getDirectedTraits();
 
-    public Trait getEnergetic();
+    public Integer getEnergetic();
 
-    public Trait getForgiving();
+    public Integer getForgiving();
 
     public Gender getGender();
 
-    public Trait getGenerous();
+    public Integer getGenerous();
 
-    public Trait getHonest();
+    public Integer getHonest();
 
-    public Trait getIndulgent();
+    public Integer getIndulgent();
 
-    public Trait getJust();
+    public Integer getJust();
 
-    public Trait getLazy();
+    public Integer getLazy();
 
-    public Trait getLustful();
+    public Integer getLustful();
 
-    public Trait getMerciful();
+    public Integer getMerciful();
 
-    public Trait getModest();
+    public Integer getModest();
 
-    public Collection<Passion> getPassions();
+    public Collection<SkillBox> getPassions();
 
-    public Trait getPious();
+    public Integer getPious();
 
-    public Trait getProud();
+    public Integer getProud();
 
-    public Trait getPrudent();
+    public Integer getPrudent();
 
-    public Trait getReckless();
+    public Integer getReckless();
 
-    public Trait getSelfish();
+    public Integer getSelfish();
 
     public Collection<Skill> getSkills();
 
     public Collection<SpecialtySkill> getSpecialtySkills();
 
-    public Trait getSuspicious();
+    public Integer getSuspicious();
 
-    public Trait getTemperate();
+    public Integer getTemperate();
 
-    public Trait getTrusting();
+    public Integer getTrusting();
 
-    public Trait getValorous();
+    public Integer getValorous();
 
-    public Trait getVengeful();
+    public Integer getVengeful();
 
-    public Trait getWordly();
+    public Integer getWordly();
 
-    public void removeDirectedTrait(final DirectedTrait directedTrait);
+    public void removeDirectedTrait(final SkillBox directedTrait);
 
-    public void removePassion(final Passion passion);
+    public void removePassion(final SkillBox passion);
 
     public void removeSkill(final Skill skill);
 
     public void removeSpecialtySkill(final SpecialtySkill skill);
 
-    public void
-            setDirectedTraits(final Collection<DirectedTrait> directedTraits);
+    public void setDirectedTraits(final Collection<SkillBox> directedTraits);
 
-    public void setPassions(final Collection<Passion> passions);
+    public void setPassions(final Collection<SkillBox> passions);
 
     public void setSkills(final Collection<Skill> skills);
 
