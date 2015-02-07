@@ -8,7 +8,7 @@ public interface FamilyCharacteristicTemplate {
 
     public Map<String, Integer> getAttributes();
 
-    public String getFamilyCharacteristic();
+    public String getName();
 
     public Map<NameAndDescriptor, Integer> getSkills();
 

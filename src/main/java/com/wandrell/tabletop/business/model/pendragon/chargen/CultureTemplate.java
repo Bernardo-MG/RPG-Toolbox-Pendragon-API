@@ -1,21 +1,19 @@
 package com.wandrell.tabletop.business.model.pendragon.chargen;
 
-import com.wandrell.tabletop.business.model.character.Gender;
-import com.wandrell.tabletop.business.model.interval.IntervalTable;
-
 public interface CultureTemplate {
 
-    public String getCulture();
+    public FamilyCharacteristicTemplate getFemaleFamilyCharacteristic();
 
-    public FamilyCharacteristicTemplate getFamilyCharacteristic(
-            final Gender gender);
+    public AdditionalBelongingsTable getFemaleInitialLuckTable();
 
-    public IntervalTable<AdditionalBelongings> getInitialLuckTable(
-            final Gender gender);
+    public CultureCharacterTemplate getFemaleTemplate();
 
-    public CultureCharacterRandomTemplate
-            getRandomTemplate(final Gender gender);
+    public FamilyCharacteristicTemplate getMaleFamilyCharacteristic();
 
-    public CultureCharacterTemplate getTemplate(final Gender gender);
+    public AdditionalBelongingsTable getMaleInitialLuckTable();
+
+    public CultureCharacterTemplate getMaleTemplate();
+
+    public String getName();
 
 }
