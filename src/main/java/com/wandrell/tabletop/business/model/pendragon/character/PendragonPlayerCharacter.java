@@ -22,7 +22,7 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
 
     public void addHoldingCarried(final Item item);
 
-    public void addHorse(final HorseCharacter horse);
+    public void addHorse(final Horse horse);
 
     public void addPet(final Pet pet);
 
@@ -67,7 +67,7 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
 
     public String getHomeland();
 
-    public Collection<HorseCharacter> getHorses();
+    public Collection<Horse> getHorses();
 
     public Money getMoney();
 
@@ -91,7 +91,7 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
 
     public void removeHoldingCarried(final Item item);
 
-    public void removeHorse(final HorseCharacter horse);
+    public void removeHorse(final Horse horse);
 
     public void removePet(final Pet pet);
 
@@ -108,7 +108,7 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
 
     public void setHoldingsCarried(final Collection<Item> items);
 
-    public void setHorses(final Collection<HorseCharacter> horses);
+    public void setHorses(final Collection<Horse> horses);
 
     public void setPets(final Collection<Pet> pets);
 

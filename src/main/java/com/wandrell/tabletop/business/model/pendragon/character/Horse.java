@@ -1,9 +1,9 @@
 package com.wandrell.tabletop.business.model.pendragon.character;
 
-public interface HorseCharacter extends PendragonBaseCharacter {
+public interface Horse extends PendragonBaseCharacter {
 
     @Override
-    public HorseCharacter createNewInstance();
+    public Horse createNewInstance();
 
     public String getHorseType();
 

@@ -3,7 +3,7 @@ package com.wandrell.tabletop.business.model.pendragon.chargen;
 import java.util.Collection;
 
 import com.wandrell.tabletop.business.model.dice.Dice;
-import com.wandrell.tabletop.business.model.pendragon.character.HorseCharacter;
+import com.wandrell.tabletop.business.model.pendragon.character.Horse;
 import com.wandrell.tabletop.business.model.pendragon.inventory.Item;
 import com.wandrell.tabletop.business.model.pendragon.inventory.Money;
 import com.wandrell.tabletop.business.model.pendragon.inventory.Shield;
@@ -12,7 +12,7 @@ import com.wandrell.tabletop.business.model.pendragon.manor.Pet;
 
 public interface AdditionalBelongings {
 
-    public Collection<HorseCharacter> getHorses();
+    public Collection<Horse> getHorses();
 
     public Collection<Item> getItems();
 
