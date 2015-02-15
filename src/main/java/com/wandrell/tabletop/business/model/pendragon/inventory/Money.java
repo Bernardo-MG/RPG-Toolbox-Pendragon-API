@@ -1,6 +1,6 @@
 package com.wandrell.tabletop.business.model.pendragon.inventory;
 
-import com.wandrell.util.tag.NewInstantiable;
+import com.wandrell.pattern.prototype.NewInstantiable;
 
 public interface Money extends NewInstantiable {
 

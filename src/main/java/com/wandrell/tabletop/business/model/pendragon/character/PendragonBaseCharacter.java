@@ -1,6 +1,6 @@
 package com.wandrell.tabletop.business.model.pendragon.character;
 
-import com.wandrell.util.tag.NewInstantiable;
+import com.wandrell.pattern.prototype.NewInstantiable;
 
 public interface PendragonBaseCharacter extends NewInstantiable {
 
