@@ -13,7 +13,7 @@ public interface ReligionTemplate {
 
     public Map<String, Integer> getDerivedAttributeBonus();
 
-    public String getReligion();
+    public String getName();
 
     public Collection<String> getReligiousTraits();
 

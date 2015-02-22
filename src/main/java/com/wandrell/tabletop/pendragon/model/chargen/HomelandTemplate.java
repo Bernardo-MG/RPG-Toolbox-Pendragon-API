@@ -9,7 +9,7 @@ public interface HomelandTemplate {
 
     public Collection<NameAndDescriptor> getDirectedTraits();
 
-    public String getHomeland();
+    public String getName();
 
     public Collection<NameAndDescriptor> getPassions();
 
