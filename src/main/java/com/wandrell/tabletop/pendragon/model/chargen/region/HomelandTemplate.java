@@ -13,7 +13,7 @@ public interface HomelandTemplate {
 
     public Collection<NameAndDescriptor> getPassions();
 
-    public String getRegion();
+    public RegionTemplate getRegion();
 
     public Map<NameAndDescriptor, Integer> getSkills();
 
