@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.pendragon.model.chargen;
+package com.wandrell.tabletop.pendragon.model.chargen.region;
 
 import java.util.Collection;
 import java.util.Map;
@@ -9,14 +9,14 @@ public interface HomelandTemplate {
 
     public Collection<NameAndDescriptor> getDirectedTraits();
 
-    public String getName();
+    public String getHomeland();
 
     public Collection<NameAndDescriptor> getPassions();
+
+    public String getRegion();
 
     public Map<NameAndDescriptor, Integer> getSkills();
 
     public Map<String, Integer> getSpecialtySkills();
-
-    public Map<String, Integer> getTraits();
 
 }
