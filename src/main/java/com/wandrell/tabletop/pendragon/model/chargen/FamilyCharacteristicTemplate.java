@@ -2,7 +2,7 @@ package com.wandrell.tabletop.pendragon.model.chargen;
 
 import java.util.Map;
 
-import com.wandrell.tabletop.skill.NameAndDescriptor;
+import com.wandrell.tabletop.skill.SkillName;
 
 public interface FamilyCharacteristicTemplate {
 
@@ -10,6 +10,6 @@ public interface FamilyCharacteristicTemplate {
 
     public String getName();
 
-    public Map<NameAndDescriptor, Integer> getSkills();
+    public Map<SkillName, Integer> getSkills();
 
 }

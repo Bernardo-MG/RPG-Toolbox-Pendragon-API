@@ -8,13 +8,13 @@ import com.wandrell.tabletop.pendragon.model.glory.GloryManager;
 import com.wandrell.tabletop.pendragon.model.inventory.Item;
 import com.wandrell.tabletop.pendragon.model.inventory.Money;
 import com.wandrell.tabletop.pendragon.model.manor.Pet;
-import com.wandrell.tabletop.pendragon.model.stats.Skill;
+import com.wandrell.tabletop.pendragon.model.stats.PendragonSkillBox;
 
 public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
 
     public void addDistinctiveFeature(final DistinctiveFeature feature);
 
-    public void addExclusiveSkill(final Skill skill);
+    public void addExclusiveSkill(final PendragonSkillBox skill);
 
     public void addFollower(final Follower follower);
 
@@ -53,7 +53,7 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
 
     public Collection<DistinctiveFeature> getDistinctiveFeatures();
 
-    public Collection<Skill> getExclusiveSkills();
+    public Collection<PendragonSkillBox> getExclusiveSkills();
 
     public String getFatherClass();
 
@@ -83,7 +83,7 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
 
     public void removeDistinctiveFeature(final DistinctiveFeature feature);
 
-    public void removeExclusiveSkill(final Skill skill);
+    public void removeExclusiveSkill(final PendragonSkillBox skill);
 
     public void removeFollower(final Follower follower);
 
@@ -100,7 +100,7 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
     public void setDistinctiveFeatures(
             final Collection<DistinctiveFeature> features);
 
-    public void setExclusiveSkills(final Collection<Skill> skill);
+    public void setExclusiveSkills(final Collection<PendragonSkillBox> skill);
 
     public void setFollowers(final Collection<Follower> followers);
 

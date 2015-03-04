@@ -3,7 +3,7 @@ package com.wandrell.tabletop.pendragon.model.chargen;
 import java.util.Map;
 
 import com.wandrell.tabletop.dice.Dice;
-import com.wandrell.tabletop.skill.NameAndDescriptor;
+import com.wandrell.tabletop.skill.SkillName;
 
 public interface CultureCharacterTemplate {
 
@@ -11,13 +11,13 @@ public interface CultureCharacterTemplate {
 
     public Map<String, Dice> getAttributesRandom();
 
-    public Map<NameAndDescriptor, Integer> getDirectedTraits();
+    public Map<SkillName, Integer> getDirectedTraits();
 
-    public Map<NameAndDescriptor, Integer> getPassions();
+    public Map<SkillName, Integer> getPassions();
 
-    public Map<NameAndDescriptor, Dice> getPassionsRandom();
+    public Map<SkillName, Dice> getPassionsRandom();
 
-    public Map<NameAndDescriptor, Integer> getSkills();
+    public Map<SkillName, Integer> getSkills();
 
     public Map<String, Integer> getSpecialtySkills();
 

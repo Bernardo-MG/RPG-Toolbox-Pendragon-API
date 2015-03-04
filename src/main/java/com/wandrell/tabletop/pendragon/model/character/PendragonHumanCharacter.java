@@ -3,8 +3,8 @@ package com.wandrell.tabletop.pendragon.model.character;
 import java.util.Collection;
 
 import com.wandrell.tabletop.character.Gender;
-import com.wandrell.tabletop.pendragon.model.stats.Skill;
-import com.wandrell.tabletop.pendragon.model.stats.SpecialtySkill;
+import com.wandrell.tabletop.pendragon.model.stats.PendragonSkillBox;
+import com.wandrell.tabletop.pendragon.model.stats.SpecialtySkillBox;
 import com.wandrell.tabletop.valuebox.SkillBox;
 
 public interface PendragonHumanCharacter extends PendragonBaseCharacter {
@@ -13,9 +13,9 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public void addPassion(final SkillBox passion);
 
-    public void addSkill(final Skill skill);
+    public void addSkill(final PendragonSkillBox skill);
 
-    public void addSpecialtySkill(final SpecialtySkill skill);
+    public void addSpecialtySkill(final SpecialtySkillBox skill);
 
     public void clearDirectedTraits();
 
@@ -76,9 +76,9 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public Integer getSelfish();
 
-    public Collection<Skill> getSkills();
+    public Collection<PendragonSkillBox> getSkills();
 
-    public Collection<SpecialtySkill> getSpecialtySkills();
+    public Collection<SpecialtySkillBox> getSpecialtySkills();
 
     public Integer getSuspicious();
 
@@ -96,9 +96,9 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public void removePassion(final SkillBox passion);
 
-    public void removeSkill(final Skill skill);
+    public void removeSkill(final PendragonSkillBox skill);
 
-    public void removeSpecialtySkill(final SpecialtySkill skill);
+    public void removeSpecialtySkill(final SpecialtySkillBox skill);
 
     public void setAppearance(final Integer appearance);
 
@@ -146,9 +146,9 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public void setSelfish(final Integer selfish);
 
-    public void setSkills(final Collection<Skill> skills);
+    public void setSkills(final Collection<PendragonSkillBox> skills);
 
-    public void setSpecialtySkills(final Collection<SpecialtySkill> skills);
+    public void setSpecialtySkills(final Collection<SpecialtySkillBox> skills);
 
     public void setSuspicious(final Integer suspicious);
 
