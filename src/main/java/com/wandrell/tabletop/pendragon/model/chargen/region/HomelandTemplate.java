@@ -9,7 +9,7 @@ public interface HomelandTemplate {
 
     public Collection<SkillName> getDirectedTraits();
 
-    public String getHomeland();
+    public String getName();
 
     public Collection<SkillName> getPassions();
 
