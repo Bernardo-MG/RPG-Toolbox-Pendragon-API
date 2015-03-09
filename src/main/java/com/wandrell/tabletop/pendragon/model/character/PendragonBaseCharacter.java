@@ -33,7 +33,7 @@ public interface PendragonBaseCharacter extends NewInstantiable {
 
     public Integer getStrength();
 
-    public Integer getUnconsciousTreshold();
+    public Integer getUnconciousTreshold();
 
     public Integer getWeight();
 

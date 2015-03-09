@@ -15,10 +15,10 @@ public interface DerivedAttributeBuilder {
     public ValueBox
             getMajorWoundTreshold(final PendragonBaseCharacter character);
 
-    public ValueBox getMovementRate(final PendragonBaseCharacter character);
+    public ValueBox getMoveRate(final PendragonBaseCharacter character);
 
-    public ValueBox getUnconsciousTreshold(
-            final PendragonBaseCharacter character);
+    public ValueBox
+            getUnconciousTreshold(final PendragonBaseCharacter character);
 
     public ValueBox getWeight(final PendragonBaseCharacter character);
 
