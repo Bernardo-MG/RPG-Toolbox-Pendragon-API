@@ -1,8 +1,12 @@
 package com.wandrell.tabletop.pendragon.model.character;
 
 import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.tabletop.pendragon.model.character.event.PendragonCharacterListener;
 
 public interface PendragonBaseCharacter extends NewInstantiable {
+
+    public void addPendragonCharacterListener(
+            final PendragonCharacterListener listener);
 
     @Override
     public PendragonBaseCharacter createNewInstance();
@@ -32,6 +36,9 @@ public interface PendragonBaseCharacter extends NewInstantiable {
     public Integer getUnconsciousTreshold();
 
     public Integer getWeight();
+
+    public void removePendragonCharacterListener(
+            final PendragonCharacterListener listener);
 
     public void setConstitution(final Integer constitution);
 
