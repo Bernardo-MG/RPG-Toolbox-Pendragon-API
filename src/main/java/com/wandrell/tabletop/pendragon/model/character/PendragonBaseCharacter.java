@@ -25,7 +25,7 @@ public interface PendragonBaseCharacter extends NewInstantiable {
 
     public Integer getMajorWoundTreshold();
 
-    public Integer getMovementRate();
+    public Integer getMoveRate();
 
     public String getName();
 
