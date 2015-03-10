@@ -42,6 +42,9 @@ public class PendragonCharacterListenerAdapter implements
     public void strengthChanged(final ValueChangeEvent event) {}
 
     @Override
+    public void traitChanged(final ValueChangeEvent event) {}
+
+    @Override
     public void unconciousChanged(final ValueChangeEvent event) {}
 
     @Override

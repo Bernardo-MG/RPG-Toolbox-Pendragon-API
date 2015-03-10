@@ -30,6 +30,8 @@ public interface PendragonCharacterListener extends EventListener {
 
     public void strengthChanged(final ValueChangeEvent event);
 
+    public void traitChanged(final ValueChangeEvent event);
+
     public void unconciousChanged(final ValueChangeEvent event);
 
     public void weightChanged(final ValueChangeEvent event);
