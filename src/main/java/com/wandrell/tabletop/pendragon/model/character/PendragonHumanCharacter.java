@@ -156,4 +156,6 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public void setTrusting(final Integer trusting);
 
+    public void setValorous(final Integer valorous);
+
 }
