@@ -26,7 +26,7 @@ public interface Horse extends PendragonBaseCharacter {
 
     public void setCombatHorse(final Boolean combat);
 
-    public void setHuntingHorse(final Boolean hunt);
+    public void setHuntingHorse(final Boolean hunting);
 
     public void setRuined(final Boolean ruined);
 
