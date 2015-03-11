@@ -3,7 +3,6 @@ package com.wandrell.tabletop.pendragon.model.character;
 import java.util.Collection;
 
 import com.wandrell.tabletop.character.Gender;
-import com.wandrell.tabletop.pendragon.model.stats.PendragonSkillBox;
 import com.wandrell.tabletop.pendragon.model.stats.SpecialtySkillBox;
 import com.wandrell.tabletop.valuebox.SkillBox;
 
@@ -13,15 +12,11 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public void addPassion(final SkillBox passion);
 
-    public void addSkill(final PendragonSkillBox skill);
-
     public void addSpecialtySkill(final SpecialtySkillBox skill);
 
     public void clearDirectedTraits();
 
     public void clearPassions();
-
-    public void clearSkills();
 
     public void clearSpecialtySkills();
 
@@ -76,8 +71,6 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public Integer getSelfish();
 
-    public Collection<PendragonSkillBox> getSkills();
-
     public Collection<SpecialtySkillBox> getSpecialtySkills();
 
     public Integer getSuspicious();
@@ -95,8 +88,6 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
     public void removeDirectedTrait(final SkillBox directedTrait);
 
     public void removePassion(final SkillBox passion);
-
-    public void removeSkill(final PendragonSkillBox skill);
 
     public void removeSpecialtySkill(final SpecialtySkillBox skill);
 
@@ -145,8 +136,6 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
     public void setReckless(final Integer reckless);
 
     public void setSelfish(final Integer selfish);
-
-    public void setSkills(final Collection<PendragonSkillBox> skills);
 
     public void setSpecialtySkills(final Collection<SpecialtySkillBox> skills);
 
