@@ -9,6 +9,11 @@ public interface Horse extends PendragonBaseCharacter {
 
     public Integer getNaturalArmor();
 
+    /**
+     * TODO: What is this armored flag for?
+     * 
+     * @return
+     */
     public Boolean isArmored();
 
     public Boolean isCombatHorse();
@@ -16,6 +21,12 @@ public interface Horse extends PendragonBaseCharacter {
     public Boolean isHuntingHorse();
 
     public Boolean isRuined();
+
+    public void setArmoredHorse(final Boolean armored);
+
+    public void setCombatHorse(final Boolean combat);
+
+    public void setHuntingHorse(final Boolean hunt);
 
     public void setRuined(final Boolean ruined);
 
