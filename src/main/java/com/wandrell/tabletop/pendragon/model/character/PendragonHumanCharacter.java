@@ -45,6 +45,8 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public Integer getGenerous();
 
+    public Integer getGlory();
+
     public Integer getHonest();
 
     public Integer getIndulgent();
@@ -110,6 +112,8 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
     public void setForgiving(final Integer forgiving);
 
     public void setGenerous(final Integer generous);
+
+    public void setGlory(final Integer glory);
 
     public void setHonest(final Integer honest);
 

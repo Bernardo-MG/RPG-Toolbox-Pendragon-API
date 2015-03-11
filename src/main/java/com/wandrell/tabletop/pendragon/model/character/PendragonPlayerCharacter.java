@@ -4,7 +4,6 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.pendragon.model.character.follower.Follower;
 import com.wandrell.tabletop.pendragon.model.character.follower.Wife;
-import com.wandrell.tabletop.pendragon.model.glory.GloryManager;
 import com.wandrell.tabletop.pendragon.model.inventory.Item;
 import com.wandrell.tabletop.pendragon.model.inventory.Money;
 import com.wandrell.tabletop.pendragon.model.manor.Pet;
@@ -51,8 +50,6 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
     public String getFatherClass();
 
     public Collection<Follower> getFollowers();
-
-    public GloryManager getGlory();
 
     public Collection<Item> getHoldingsAtHome();
 
