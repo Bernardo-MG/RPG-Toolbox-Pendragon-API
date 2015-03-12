@@ -4,7 +4,6 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.pendragon.model.character.follower.Follower;
 import com.wandrell.tabletop.pendragon.model.character.follower.Wife;
-import com.wandrell.tabletop.pendragon.model.inventory.Item;
 import com.wandrell.tabletop.pendragon.model.inventory.Money;
 import com.wandrell.tabletop.pendragon.model.manor.Pet;
 
@@ -13,10 +12,6 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
     public void addDistinctiveFeature(final DistinctiveFeature feature);
 
     public void addFollower(final Follower follower);
-
-    public void addHoldingAtHome(final Item item);
-
-    public void addHoldingCarried(final Item item);
 
     public void addHorse(final Horse horse);
 
@@ -27,10 +22,6 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
     public void clearDistinctiveFeatures();
 
     public void clearFollowers();
-
-    public void clearHoldingsAtHome();
-
-    public void clearHoldingsCarried();
 
     public void clearHorses();
 
@@ -50,10 +41,6 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
     public String getFatherClass();
 
     public Collection<Follower> getFollowers();
-
-    public Collection<Item> getHoldingsAtHome();
-
-    public Collection<Item> getHoldingsCarried();
 
     public String getHomeland();
 
@@ -75,10 +62,6 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
 
     public void removeFollower(final Follower follower);
 
-    public void removeHoldingAtHome(final Item item);
-
-    public void removeHoldingCarried(final Item item);
-
     public void removeHorse(final Horse horse);
 
     public void removePet(final Pet pet);
@@ -89,10 +72,6 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
             final Collection<DistinctiveFeature> features);
 
     public void setFollowers(final Collection<Follower> followers);
-
-    public void setHoldingsAtHome(final Collection<Item> items);
-
-    public void setHoldingsCarried(final Collection<Item> items);
 
     public void setHorses(final Collection<Horse> horses);
 
