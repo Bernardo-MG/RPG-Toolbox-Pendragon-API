@@ -1,6 +1,9 @@
-package com.wandrell.tabletop.pendragon.model.inventory;
+package com.wandrell.tabletop.pendragon.model.inventory.weapon;
 
 import java.util.Map;
+
+import com.wandrell.tabletop.pendragon.model.inventory.Item;
+import com.wandrell.tabletop.pendragon.model.inventory.armor.ArmorType;
 
 public interface Weapon extends Item {
 
