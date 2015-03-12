@@ -10,6 +10,8 @@ public interface Stash {
 
     public Collection<Item> getItems();
 
+    public Money getMoney();
+
     public String getName();
 
     public void removeItem(final Item item);

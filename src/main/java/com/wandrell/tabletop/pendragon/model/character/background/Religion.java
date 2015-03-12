@@ -1,9 +1,9 @@
-package com.wandrell.tabletop.pendragon.model.chargen;
+package com.wandrell.tabletop.pendragon.model.character.background;
 
 import java.util.Collection;
 import java.util.Map;
 
-public interface ReligionTemplate {
+public interface Religion {
 
     public Integer getArmorBonus();
 

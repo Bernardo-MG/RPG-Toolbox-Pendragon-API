@@ -3,6 +3,7 @@ package com.wandrell.tabletop.pendragon.model.character;
 import java.util.Collection;
 
 import com.wandrell.tabletop.character.Gender;
+import com.wandrell.tabletop.pendragon.model.character.background.Religion;
 import com.wandrell.tabletop.pendragon.model.stats.SpecialtySkillBox;
 import com.wandrell.tabletop.valuebox.SkillBox;
 
@@ -32,6 +33,8 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
     public Integer getCowardly();
 
     public Integer getCruel();
+
+    public String getCulture();
 
     public Integer getDeceitful();
 
@@ -70,6 +73,8 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
     public Integer getPrudent();
 
     public Integer getReckless();
+
+    public Religion getReligion();
 
     public Integer getSelfish();
 
@@ -142,6 +147,8 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
     public void setPrudent(final Integer prudent);
 
     public void setReckless(final Integer reckless);
+
+    public void setReligion(final Religion religion);
 
     public void setSelfish(final Integer selfish);
 

@@ -2,7 +2,6 @@ package com.wandrell.tabletop.pendragon.model.character;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.pendragon.model.inventory.Money;
 import com.wandrell.tabletop.pendragon.model.manor.Pet;
 
 public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
@@ -18,21 +17,15 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
     @Override
     public PendragonPlayerCharacter createNewInstance();
 
-    public String getCulture();
-
     public Collection<DistinctiveFeature> getDistinctiveFeatures();
 
     public String getFatherClass();
 
     public String getHomeland();
 
-    public Money getMoney();
-
     public Collection<Pet> getPets();
 
     public String getPlayerName();
-
-    public String getReligion();
 
     public void removeDistinctiveFeature(final DistinctiveFeature feature);
 

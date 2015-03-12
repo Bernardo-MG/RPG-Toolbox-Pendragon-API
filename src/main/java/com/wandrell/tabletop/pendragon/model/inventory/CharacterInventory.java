@@ -19,8 +19,6 @@ public interface CharacterInventory {
 
     public Collection<Horse> getHorses();
 
-    public Money getMoney();
-
     public Collection<Stash> getStashes();
 
     public void removeHorse(final Horse horse);
