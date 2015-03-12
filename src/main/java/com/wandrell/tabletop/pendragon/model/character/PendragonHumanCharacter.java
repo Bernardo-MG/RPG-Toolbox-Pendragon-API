@@ -87,6 +87,8 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public Integer getWorldly();
 
+    public Boolean isKnight();
+
     public void removeDirectedTrait(final SkillBox directedTrait);
 
     public void removePassion(final SkillBox passion);
@@ -120,6 +122,8 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
     public void setIndulgent(final Integer indulgent);
 
     public void setJust(final Integer just);
+
+    public void setKnight(final Boolean knight);
 
     public void setLazy(final Integer lazy);
 
