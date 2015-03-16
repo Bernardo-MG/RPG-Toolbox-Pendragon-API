@@ -1,6 +1,11 @@
 package com.wandrell.tabletop.pendragon.model.chargen;
 
-public interface CultureTemplate {
+import com.wandrell.pattern.prototype.NewInstantiable;
+
+public interface CultureTemplate extends NewInstantiable {
+
+    @Override
+    public CultureTemplate createNewInstance();
 
     public FamilyCharacteristicTemplate getFemaleFamilyCharacteristic();
 

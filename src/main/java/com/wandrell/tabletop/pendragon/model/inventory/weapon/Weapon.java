@@ -7,6 +7,9 @@ import com.wandrell.tabletop.pendragon.model.inventory.armor.ArmorType;
 
 public interface Weapon extends Item {
 
+    @Override
+    public Weapon createNewInstance();
+
     /**
      * Returns a map indicating the number of dice to be added or removed when
      * using the weapon against a type of armor.

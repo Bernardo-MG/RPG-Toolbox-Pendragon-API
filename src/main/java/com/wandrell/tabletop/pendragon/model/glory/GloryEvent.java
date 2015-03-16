@@ -1,6 +1,11 @@
 package com.wandrell.tabletop.pendragon.model.glory;
 
-public interface GloryEvent {
+import com.wandrell.pattern.prototype.NewInstantiable;
+
+public interface GloryEvent extends NewInstantiable {
+
+    @Override
+    public GloryEvent createNewInstance();
 
     public String getDescription();
 

@@ -2,6 +2,7 @@ package com.wandrell.tabletop.pendragon.model.chargen;
 
 import java.util.Collection;
 
+import com.wandrell.pattern.prototype.NewInstantiable;
 import com.wandrell.tabletop.dice.Dice;
 import com.wandrell.tabletop.pendragon.model.character.Horse;
 import com.wandrell.tabletop.pendragon.model.inventory.Item;
@@ -10,7 +11,10 @@ import com.wandrell.tabletop.pendragon.model.inventory.armor.Shield;
 import com.wandrell.tabletop.pendragon.model.inventory.weapon.Weapon;
 import com.wandrell.tabletop.pendragon.model.manor.Pet;
 
-public interface AdditionalBelongings {
+public interface AdditionalBelongings extends NewInstantiable {
+
+    @Override
+    public AdditionalBelongings createNewInstance();
 
     public Collection<Horse> getHorses();
 

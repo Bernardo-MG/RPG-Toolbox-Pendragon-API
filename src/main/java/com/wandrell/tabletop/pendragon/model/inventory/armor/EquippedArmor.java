@@ -2,11 +2,16 @@ package com.wandrell.tabletop.pendragon.model.inventory.armor;
 
 import java.util.Collection;
 
-public interface EquippedArmor {
+import com.wandrell.pattern.prototype.NewInstantiable;
+
+public interface EquippedArmor extends NewInstantiable {
 
     public void addArmorPiece(final ArmorPiece armor);
 
     public void clearArmorPieces();
+
+    @Override
+    public EquippedArmor createNewInstance();
 
     public Collection<ArmorPiece> getArmorPieces();
 

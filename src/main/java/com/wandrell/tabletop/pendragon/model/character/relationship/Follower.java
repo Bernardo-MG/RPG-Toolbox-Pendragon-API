@@ -1,6 +1,11 @@
 package com.wandrell.tabletop.pendragon.model.character.relationship;
 
-public interface Follower {
+import com.wandrell.pattern.prototype.NewInstantiable;
+
+public interface Follower extends NewInstantiable {
+
+    @Override
+    public Follower createNewInstance();
 
     public String getJob();
 

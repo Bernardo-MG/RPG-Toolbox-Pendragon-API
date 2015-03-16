@@ -3,10 +3,14 @@ package com.wandrell.tabletop.pendragon.model.chargen;
 import java.util.Collection;
 import java.util.Map;
 
+import com.wandrell.pattern.prototype.NewInstantiable;
 import com.wandrell.tabletop.dice.Dice;
 import com.wandrell.tabletop.skill.SkillName;
 
-public interface FatherClassTemplate {
+public interface FatherClassTemplate extends NewInstantiable {
+
+    @Override
+    public FatherClassTemplate createNewInstance();
 
     public Map<SkillName, Integer> getDirectedTraits();
 

@@ -1,6 +1,8 @@
 package com.wandrell.tabletop.pendragon.model.character;
 
-public interface Horse extends PendragonBaseCharacter {
+import com.wandrell.pattern.prototype.NewInstantiable;
+
+public interface Horse extends NewInstantiable, PendragonBaseCharacter {
 
     @Override
     public Horse createNewInstance();
