@@ -1,7 +1,7 @@
 package com.wandrell.tabletop.pendragon.model.character.stats;
 
 import com.wandrell.pattern.prototype.NewInstantiable;
-import com.wandrell.tabletop.pendragon.model.character.stats.listener.TraitsListener;
+import com.wandrell.tabletop.pendragon.model.character.stats.event.TraitsListener;
 
 public interface TraitsHolder extends NewInstantiable {
 
