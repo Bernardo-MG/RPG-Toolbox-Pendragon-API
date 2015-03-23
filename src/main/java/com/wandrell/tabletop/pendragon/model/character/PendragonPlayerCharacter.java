@@ -6,18 +6,12 @@ import com.wandrell.tabletop.pendragon.model.manor.Pet;
 
 public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
 
-    public void addDistinctiveFeature(final DistinctiveFeature feature);
-
     public void addPet(final Pet pet);
-
-    public void clearDistinctiveFeatures();
 
     public void clearPet();
 
     @Override
     public PendragonPlayerCharacter createNewInstance();
-
-    public Collection<DistinctiveFeature> getDistinctiveFeatures();
 
     public String getFatherClass();
 
@@ -27,12 +21,7 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
 
     public String getPlayerName();
 
-    public void removeDistinctiveFeature(final DistinctiveFeature feature);
-
     public void removePet(final Pet pet);
-
-    public void setDistinctiveFeatures(
-            final Collection<DistinctiveFeature> features);
 
     public void setPets(final Collection<Pet> pets);
 

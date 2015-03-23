@@ -11,11 +11,15 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public void addDirectedTrait(final SkillBox directedTrait);
 
+    public void addDistinctiveFeature(final DistinctiveFeature feature);
+
     public void addPassion(final SkillBox passion);
 
     public void addSpecialtySkill(final SpecialtySkillBox skill);
 
     public void clearDirectedTraits();
+
+    public void clearDistinctiveFeatures();
 
     public void clearPassions();
 
@@ -39,6 +43,8 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
     public Integer getDeceitful();
 
     public Collection<SkillBox> getDirectedTraits();
+
+    public Collection<DistinctiveFeature> getDistinctiveFeatures();
 
     public Integer getEnergetic();
 
@@ -96,6 +102,8 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public void removeDirectedTrait(final SkillBox directedTrait);
 
+    public void removeDistinctiveFeature(final DistinctiveFeature feature);
+
     public void removePassion(final SkillBox passion);
 
     public void removeSpecialtySkill(final SpecialtySkillBox skill);
@@ -113,6 +121,9 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
     public void setDeceitful(final Integer deceitful);
 
     public void setDirectedTraits(final Collection<SkillBox> directedTraits);
+
+    public void setDistinctiveFeatures(
+            final Collection<DistinctiveFeature> features);
 
     public void setEnergetic(final Integer energetic);
 
