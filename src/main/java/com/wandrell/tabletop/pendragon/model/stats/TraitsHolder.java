@@ -1,6 +1,14 @@
 package com.wandrell.tabletop.pendragon.model.stats;
 
-public interface TraitsHolder {
+import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.tabletop.pendragon.model.stats.listener.TraitsListener;
+
+public interface TraitsHolder extends NewInstantiable {
+
+    public void addTraitsListener(final TraitsListener listener);
+
+    @Override
+    public TraitsHolder createNewInstance();
 
     public Integer getArbitrary();
 
@@ -13,6 +21,8 @@ public interface TraitsHolder {
     public Integer getDeceitful();
 
     public Integer getEnergetic();
+
+    public Integer getForgiving();
 
     public Integer getGenerous();
 
@@ -52,6 +62,8 @@ public interface TraitsHolder {
 
     public Integer getWorldly();
 
+    public void removeTraitsListener(final TraitsListener listener);
+
     public void setArbitrary(final Integer arbitrary);
 
     public void setChaste(final Integer chaste);
@@ -73,6 +85,8 @@ public interface TraitsHolder {
     public void setIndulgent(final Integer indulgent);
 
     public void setJust(final Integer just);
+
+    public void setLazy(final Integer lazy);
 
     public void setLustful(final Integer lustful);
 
@@ -97,8 +111,4 @@ public interface TraitsHolder {
     public void setTrusting(final Integer trusting);
 
     public void setValorous(final Integer valorous);
-
-    public Integer getForgiving();
-
-    public void setLazy(final Integer lazy);
 }

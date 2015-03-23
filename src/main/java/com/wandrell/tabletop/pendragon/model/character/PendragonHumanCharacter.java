@@ -9,8 +9,6 @@ import com.wandrell.tabletop.pendragon.model.stats.TraitsHolder;
 import com.wandrell.tabletop.valuebox.SkillBox;
 
 public interface PendragonHumanCharacter extends PendragonBaseCharacter {
-    
-    public TraitsHolder getTraits();
 
     public void addDirectedTrait(final SkillBox directedTrait);
 
@@ -41,7 +39,6 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public String getFatherClass();
 
-
     public Gender getGender();
 
     public Integer getGlory();
@@ -55,6 +52,8 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
     public Religion getReligion();
 
     public Collection<SpecialtySkillBox> getSpecialtySkills();
+
+    public TraitsHolder getTraits();
 
     public Boolean isKnight();
 

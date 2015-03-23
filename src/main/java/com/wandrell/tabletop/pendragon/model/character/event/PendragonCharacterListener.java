@@ -3,8 +3,10 @@ package com.wandrell.tabletop.pendragon.model.character.event;
 import java.util.EventListener;
 
 import com.wandrell.tabletop.event.ValueChangeEvent;
+import com.wandrell.tabletop.pendragon.model.stats.listener.TraitsListener;
 
-public interface PendragonCharacterListener extends EventListener {
+public interface PendragonCharacterListener extends EventListener,
+        TraitsListener {
 
     public void appearanceChanged(final ValueChangeEvent event);
 
@@ -29,8 +31,6 @@ public interface PendragonCharacterListener extends EventListener {
     public void sizeChanged(final ValueChangeEvent event);
 
     public void strengthChanged(final ValueChangeEvent event);
-
-    public void traitChanged(final ValueChangeEvent event);
 
     public void unconciousChanged(final ValueChangeEvent event);
 
