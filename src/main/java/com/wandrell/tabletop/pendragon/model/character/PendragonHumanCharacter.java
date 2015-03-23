@@ -4,8 +4,8 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.character.Gender;
 import com.wandrell.tabletop.pendragon.model.character.background.Religion;
-import com.wandrell.tabletop.pendragon.model.stats.SpecialtySkillBox;
-import com.wandrell.tabletop.pendragon.model.stats.TraitsHolder;
+import com.wandrell.tabletop.pendragon.model.character.stats.SpecialtySkillBox;
+import com.wandrell.tabletop.pendragon.model.character.stats.TraitsHolder;
 import com.wandrell.tabletop.valuebox.SkillBox;
 
 public interface PendragonHumanCharacter extends PendragonBaseCharacter {

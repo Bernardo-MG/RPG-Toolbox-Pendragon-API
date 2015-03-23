@@ -4,7 +4,7 @@ import java.util.Collection;
 
 import com.wandrell.pattern.prototype.NewInstantiable;
 import com.wandrell.tabletop.pendragon.model.character.event.PendragonCharacterListener;
-import com.wandrell.tabletop.pendragon.model.stats.PendragonSkillBox;
+import com.wandrell.tabletop.pendragon.model.character.stats.PendragonSkillBox;
 
 public interface PendragonBaseCharacter extends NewInstantiable {
 

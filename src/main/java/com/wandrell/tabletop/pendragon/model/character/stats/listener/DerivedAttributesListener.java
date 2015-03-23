@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.pendragon.model.stats.listener;
+package com.wandrell.tabletop.pendragon.model.character.stats.listener;
 
 import java.util.EventListener;
 
