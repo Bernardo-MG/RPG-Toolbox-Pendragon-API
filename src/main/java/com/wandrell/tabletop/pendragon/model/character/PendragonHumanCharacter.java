@@ -48,6 +48,8 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public Integer getEnergetic();
 
+    public String getFatherClass();
+
     public Integer getForgiving();
 
     public Gender getGender();
@@ -55,6 +57,8 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
     public Integer getGenerous();
 
     public Integer getGlory();
+
+    public String getHomeland();
 
     public Integer getHonest();
 
@@ -73,6 +77,8 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
     public Collection<SkillBox> getPassions();
 
     public Integer getPious();
+
+    public String getPlayerName();
 
     public Integer getProud();
 

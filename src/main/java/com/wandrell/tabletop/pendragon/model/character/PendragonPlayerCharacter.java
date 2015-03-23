@@ -13,13 +13,7 @@ public interface PendragonPlayerCharacter extends PendragonHumanCharacter {
     @Override
     public PendragonPlayerCharacter createNewInstance();
 
-    public String getFatherClass();
-
-    public String getHomeland();
-
     public Collection<Pet> getPets();
-
-    public String getPlayerName();
 
     public void removePet(final Pet pet);
 
