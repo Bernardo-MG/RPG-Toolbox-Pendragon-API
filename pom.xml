@@ -22,20 +22,20 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:https://github.com/Bernardo-MG/Tabletop-Pendragon-API.git</connection>
-		<developerConnection>scm:git:https://github.com/Bernardo-MG/Tabletop-Pendragon-API.git</developerConnection>
+		<connection>scm:git:https://github.com/Bernardo-MG/Tabletop-Pendragon-Model-API.git</connection>
+		<developerConnection>scm:git:https://github.com/Bernardo-MG/Tabletop-Pendragon-Model-API.git</developerConnection>
 		<tag>head</tag>
-		<url>https://github.com/Bernardo-MG/Tabletop-Pendragon-API</url>
+		<url>https://github.com/Bernardo-MG/Tabletop-Pendragon-Model-API</url>
 	</scm>
 
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/Bernardo-MG/Tabletop-Pendragon-API/issues</url>
+		<url>https://github.com/Bernardo-MG/Tabletop-Pendragon-Model-API/issues</url>
 	</issueManagement>
 
 	<ciManagement>
 		<system>Travis CI</system>
-		<url>https://travis-ci.org/Bernardo-MG/Tabletop-Pendragon-API</url>
+		<url>https://travis-ci.org/Bernardo-MG/Tabletop-Pendragon-Model-API</url>
 		<notifiers />
 	</ciManagement>
 
@@ -44,7 +44,7 @@
 			<uniqueVersion>false</uniqueVersion>
 			<id>wandrell-releases</id>
 			<name>Wandrell releases repository</name>
-			<url>https://api.bintray.com/maven/bernardo-mg/maven/tabletop-pendragon-api</url>
+			<url>https://api.bintray.com/maven/bernardo-mg/maven/tabletop-pendragon-model-api</url>
 		</repository>
 		<snapshotRepository>
 			<uniqueVersion>true</uniqueVersion>
@@ -64,7 +64,7 @@
 				<site>
 					<id>wandrell-site</id>
 					<name>Wandrell Maven sites</name>
-					<url>ftp://docs.wandrell.com/tabletop-api</url>
+					<url>ftp://docs.wandrell.com/tabletop-model-api</url>
 				</site>
 			</distributionManagement>
 		</profile>
@@ -74,7 +74,7 @@
 				<site>
 					<id>wandrell-site-development</id>
 					<name>Wandrell Development Maven sites</name>
-					<url>ftp://docs.wandrell.com/tabletop-api</url>
+					<url>ftp://docs.wandrell.com/tabletop-model-api</url>
 				</site>
 			</distributionManagement>
 		</profile>
