@@ -64,7 +64,7 @@
 				<site>
 					<id>wandrell-site</id>
 					<name>Wandrell Maven sites</name>
-					<url>ftp://docs.wandrell.com/tabletop-model-api</url>
+					<url>ftp://docs.wandrell.com/tabletop-pendragon-model-api</url>
 				</site>
 			</distributionManagement>
 		</profile>
@@ -74,7 +74,7 @@
 				<site>
 					<id>wandrell-site-development</id>
 					<name>Wandrell Development Maven sites</name>
-					<url>ftp://docs.wandrell.com/tabletop-model-api</url>
+					<url>ftp://docs.wandrell.com/tabletop-pendragon-model-api</url>
 				</site>
 			</distributionManagement>
 		</profile>
