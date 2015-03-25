@@ -1,26 +1,27 @@
 package com.wandrell.tabletop.pendragon.model.chargen;
 
+import java.util.Collection;
 import java.util.Map;
 
 import com.wandrell.tabletop.dice.Dice;
-import com.wandrell.tabletop.skill.SkillName;
+import com.wandrell.tabletop.valuebox.SkillBox;
 
 public interface CultureCharacterTemplate {
 
-    public Map<String, Integer> getAttributes();
+    public Collection<SkillBox> getAttributes();
 
     public Map<String, Dice> getAttributesRandom();
 
-    public Map<SkillName, Integer> getDirectedTraits();
+    public Collection<SkillBox> getDirectedTraits();
 
-    public Map<SkillName, Integer> getPassions();
+    public Collection<SkillBox> getPassions();
 
-    public Map<SkillName, Dice> getPassionsRandom();
+    public Map<SkillBox, Dice> getPassionsRandom();
 
-    public Map<SkillName, Integer> getSkills();
+    public Collection<SkillBox> getSkills();
 
-    public Map<String, Integer> getSpecialtySkills();
+    public Collection<SkillBox> getSpecialtySkills();
 
-    public Map<String, Integer> getTraits();
+    public Collection<SkillBox> getTraits();
 
 }

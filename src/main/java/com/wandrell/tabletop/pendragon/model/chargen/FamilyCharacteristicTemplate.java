@@ -1,19 +1,19 @@
 package com.wandrell.tabletop.pendragon.model.chargen;
 
-import java.util.Map;
+import java.util.Collection;
 
 import com.wandrell.pattern.prototype.NewInstantiable;
-import com.wandrell.tabletop.skill.SkillName;
+import com.wandrell.tabletop.valuebox.SkillBox;
 
 public interface FamilyCharacteristicTemplate extends NewInstantiable {
 
     @Override
     public FamilyCharacteristicTemplate createNewInstance();
 
-    public Map<String, Integer> getAttributes();
+    public Collection<SkillBox> getAttributes();
 
     public String getName();
 
-    public Map<SkillName, Integer> getSkills();
+    public Collection<SkillBox> getSkills();
 
 }

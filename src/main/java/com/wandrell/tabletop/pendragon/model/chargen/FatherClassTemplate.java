@@ -1,20 +1,19 @@
 package com.wandrell.tabletop.pendragon.model.chargen;
 
 import java.util.Collection;
-import java.util.Map;
 
 import com.wandrell.pattern.prototype.NewInstantiable;
 import com.wandrell.tabletop.dice.Dice;
-import com.wandrell.tabletop.skill.SkillName;
+import com.wandrell.tabletop.valuebox.SkillBox;
 
 public interface FatherClassTemplate extends NewInstantiable {
 
     @Override
     public FatherClassTemplate createNewInstance();
 
-    public Map<SkillName, Integer> getDirectedTraits();
+    public Collection<SkillBox> getDirectedTraits();
 
-    public Map<SkillName, Integer> getDirectedTraitsBase();
+    public Collection<SkillBox> getDirectedTraitsBase();
 
     public Dice getMoney();
 
@@ -22,7 +21,7 @@ public interface FatherClassTemplate extends NewInstantiable {
 
     public Integer getNonCombatSkillBonus();
 
-    public Collection<SkillName> getSkillsGroup();
+    public Collection<SkillBox> getSkillsGroup();
 
     public Integer getSkillsGroupBonusPoints();
 
@@ -30,6 +29,6 @@ public interface FatherClassTemplate extends NewInstantiable {
 
     public Integer getSkillsPoints();
 
-    public Map<String, Integer> getSpecialtySkills();
+    public Collection<SkillBox> getSpecialtySkills();
 
 }

@@ -1,8 +1,9 @@
 package com.wandrell.tabletop.pendragon.model.chargen.region;
 
-import java.util.Map;
+import java.util.Collection;
 
 import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.tabletop.valuebox.SkillBox;
 
 public interface RegionTemplate extends NewInstantiable {
 
@@ -11,6 +12,6 @@ public interface RegionTemplate extends NewInstantiable {
 
     public String getName();
 
-    public Map<String, Integer> getTraits();
+    public Collection<SkillBox> getTraits();
 
 }

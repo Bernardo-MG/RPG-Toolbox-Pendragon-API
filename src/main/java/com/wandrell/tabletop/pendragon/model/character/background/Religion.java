@@ -1,9 +1,9 @@
 package com.wandrell.tabletop.pendragon.model.character.background;
 
 import java.util.Collection;
-import java.util.Map;
 
 import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.tabletop.valuebox.SkillBox;
 
 public interface Religion extends NewInstantiable {
 
@@ -16,7 +16,7 @@ public interface Religion extends NewInstantiable {
 
     public Integer getDamageDiceBonus();
 
-    public Map<String, Integer> getDerivedAttributeBonus();
+    public Collection<SkillBox> getDerivedAttributeBonus();
 
     public String getName();
 
