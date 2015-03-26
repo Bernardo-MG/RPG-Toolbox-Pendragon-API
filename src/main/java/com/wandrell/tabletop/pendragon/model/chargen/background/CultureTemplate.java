@@ -1,6 +1,7 @@
-package com.wandrell.tabletop.pendragon.model.chargen;
+package com.wandrell.tabletop.pendragon.model.chargen.background;
 
 import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.tabletop.pendragon.model.chargen.inventory.AdditionalBelongingsTable;
 
 public interface CultureTemplate extends NewInstantiable {
 

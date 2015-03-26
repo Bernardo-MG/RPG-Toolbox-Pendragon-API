@@ -1,4 +1,4 @@
-package com.wandrell.tabletop.pendragon.model.chargen;
+package com.wandrell.tabletop.pendragon.model.chargen.inventory;
 
 import com.wandrell.pattern.prototype.NewInstantiable;
 import com.wandrell.tabletop.interval.IntervalTable;
