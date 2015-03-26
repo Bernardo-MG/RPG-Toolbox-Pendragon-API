@@ -4,6 +4,7 @@ import java.util.Collection;
 import java.util.Map;
 
 import com.wandrell.tabletop.dice.Dice;
+import com.wandrell.tabletop.pendragon.model.character.stats.TraitsBox;
 import com.wandrell.tabletop.valuebox.SkillBox;
 
 public interface CultureCharacterTemplate {
@@ -22,6 +23,6 @@ public interface CultureCharacterTemplate {
 
     public Collection<SkillBox> getSpecialtySkills();
 
-    public Collection<SkillBox> getTraits();
+    public TraitsBox getTraits();
 
 }
