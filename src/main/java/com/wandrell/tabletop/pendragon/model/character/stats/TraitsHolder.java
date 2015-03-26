@@ -111,4 +111,8 @@ public interface TraitsHolder extends NewInstantiable {
     public void setTrusting(final Integer trusting);
 
     public void setValorous(final Integer valorous);
+
+    public void setVengeful(final Integer vengeful);
+
+    public void setWorldly(final Integer wordly);
 }
