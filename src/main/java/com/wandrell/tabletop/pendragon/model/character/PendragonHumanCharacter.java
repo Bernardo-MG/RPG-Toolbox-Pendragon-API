@@ -5,7 +5,7 @@ import java.util.Collection;
 import com.wandrell.tabletop.character.Gender;
 import com.wandrell.tabletop.pendragon.model.character.background.Religion;
 import com.wandrell.tabletop.pendragon.model.character.stats.SpecialtySkillBox;
-import com.wandrell.tabletop.pendragon.model.character.stats.TraitsBox;
+import com.wandrell.tabletop.pendragon.model.character.stats.TraitsHolder;
 import com.wandrell.tabletop.valuebox.SkillBox;
 
 public interface PendragonHumanCharacter extends PendragonBaseCharacter {
@@ -53,7 +53,7 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
 
     public Collection<SpecialtySkillBox> getSpecialtySkills();
 
-    public TraitsBox getTraits();
+    public TraitsHolder getTraits();
 
     public Boolean isKnight();
 

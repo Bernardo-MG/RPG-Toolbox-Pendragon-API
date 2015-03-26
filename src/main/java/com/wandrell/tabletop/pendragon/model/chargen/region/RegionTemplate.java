@@ -1,7 +1,7 @@
 package com.wandrell.tabletop.pendragon.model.chargen.region;
 
 import com.wandrell.pattern.prototype.NewInstantiable;
-import com.wandrell.tabletop.pendragon.model.character.stats.TraitsBox;
+import com.wandrell.tabletop.pendragon.model.character.stats.TraitsHolder;
 
 public interface RegionTemplate extends NewInstantiable {
 
@@ -10,6 +10,6 @@ public interface RegionTemplate extends NewInstantiable {
 
     public String getName();
 
-    public TraitsBox getTraits();
+    public TraitsHolder getTraits();
 
 }

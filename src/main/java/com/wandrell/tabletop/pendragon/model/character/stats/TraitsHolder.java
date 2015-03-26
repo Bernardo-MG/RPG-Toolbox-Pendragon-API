@@ -3,12 +3,12 @@ package com.wandrell.tabletop.pendragon.model.character.stats;
 import com.wandrell.pattern.prototype.NewInstantiable;
 import com.wandrell.tabletop.pendragon.model.character.stats.event.TraitsListener;
 
-public interface TraitsBox extends NewInstantiable {
+public interface TraitsHolder extends NewInstantiable {
 
     public void addTraitsListener(final TraitsListener listener);
 
     @Override
-    public TraitsBox createNewInstance();
+    public TraitsHolder createNewInstance();
 
     public Integer getArbitrary();
 
