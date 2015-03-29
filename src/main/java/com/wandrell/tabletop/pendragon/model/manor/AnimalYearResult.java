@@ -1,9 +1,9 @@
 package com.wandrell.tabletop.pendragon.model.manor;
 
-import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.pendragon.model.inventory.Money;
 
-public interface AnimalYearResult extends NewInstantiable {
+public interface AnimalYearResult extends Prototype {
 
     @Override
     public AnimalYearResult createNewInstance();

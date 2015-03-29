@@ -1,8 +1,8 @@
 package com.wandrell.tabletop.pendragon.model.inventory;
 
-import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.pattern.prototype.Prototype;
 
-public interface Item extends NewInstantiable {
+public interface Item extends Prototype {
 
     @Override
     public Item createNewInstance();

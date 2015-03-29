@@ -1,25 +1,36 @@
 package com.wandrell.tabletop.pendragon.model.character;
 
+import com.wandrell.tabletop.pendragon.model.character.stats.AttributesHolder;
+import com.wandrell.tabletop.pendragon.model.character.stats.DerivedAttributesHolder;
 import com.wandrell.tabletop.valuebox.ValueBox;
 
 public interface DerivedAttributeBuilder {
 
-    public ValueBox getDamage(final PendragonBaseCharacter character);
+    public ValueBox getDamage(final AttributesHolder attributes,
+            final DerivedAttributesHolder derived);
 
-    public ValueBox getDexterityRoll(final PendragonBaseCharacter character);
+    public ValueBox getDexterityRoll(final AttributesHolder attributes,
+            final DerivedAttributesHolder derived);
 
-    public ValueBox getHealingRate(final PendragonBaseCharacter character);
+    public ValueBox getHealingRate(final AttributesHolder attributes,
+            final DerivedAttributesHolder derived);
 
-    public ValueBox getHitPoints(final PendragonBaseCharacter character);
+    public ValueBox getHitPoints(final AttributesHolder attributes,
+            final DerivedAttributesHolder derived);
 
-    public ValueBox
-            getMajorWoundTreshold(final PendragonBaseCharacter character);
+    public ValueBox getKnockdown(final AttributesHolder attributes,
+            final DerivedAttributesHolder derived);
 
-    public ValueBox getMoveRate(final PendragonBaseCharacter character);
+    public ValueBox getMajorWoundTreshold(final AttributesHolder attributes,
+            final DerivedAttributesHolder derived);
 
-    public ValueBox
-            getUnconciousTreshold(final PendragonBaseCharacter character);
+    public ValueBox getMoveRate(final AttributesHolder attributes,
+            final DerivedAttributesHolder derived);
 
-    public ValueBox getWeight(final PendragonBaseCharacter character);
+    public ValueBox getUnconciousTreshold(final AttributesHolder attributes,
+            final DerivedAttributesHolder derived);
+
+    public ValueBox getWeight(final AttributesHolder attributes,
+            final DerivedAttributesHolder derived);
 
 }

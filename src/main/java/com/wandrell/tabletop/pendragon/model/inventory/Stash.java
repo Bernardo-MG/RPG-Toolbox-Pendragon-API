@@ -2,9 +2,9 @@ package com.wandrell.tabletop.pendragon.model.inventory;
 
 import java.util.Collection;
 
-import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.pattern.prototype.Prototype;
 
-public interface Stash extends NewInstantiable {
+public interface Stash extends Prototype {
 
     public void addItem(final Item item);
 

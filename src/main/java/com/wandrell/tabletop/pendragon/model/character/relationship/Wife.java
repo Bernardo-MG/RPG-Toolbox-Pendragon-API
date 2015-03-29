@@ -2,9 +2,9 @@ package com.wandrell.tabletop.pendragon.model.character.relationship;
 
 import java.util.Collection;
 
-import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.pattern.prototype.Prototype;
 
-public interface Wife extends NewInstantiable {
+public interface Wife extends Prototype {
 
     @Override
     public Wife createNewInstance();

@@ -1,8 +1,8 @@
 package com.wandrell.tabletop.pendragon.model.glory;
 
-import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.pattern.prototype.Prototype;
 
-public interface FatherClassGlory extends NewInstantiable {
+public interface FatherClassGlory extends Prototype {
 
     @Override
     public FatherClassGlory createNewInstance();

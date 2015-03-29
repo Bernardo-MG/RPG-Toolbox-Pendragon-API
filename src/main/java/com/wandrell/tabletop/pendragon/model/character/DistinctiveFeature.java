@@ -1,8 +1,8 @@
 package com.wandrell.tabletop.pendragon.model.character;
 
-import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.pattern.prototype.Prototype;
 
-public interface DistinctiveFeature extends NewInstantiable {
+public interface DistinctiveFeature extends Prototype {
 
     @Override
     public DistinctiveFeature createNewInstance();

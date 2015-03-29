@@ -2,10 +2,10 @@ package com.wandrell.tabletop.pendragon.model.chargen.region;
 
 import java.util.Collection;
 
-import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.valuebox.SkillBox;
 
-public interface HomelandTemplate extends NewInstantiable {
+public interface HomelandTemplate extends Prototype {
 
     @Override
     public HomelandTemplate createNewInstance();

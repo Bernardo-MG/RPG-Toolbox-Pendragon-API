@@ -2,11 +2,11 @@ package com.wandrell.tabletop.pendragon.model.chargen.background;
 
 import java.util.Collection;
 
-import com.wandrell.pattern.prototype.NewInstantiable;
+import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.dice.Dice;
 import com.wandrell.tabletop.valuebox.SkillBox;
 
-public interface FatherClassTemplate extends NewInstantiable {
+public interface FatherClassTemplate extends Prototype {
 
     @Override
     public FatherClassTemplate createNewInstance();

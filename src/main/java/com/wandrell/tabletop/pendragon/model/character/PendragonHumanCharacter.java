@@ -4,6 +4,7 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.character.Gender;
 import com.wandrell.tabletop.pendragon.model.character.background.Religion;
+import com.wandrell.tabletop.pendragon.model.character.stats.HumanAttributesHolder;
 import com.wandrell.tabletop.pendragon.model.character.stats.SpecialtySkillBox;
 import com.wandrell.tabletop.pendragon.model.character.stats.TraitsHolder;
 import com.wandrell.tabletop.valuebox.SkillBox;
@@ -29,7 +30,8 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
     @Override
     public PendragonHumanCharacter createNewInstance();
 
-    public Integer getAppearance();
+    @Override
+    public HumanAttributesHolder getAttributes();
 
     public String getCulture();
 
@@ -64,8 +66,6 @@ public interface PendragonHumanCharacter extends PendragonBaseCharacter {
     public void removePassion(final SkillBox passion);
 
     public void removeSpecialtySkill(final SpecialtySkillBox skill);
-
-    public void setAppearance(final Integer appearance);
 
     public void setDirectedTraits(final Collection<SkillBox> directedTraits);
 
