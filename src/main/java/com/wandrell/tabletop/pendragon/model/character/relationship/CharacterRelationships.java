@@ -2,7 +2,7 @@ package com.wandrell.tabletop.pendragon.model.character.relationship;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.pendragon.model.character.PendragonBaseCharacter;
+import com.wandrell.tabletop.pendragon.model.character.PendragonCharacter;
 
 public interface CharacterRelationships {
 
@@ -14,7 +14,7 @@ public interface CharacterRelationships {
 
     public void clearWives();
 
-    public PendragonBaseCharacter getCharacter();
+    public PendragonCharacter getCharacter();
 
     public Collection<Follower> getFollowers();
 

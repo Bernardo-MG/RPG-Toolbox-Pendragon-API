@@ -10,6 +10,8 @@ public interface AttributesHolder extends Prototype {
     @Override
     public AttributesHolder createNewInstance();
 
+    public Integer getAppearance();
+
     public Integer getConstitution();
 
     public Integer getDexterity();
@@ -19,6 +21,8 @@ public interface AttributesHolder extends Prototype {
     public Integer getStrength();
 
     public void removeAttributesListener(final AttributesListener listener);
+
+    public void setAppearance(final Integer appearance);
 
     public void setConstitution(final Integer constitution);
 

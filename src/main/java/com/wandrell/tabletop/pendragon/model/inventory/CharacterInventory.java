@@ -3,7 +3,7 @@ package com.wandrell.tabletop.pendragon.model.inventory;
 import java.util.Collection;
 
 import com.wandrell.tabletop.pendragon.model.character.Horse;
-import com.wandrell.tabletop.pendragon.model.character.PendragonBaseCharacter;
+import com.wandrell.tabletop.pendragon.model.character.PendragonCharacter;
 
 public interface CharacterInventory {
 
@@ -15,7 +15,7 @@ public interface CharacterInventory {
 
     public void clearStashes();
 
-    public PendragonBaseCharacter getCharacter();
+    public PendragonCharacter getCharacter();
 
     public Collection<Horse> getHorses();
 
