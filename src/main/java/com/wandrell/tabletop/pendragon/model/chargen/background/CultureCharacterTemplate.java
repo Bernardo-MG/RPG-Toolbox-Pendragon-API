@@ -4,13 +4,13 @@ import java.util.Collection;
 import java.util.Map;
 
 import com.wandrell.tabletop.dice.Dice;
-import com.wandrell.tabletop.pendragon.model.character.PendragonCharacter;
+import com.wandrell.tabletop.pendragon.model.character.stats.AttributesHolder;
 import com.wandrell.tabletop.pendragon.model.character.stats.TraitsHolder;
 import com.wandrell.tabletop.valuebox.SkillBox;
 
 public interface CultureCharacterTemplate {
 
-    public PendragonCharacter getAttributes();
+    public AttributesHolder getAttributes();
 
     // TODO: Use a class storing the attributes
     public Map<String, Dice> getAttributesRandom();
