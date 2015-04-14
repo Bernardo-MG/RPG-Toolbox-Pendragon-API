@@ -9,6 +9,7 @@ import com.wandrell.tabletop.pendragon.model.character.event.PendragonCharacterL
 import com.wandrell.tabletop.pendragon.model.character.stats.AttributesHolder;
 import com.wandrell.tabletop.pendragon.model.character.stats.DerivedAttributesHolder;
 import com.wandrell.tabletop.pendragon.model.character.stats.SkillsHolder;
+import com.wandrell.tabletop.pendragon.model.character.stats.TraitsHolder;
 
 public interface PendragonCharacter extends Prototype {
 
@@ -35,6 +36,8 @@ public interface PendragonCharacter extends Prototype {
     public String getName();
 
     public SkillsHolder getSkills();
+
+    public TraitsHolder getTraits();
 
     public void removeDistinctiveFeature(final DistinctiveFeature feature);
 
