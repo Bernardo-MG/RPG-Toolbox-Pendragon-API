@@ -2,9 +2,10 @@ package com.wandrell.tabletop.pendragon.model.character.stats;
 
 import java.util.Collection;
 
+import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.valuebox.SkillBox;
 
-public interface SkillsHolder {
+public interface SkillsHolder extends Prototype {
 
     public void addDirectedTrait(final SkillBox directedTrait);
 
@@ -21,6 +22,9 @@ public interface SkillsHolder {
     public void clearSkills();
 
     public void clearSpecialtySkills();
+
+    @Override
+    public SkillsHolder createNewInstance();
 
     public Collection<SkillBox> getDirectedTraits();
 

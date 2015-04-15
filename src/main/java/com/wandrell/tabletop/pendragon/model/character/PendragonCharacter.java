@@ -51,6 +51,4 @@ public interface PendragonCharacter extends Prototype {
 
     public void setGlory(final Integer glory);
 
-    public void setKnight(final Boolean knight);
-
 }
