@@ -16,8 +16,6 @@ public interface SkillsHolder {
 
     public void clearDirectedTraits();
 
-    public void clearDistinctiveFeatures();
-
     public void clearPassions();
 
     public void clearSkills();

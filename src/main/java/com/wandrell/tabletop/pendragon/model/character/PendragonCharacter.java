@@ -18,6 +18,8 @@ public interface PendragonCharacter extends Prototype {
     public void addPendragonCharacterListener(
             final PendragonCharacterListener listener);
 
+    public void clearDistinctiveFeatures();
+
     @Override
     public PendragonCharacter createNewInstance();
 
