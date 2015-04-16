@@ -1,10 +1,10 @@
 package com.wandrell.tabletop.pendragon.model.chargen.background;
 
 import java.util.Collection;
-import java.util.Map;
 
-import com.wandrell.tabletop.dice.Dice;
 import com.wandrell.tabletop.pendragon.model.character.stats.AttributesHolder;
+import com.wandrell.tabletop.pendragon.model.character.stats.AttributesRandom;
+import com.wandrell.tabletop.pendragon.model.character.stats.RandomSkill;
 import com.wandrell.tabletop.pendragon.model.character.stats.TraitsHolder;
 import com.wandrell.tabletop.valuebox.SkillBox;
 
@@ -12,15 +12,13 @@ public interface CultureCharacterTemplate {
 
     public AttributesHolder getAttributes();
 
-    // TODO: Use a class storing the attributes
-    public Map<String, Dice> getAttributesRandom();
+    public AttributesRandom getAttributesRandom();
 
     public Collection<SkillBox> getDirectedTraits();
 
     public Collection<SkillBox> getPassions();
 
-    // TODO: Use a collection
-    public Map<SkillBox, Dice> getPassionsRandom();
+    public Collection<RandomSkill> getPassionsRandom();
 
     public Collection<SkillBox> getSkills();
 
