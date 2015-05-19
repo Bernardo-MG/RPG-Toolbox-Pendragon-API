@@ -4,7 +4,7 @@ import java.util.Collection;
 
 import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.pendragon.model.character.stats.AttributesHolder;
-import com.wandrell.tabletop.valuebox.SkillBox;
+import com.wandrell.tabletop.stat.valuebox.SkillBox;
 
 public interface FamilyCharacteristicTemplate extends Prototype {
 

@@ -1,11 +1,8 @@
 package com.wandrell.tabletop.pendragon.model.character.stats;
 
-import com.wandrell.tabletop.valuebox.SkillBox;
+import com.wandrell.tabletop.stat.valuebox.SkillBox;
 
 public interface PendragonSkillBox extends SkillBox {
-
-    @Override
-    public PendragonSkillBox createNewInstance();
 
     public Boolean isCombatSkill();
 

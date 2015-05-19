@@ -2,7 +2,7 @@ package com.wandrell.tabletop.pendragon.model.character.stats.event;
 
 import java.util.EventListener;
 
-import com.wandrell.tabletop.event.ValueChangeEvent;
+import com.wandrell.tabletop.stat.event.ValueChangeEvent;
 
 public interface AttributesListener extends EventListener {
 

@@ -2,7 +2,7 @@ package com.wandrell.tabletop.pendragon.model.glory;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.valuebox.ValueBox;
+import com.wandrell.tabletop.stat.valuebox.ValueBox;
 
 public interface GloryManager {
 
