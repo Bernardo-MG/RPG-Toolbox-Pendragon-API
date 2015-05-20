@@ -4,7 +4,7 @@ import java.util.Collection;
 
 import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.dice.Dice;
-import com.wandrell.tabletop.stat.valuebox.SkillBox;
+import com.wandrell.tabletop.stats.valuebox.SkillBox;
 
 public interface FatherClassTemplate extends Prototype {
 

@@ -1,6 +1,6 @@
 package com.wandrell.tabletop.pendragon.model.character.event;
 
-import com.wandrell.tabletop.stat.event.ValueChangeEvent;
+import com.wandrell.tabletop.stats.event.ValueChangeEvent;
 
 public class PendragonCharacterListenerAdapter implements
         PendragonCharacterListener {

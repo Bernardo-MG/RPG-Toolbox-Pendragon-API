@@ -2,7 +2,7 @@ package com.wandrell.tabletop.pendragon.model.character;
 
 import com.wandrell.tabletop.pendragon.model.character.stats.AttributesHolder;
 import com.wandrell.tabletop.pendragon.model.character.stats.DerivedAttributesHolder;
-import com.wandrell.tabletop.stat.valuebox.ValueBox;
+import com.wandrell.tabletop.stats.valuebox.ValueBox;
 
 public interface DerivedAttributeBuilder {
 
