@@ -1,6 +1,6 @@
 package com.wandrell.tabletop.pendragon.model.character.stats;
 
-import com.wandrell.tabletop.dice.Dice;
+import com.wandrell.tabletop.dice.notation.DiceFormula;
 
 public interface RandomSkill {
 
@@ -8,6 +8,6 @@ public interface RandomSkill {
 
     public String getName();
 
-    public Dice getValue();
+    public DiceFormula getValue();
 
 }

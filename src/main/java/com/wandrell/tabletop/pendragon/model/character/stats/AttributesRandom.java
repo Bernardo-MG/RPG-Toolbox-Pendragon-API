@@ -1,17 +1,17 @@
 package com.wandrell.tabletop.pendragon.model.character.stats;
 
-import com.wandrell.tabletop.dice.Dice;
+import com.wandrell.tabletop.dice.notation.DiceFormula;
 
 public interface AttributesRandom {
 
-    public Dice getAppearance();
+    public DiceFormula getAppearance();
 
-    public Dice getConstitution();
+    public DiceFormula getConstitution();
 
-    public Dice getDexterity();
+    public DiceFormula getDexterity();
 
-    public Dice getSize();
+    public DiceFormula getSize();
 
-    public Dice getStrength();
+    public DiceFormula getStrength();
 
 }

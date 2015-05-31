@@ -111,6 +111,7 @@
 		<!-- Manifest data -->
 		<manifest.name>com/wandrell/tabletop/pendragon/model/api</manifest.name>
 		<!-- Dependencies versions -->
+		<tabletop.dice.version>0.1.0-SNAPSHOT</tabletop.dice.version>
 		<tabletop.stats.version>0.1.0-SNAPSHOT</tabletop.stats.version>
 		<tabletop.version>0.1.0-SNAPSHOT</tabletop.version>
 		<testng.version>6.8.8</testng.version>
@@ -149,6 +150,12 @@
 	</repositories>
 
 	<dependencies>
+		<dependency>
+			<!-- Tabletop Dice -->
+			<groupId>com.wandrell.tabletop</groupId>
+			<artifactId>dice</artifactId>
+			<version>${tabletop.dice.version}</version>
+		</dependency>
 		<dependency>
 			<!-- Tabletop Stats -->
 			<groupId>com.wandrell.tabletop</groupId>
