@@ -3,7 +3,7 @@ package com.wandrell.tabletop.pendragon.model.chargen.inventory;
 import java.util.Collection;
 
 import com.wandrell.pattern.prototype.Prototype;
-import com.wandrell.tabletop.dice.notation.DiceFormula;
+import com.wandrell.tabletop.dice.notation.DiceExpression;
 import com.wandrell.tabletop.pendragon.model.character.Horse;
 import com.wandrell.tabletop.pendragon.model.inventory.Item;
 import com.wandrell.tabletop.pendragon.model.inventory.Money;
@@ -26,7 +26,7 @@ public interface AdditionalBelongings extends Prototype {
 
     public Collection<Pet> getPets();
 
-    public Collection<DiceFormula> getRerolls();
+    public Collection<DiceExpression> getRerolls();
 
     public String getRerollTable();
 
