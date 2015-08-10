@@ -4,14 +4,15 @@
 
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.wandrell.tabletop</groupId>
+	<groupId>com.wandrell.tabletop.pendragon</groupId>
 	<artifactId>pendragon-model-api</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>Tabletop's Pendragon Model API</name>
 	<description>Model API library for the RPG Pendragon, part of the Tabletop project.</description>
-	<url />
+	<url>https://github.com/Bernardo-MG/Tabletop-Pendragon-Model-API</url>
+	<inceptionYear>2015</inceptionYear>
 
 	<licenses>
 		<license>
@@ -42,15 +43,15 @@
 	<distributionManagement>
 		<repository>
 			<uniqueVersion>false</uniqueVersion>
-			<id>wandrell-releases</id>
-			<name>Wandrell releases repository</name>
-			<url>https://api.bintray.com/maven/bernardo-mg/maven/tabletop-pendragon-model-api</url>
+			<id>releases</id>
+			<name>Releases Repository</name>
+			<url>https://api.bintray.com/maven/bernardo-mg/tabletop-toolkits/stats</url>
 		</repository>
 		<snapshotRepository>
-			<uniqueVersion>true</uniqueVersion>
-			<id>wandrell-snapshots</id>
-			<name>Wandrell snapshots repository</name>
-			<url>ftp://maven.wandrell.com</url>
+			<uniqueVersion>false</uniqueVersion>
+			<id>snapshots</id>
+			<name>Snapshots Repository</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
@@ -62,9 +63,9 @@
 			</activation>
 			<distributionManagement>
 				<site>
-					<id>wandrell-site</id>
-					<name>Wandrell Maven sites</name>
-					<url>ftp://docs.wandrell.com/tabletop-pendragon-model-api</url>
+					<id>site</id>
+					<name>Project Documentation Site</name>
+					<url>ftp://docs.wandrell.com/tabletop-stats</url>
 				</site>
 			</distributionManagement>
 		</profile>
@@ -72,17 +73,17 @@
 			<id>development</id>
 			<distributionManagement>
 				<site>
-					<id>wandrell-site-development</id>
-					<name>Wandrell Development Maven sites</name>
-					<url>ftp://docs.wandrell.com/tabletop-pendragon-model-api</url>
+					<id>site-development</id>
+					<name>Project Development Documentation Site</name>
+					<url>ftp://docs.wandrell.com/tabletop-stats</url>
 				</site>
 			</distributionManagement>
 		</profile>
 	</profiles>
 
 	<organization>
-		<name />
-		<url />
+		<name>Bernardo Martínez Garrido</name>
+		<url>https://github.com/Bernardo-MG</url>
 	</organization>
 
 	<developers>
@@ -90,11 +91,11 @@
 			<id>bmg</id>
 			<name>Bernardo Martínez Garrido</name>
 			<email>programming@wandrell.com</email>
-			<url />
-			<organization />
-			<organizationUrl />
+			<url>https://github.com/Bernardo-MG</url>
+			<organization>Bernardo Martínez Garrido</organization>
+			<organizationUrl>https://github.com/Bernardo-MG</organizationUrl>
 			<roles>
-				<role>developer</role>
+				<role>Developer</role>
 			</roles>
 			<timezone>+1</timezone>
 			<properties />
@@ -111,43 +112,44 @@
 		<!-- Manifest data -->
 		<manifest.name>com/wandrell/tabletop/pendragon/model/api</manifest.name>
 		<!-- Dependencies versions -->
-		<tabletop.dice.version>0.1.1</tabletop.dice.version>
+		<tabletop.dice.version>0.1.0</tabletop.dice.version>
 		<tabletop.stats.version>0.1.1</tabletop.stats.version>
 		<tabletop.version>0.1.0-SNAPSHOT</tabletop.version>
 		<testng.version>6.8.8</testng.version>
 		<!-- Plugins versions -->
-		<plugin.checkstyle.version>2.13</plugin.checkstyle.version>
-		<plugin.compiler.version>3.2</plugin.compiler.version>
+		<plugin.ant.version>1.8</plugin.ant.version>
+		<plugin.assembly.version>2.5.5</plugin.assembly.version>
+		<plugin.checkstyle.version>2.16</plugin.checkstyle.version>
+		<plugin.changes.version>2.11</plugin.changes.version>
+		<plugin.clean.version>2.6.1</plugin.clean.version>
+		<plugin.compiler.version>3.3</plugin.compiler.version>
+		<plugin.dependency.version>2.10</plugin.dependency.version>
 		<plugin.deploy.version>2.8.2</plugin.deploy.version>
-		<plugin.failsafe.version>2.18</plugin.failsafe.version>
-		<plugin.findbugs.version>3.0.0</plugin.findbugs.version>
-		<plugin.jacoco.version>0.7.2.201409121644</plugin.jacoco.version>
-		<plugin.jar.version>2.5</plugin.jar.version>
-		<plugin.javadoc.version>2.10.1</plugin.javadoc.version>
+		<plugin.enforcer.version>1.4</plugin.enforcer.version>
+		<plugin.failsafe.version>2.18.1</plugin.failsafe.version>
+		<plugin.findbugs.version>3.0.1</plugin.findbugs.version>
+		<plugin.install.version>2.5.2</plugin.install.version>
+		<plugin.jacoco.version>0.7.5.201505241946</plugin.jacoco.version>
+		<plugin.jar.version>2.6</plugin.jar.version>
+		<plugin.javadoc.version>2.10.3</plugin.javadoc.version>
 		<plugin.jdepend.version>2.0</plugin.jdepend.version>
 		<plugin.jxr.version>2.5</plugin.jxr.version>
-		<plugin.pmd.version>3.3</plugin.pmd.version>
-		<plugin.reports.version>2.7</plugin.reports.version>
+		<plugin.pmd.version>3.5</plugin.pmd.version>
+		<plugin.release.version>2.5.2</plugin.release.version>
+		<plugin.reports.version>2.8</plugin.reports.version>
+		<plugin.resources.version>2.6</plugin.resources.version>
 		<plugin.site.version>3.4</plugin.site.version>
+		<plugin.site.velocity.version>1.7</plugin.site.velocity.version>
 		<plugin.source.version>2.4</plugin.source.version>
-		<plugin.surefire.version>2.18</plugin.surefire.version>
+		<plugin.surefire.version>2.18.1</plugin.surefire.version>
 		<plugin.taglist.version>2.4</plugin.taglist.version>
 		<!-- Extensions versions -->
 		<extension.wagon.version>2.8</extension.wagon.version>
+		<!-- Maven Site -->
+		<site.skin.version>0.1.0</site.skin.version>
+		<bintrayURL>https://bintray.com/bernardo-mg/tabletop-toolkits/pendragon-model-api/view</bintrayURL>
+		<mavenURL>http://mvnrepository.com/artifact/com.wandrell.tabletop.pendragon/pendragon-model-api</mavenURL>
 	</properties>
-
-	<repositories>
-		<repository>
-			<id>wandrell-releases</id>
-			<name>Wandrell releases repository</name>
-			<url>http://dl.bintray.com/bernardo-mg/maven</url>
-		</repository>
-		<repository>
-			<id>wandrell-snapshots</id>
-			<name>Wandrell snapshots repository</name>
-			<url>http://maven.wandrell.com</url>
-		</repository>
-	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -219,9 +221,48 @@
 						</lifecycleMappingMetadata>
 					</configuration>
 				</plugin>
+				<plugin>
+					<!-- Dependency -->
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-dependency-plugin</artifactId>
+					<version>${plugin.dependency.version}</version>
+				</plugin>
+				<plugin>
+					<!-- Assembly -->
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-assembly-plugin</artifactId>
+					<version>${plugin.assembly.version}</version>
+				</plugin>
+				<plugin>
+					<!-- Release -->
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>${plugin.release.version}</version>
+				</plugin>
+				<plugin>
+					<!-- Ant Run -->
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-antrun-plugin</artifactId>
+					<version>${plugin.ant.version}</version>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 		<plugins>
+			<plugin>
+				<!-- Clean -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-clean-plugin</artifactId>
+				<version>${plugin.clean.version}</version>
+			</plugin>
+			<plugin>
+				<!-- Resources -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>${plugin.resources.version}</version>
+				<configuration>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
 			<plugin>
 				<!-- Compiler -->
 				<groupId>org.apache.maven.plugins</groupId>
@@ -232,6 +273,31 @@
 					<source>${java.version.source}</source>
 					<target>${java.version.target}</target>
 				</configuration>
+			</plugin>
+			<plugin>
+				<!-- Install -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-install-plugin</artifactId>
+				<version>${plugin.install.version}</version>
+			</plugin>
+			<plugin>
+				<!-- Enforcer -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>${plugin.enforcer.version}</version>
+				<executions>
+					<execution>
+						<id>enforce</id>
+						<configuration>
+							<rules>
+								<dependencyConvergence />
+							</rules>
+						</configuration>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 			<plugin>
 				<!-- Failsafe -->
@@ -314,6 +380,29 @@
 				</configuration>
 			</plugin>
 			<plugin>
+				<!-- Site -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>${plugin.site.version}</version>
+				<dependencies>
+					<dependency>
+						<!-- Docs Maven Skin -->
+						<groupId>com.wandrell.maven.skins</groupId>
+						<artifactId>docs-maven-skin</artifactId>
+						<version>${site.skin.version}</version>
+					</dependency>
+					<dependency>
+						<!-- Velocity -->
+						<groupId>org.apache.velocity</groupId>
+						<artifactId>velocity</artifactId>
+						<version>${plugin.site.velocity.version}</version>
+					</dependency>
+				</dependencies>
+				<configuration>
+					<relativizeDecorationLinks>false</relativizeDecorationLinks>
+				</configuration>
+			</plugin>
+			<plugin>
 				<!-- Source -->
 				<artifactId>maven-source-plugin</artifactId>
 				<version>${plugin.source.version}</version>
@@ -365,6 +454,31 @@
 				</executions>
 			</plugin>
 			<plugin>
+				<!-- Changes -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-changes-plugin</artifactId>
+				<version>${plugin.changes.version}</version>
+				<executions>
+					<execution>
+						<id>check-changes</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>changes-check</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>validate-changes</id>
+						<phase>pre-site</phase>
+						<goals>
+							<goal>changes-validate</goal>
+						</goals>
+						<configuration>
+							<failOnError>true</failOnError>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
 				<!-- Surefire -->
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -391,36 +505,37 @@
 	<reporting>
 		<plugins>
 			<plugin>
-				<!-- Checkstyle -->
+				<!-- Project Info -->
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-				<version>${plugin.checkstyle.version}</version>
+				<artifactId>maven-project-info-reports-plugin</artifactId>
+				<version>${plugin.reports.version}</version>
 				<reportSets>
 					<reportSet>
 						<reports>
-							<report>checkstyle</report>
+							<report>summary</report>
+							<report>license</report>
+							<report>modules</report>
+							<report>project-team</report>
+							<report>dependencies</report>
+							<report>dependency-info</report>
+							<report>dependency-management</report>
+							<report>plugins</report>
+							<report>plugin-management</report>
 						</reports>
 					</reportSet>
 				</reportSets>
-				<configuration>
-					<configLocation>src/checkstyle/checkstyle.xml</configLocation>
-				</configuration>
 			</plugin>
 			<plugin>
-				<!-- FindBugs -->
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>findbugs-maven-plugin</artifactId>
-				<version>${plugin.findbugs.version}</version>
-				<configuration>
-					<effort>Max</effort>
-					<threshold>Low</threshold>
-				</configuration>
+				<!-- JXR -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jxr-plugin</artifactId>
+				<version>${plugin.jxr.version}</version>
 			</plugin>
 			<plugin>
-				<!-- JaCoCo -->
-				<groupId>org.jacoco</groupId>
-				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>${plugin.jacoco.version}</version>
+				<!-- Site -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-site-plugin</artifactId>
+				<version>${plugin.site.version}</version>
 			</plugin>
 			<plugin>
 				<!-- Javadoc -->
@@ -436,56 +551,17 @@
 				</reportSets>
 			</plugin>
 			<plugin>
-				<!-- JDepend -->
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>jdepend-maven-plugin</artifactId>
-				<version>${plugin.jdepend.version}</version>
-			</plugin>
-			<plugin>
-				<!-- JXR -->
+				<!-- Changes -->
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jxr-plugin</artifactId>
-				<version>${plugin.jxr.version}</version>
-			</plugin>
-			<plugin>
-				<!-- PMD -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-pmd-plugin</artifactId>
-				<version>${plugin.pmd.version}</version>
-				<configuration>
-					<linkXref>true</linkXref>
-					<sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
-					<minimumTokens>100</minimumTokens>
-					<targetJdk>${java.version.source}</targetJdk>
-					<excludes>
-						<exclude>**/*Bean.java</exclude>
-						<exclude>**/generated/*.java</exclude>
-					</excludes>
-					<excludeRoots>
-						<excludeRoot>target/generated-sources/stubs</excludeRoot>
-					</excludeRoots>
-					<rulesets>
-						<ruleset>src/pmd/default-pmd.xml</ruleset>
-					</rulesets>
-				</configuration>
-			</plugin>
-			<plugin>
-				<!-- Reports -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-project-info-reports-plugin</artifactId>
-				<version>${plugin.reports.version}</version>
-			</plugin>
-			<plugin>
-				<!-- Site -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-site-plugin</artifactId>
-				<version>${plugin.site.version}</version>
-			</plugin>
-			<plugin>
-				<!-- Surefire -->
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-surefire-report-plugin</artifactId>
-				<version>${plugin.surefire.version}</version>
+				<artifactId>maven-changes-plugin</artifactId>
+				<version>${plugin.changes.version}</version>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>changes-report</report>
+						</reports>
+					</reportSet>
+				</reportSets>
 			</plugin>
 			<plugin>
 				<!-- Taglist -->
@@ -520,6 +596,73 @@
 						</tagClasses>
 					</tagListOptions>
 				</configuration>
+			</plugin>
+			<plugin>
+				<!-- Checkstyle -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+				<version>${plugin.checkstyle.version}</version>
+				<reportSets>
+					<reportSet>
+						<reports>
+							<report>checkstyle</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+				<configuration>
+					<configLocation>src/checkstyle/checkstyle.xml</configLocation>
+				</configuration>
+			</plugin>
+			<plugin>
+				<!-- FindBugs -->
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+				<version>${plugin.findbugs.version}</version>
+				<configuration>
+					<effort>Max</effort>
+					<threshold>Low</threshold>
+				</configuration>
+			</plugin>
+			<plugin>
+				<!-- PMD -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-pmd-plugin</artifactId>
+				<version>${plugin.pmd.version}</version>
+				<configuration>
+					<linkXref>true</linkXref>
+					<skipEmptyReport>false</skipEmptyReport>
+					<sourceEncoding>${project.build.sourceEncoding}</sourceEncoding>
+					<minimumTokens>100</minimumTokens>
+					<targetJdk>${java.version.source}</targetJdk>
+					<excludes>
+						<exclude>**/*Bean.java</exclude>
+						<exclude>**/generated/*.java</exclude>
+					</excludes>
+					<excludeRoots>
+						<excludeRoot>target/generated-sources/stubs</excludeRoot>
+					</excludeRoots>
+					<rulesets>
+						<ruleset>src/pmd/default-pmd.xml</ruleset>
+					</rulesets>
+				</configuration>
+			</plugin>
+			<plugin>
+				<!-- Surefire -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-report-plugin</artifactId>
+				<version>${plugin.surefire.version}</version>
+			</plugin>
+			<plugin>
+				<!-- JaCoCo -->
+				<groupId>org.jacoco</groupId>
+				<artifactId>jacoco-maven-plugin</artifactId>
+				<version>${plugin.jacoco.version}</version>
+			</plugin>
+			<plugin>
+				<!-- JDepend -->
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jdepend-maven-plugin</artifactId>
+				<version>${plugin.jdepend.version}</version>
 			</plugin>
 		</plugins>
 	</reporting>

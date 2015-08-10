@@ -1,56 +1,83 @@
 # Tabletop's Pendragon Model API
 API defining the model for the RPG Pendragon.
 
-### Webpage
-Currently the project has no webpage.
+[![Maven Central](https://img.shields.io/maven-central/v/com.wandrell.tabletop.pendragon/pendragon-mode-api.svg)][maven-repo]
+[![Bintray](https://api.bintray.com/packages/bernardo-mg/tabletop-toolkits/pendragon-mode-api/images/download.svg)][bintray-repo]
 
-#### Documentation webpage
-The project has a [Maven site][] and [Javadoc page][] with the information from the
-latest release.
+[![Release docs](https://img.shields.io/badge/docs-release-blue.svg)][site-release]
+[![Development docs](https://img.shields.io/badge/docs-develop-blue.svg)][site-develop]
 
-There is also a [development Maven site][] and a [development Javadoc page][], generated from the latest development snapshot.
+[![Release javadocs](https://img.shields.io/badge/javadocs-release-blue.svg)][javadoc-release]
+[![Development javadocs](https://img.shields.io/badge/javadocs-develop-blue.svg)][javadoc-develop]
 
-### Status
-The project is still under development, so expect a certain degree of volatility.
+## Documentation
 
-Still, it is mostly stable, and classpath or name changes should be infrequent, but classes may be added or removed without warning.
+Documentation is always generated for the latest release, kept in the 'master' branch:
 
-#### Issues management
-Issues are managed at the GitHub [project issues page][].
+- The [latest release documentation page][site-release].
+- The [the latest release Javadoc site][javadoc-release].
 
-## Building the code
-The application is coded in Java, using Maven to handle the project's configuration and tests.
+Documentation is also generated from the latest snapshot, taken from the 'develop' branch:
+
+- The [the latest snapshot documentation page][site-develop].
+- The [the latest snapshot Javadoc site][javadoc-develop].
+
+The documentation site sources come along the source code (as it is a Maven site), so it is always possible to generate them using the following Maven command:
+
+```
+$ mvn verify site
+```
+
+The verify phase is required, as otherwise some of the reports won't be created.
+
+## Usage
+
+The application is coded in Java, using Maven to manage the project.
 
 ### Prerequisites
-Requires JDK 8.
+
+The project has been tested on the following Java versions:
+* JDK 7
+* JDK 8
+* OpenJDK 7
 
 All other dependencies are handled through Maven, and noted in the included POM file.
 
+### Installing
+
+The recommended way to install the project is by setting up your preferred dependencies manager. To get the configuration information for this check the [Bintray repository][bintray-repo], or the [Maven Central Repository][maven-repo].
+
+If for some reason manual installation is necessary, just use the following Maven command:
+
+```
+$ mvn install
+```
+
+## Collaborate
+
+Any kind of help with the project will be well received, and there are two main ways to give such help:
+
+- Reporting errors and asking for extensions through the issues management
+- or forking the repository and extending the project
+
+### Issues management
+
+Issues are managed at the GitHub [project issues tracker][issues], where any Github user may report bugs or ask for new features.
+
 ### Getting the code
-The code can be found at the GitHub [project page][].
 
-To acquire it through Git use the following clone URI:
-
-`git clone https://github.com/Bernardo-MG/Tabletop-Pendragon-Model-API.git`
-
-#### Repository
-Releases can be found in the [releases repository][] on Bintray.
-
-It can be added to Maven as a repository using the following URI:
-`http://dl.bintray.com/bernardo-mg/maven`
-
-## Continuous integration
-The continuous integration information can be found at the [project CI page][] based on Travis CI.
+If you wish to fork or modify the code, visit the [GitHub project page][scm], where the latest versions are always kept. Check the 'master' branch for the latest release, and the 'develop' for the current, and stable, development version.
 
 ## License
-The project is released under version 2.0 of the [Apache License][].
 
-[development Javadoc page]: http://docs.wandrell.com/development/maven/tabletop-pendragon-model-api/apidocs
-[development Maven site]: http://docs.wandrell.com/development/maven/tabletop-pendragon-model-api
-[Apache License]: http://www.apache.org/licenses/LICENSE-2.0
-[Javadoc page]: http://docs.wandrell.com/maven/tabletop-pendragon-model-api/apidocs
-[Maven site]: http://docs.wandrell.com/maven/tabletop-pendragon-model-api
-[project CI page]: https://travis-ci.org/Bernardo-MG/Tabletop-Pendragon-Model-API
-[project issues page]: https://github.com/Bernardo-MG/Tabletop-Pendragon-Model-API/issues
-[project page]: http://github.com/Bernardo-MG/Tabletop-Pendragon-Model-API
-[releases repository]: http://dl.bintray.com/bernardo-mg/tabletop-pendragon-model-api
+The project has been released under version 2.0 of the [Apache License][license].
+
+[bintray-repo]: https://bintray.com/bernardo-mg/tabletop-toolkits/tabletop-pendragon-model-api/view
+[maven-repo]: http://mvnrepository.com/artifact/com.wandrell.tabletop.pendragon/tabletop-pendragon-model-api
+[issues]: https://github.com/Bernardo-MG/Tabletop-Pendragon-Model-API/issues
+[javadoc-develop]: http://docs.wandrell.com/development/maven/tabletop-pendragon-model-api/apidocs
+[javadoc-release]: http://docs.wandrell.com/maven/tabletop-pendragon-model-api/apidocs
+[license]: http://www.apache.org/licenses/LICENSE-2.0
+[scm]: https://github.com/bernardo-mg/tabletop-pendragon-model-api
+[site-develop]: http://docs.wandrell.com/development/maven/tabletop-pendragon-model-api
+[site-release]: http://docs.wandrell.com/maven/tabletop-pendragon-model-api
