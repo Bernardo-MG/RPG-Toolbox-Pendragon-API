@@ -11,7 +11,7 @@
 
 	<name>Tabletop's Pendragon Model API</name>
 	<description>Model API library for the RPG Pendragon, part of the Tabletop project.</description>
-	<url>https://github.com/Bernardo-MG/Tabletop-Pendragon-Model-API</url>
+	<url>https://github.com/Bernardo-MG/pendragon-model-api</url>
 	<inceptionYear>2015</inceptionYear>
 
 	<licenses>
@@ -23,20 +23,20 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:https://github.com/Bernardo-MG/Tabletop-Pendragon-Model-API.git</connection>
-		<developerConnection>scm:git:https://github.com/Bernardo-MG/Tabletop-Pendragon-Model-API.git</developerConnection>
+		<connection>scm:git:https://github.com/Bernardo-MG/pendragon-model-api.git</connection>
+		<developerConnection>scm:git:https://github.com/Bernardo-MG/pendragon-model-api.git</developerConnection>
 		<tag>head</tag>
-		<url>https://github.com/Bernardo-MG/Tabletop-Pendragon-Model-API</url>
+		<url>https://github.com/Bernardo-MG/pendragon-model-api</url>
 	</scm>
 
 	<issueManagement>
 		<system>GitHub Issues</system>
-		<url>https://github.com/Bernardo-MG/Tabletop-Pendragon-Model-API/issues</url>
+		<url>https://github.com/Bernardo-MG/pendragon-model-api/issues</url>
 	</issueManagement>
 
 	<ciManagement>
 		<system>Travis CI</system>
-		<url>https://travis-ci.org/Bernardo-MG/Tabletop-Pendragon-Model-API</url>
+		<url>https://travis-ci.org/Bernardo-MG/pendragon-model-api</url>
 		<notifiers />
 	</ciManagement>
 
@@ -45,7 +45,7 @@
 			<uniqueVersion>false</uniqueVersion>
 			<id>releases</id>
 			<name>Releases Repository</name>
-			<url>https://api.bintray.com/maven/bernardo-mg/tabletop-toolkits/stats</url>
+			<url>https://api.bintray.com/maven/bernardo-mg/tabletop-toolkits/pendragon-model-api</url>
 		</repository>
 		<snapshotRepository>
 			<uniqueVersion>false</uniqueVersion>
@@ -65,7 +65,7 @@
 				<site>
 					<id>site</id>
 					<name>Project Documentation Site</name>
-					<url>ftp://docs.wandrell.com/tabletop-stats</url>
+					<url>ftp://docs.wandrell.com/pendragon-model-api</url>
 				</site>
 			</distributionManagement>
 		</profile>
@@ -75,7 +75,7 @@
 				<site>
 					<id>site-development</id>
 					<name>Project Development Documentation Site</name>
-					<url>ftp://docs.wandrell.com/tabletop-stats</url>
+					<url>ftp://docs.wandrell.com/pendragon-model-api</url>
 				</site>
 			</distributionManagement>
 		</profile>
