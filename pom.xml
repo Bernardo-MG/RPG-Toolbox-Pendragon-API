@@ -113,6 +113,7 @@
 		<manifest.name>com/wandrell/tabletop/pendragon/model/api</manifest.name>
 		<!-- Dependencies versions -->
 		<tabletop.dice.version>0.1.0</tabletop.dice.version>
+		<tabletop.intervals.version>0.1.0</tabletop.intervals.version>
 		<tabletop.stats.version>0.1.1</tabletop.stats.version>
 		<tabletop.version>0.1.0-SNAPSHOT</tabletop.version>
 		<testng.version>6.8.8</testng.version>
@@ -157,6 +158,12 @@
 			<groupId>com.wandrell.tabletop</groupId>
 			<artifactId>dice</artifactId>
 			<version>${tabletop.dice.version}</version>
+		</dependency>
+		<dependency>
+			<!-- Tabletop Intervals -->
+			<groupId>com.wandrell.tabletop</groupId>
+			<artifactId>intervals</artifactId>
+			<version>${tabletop.intervals.version}</version>
 		</dependency>
 		<dependency>
 			<!-- Tabletop Stats -->

@@ -1,7 +1,7 @@
 package com.wandrell.tabletop.pendragon.model.character.relationship;
 
 import com.wandrell.pattern.prototype.Prototype;
-import com.wandrell.tabletop.character.Gender;
+import com.wandrell.tabletop.pendragon.model.character.Gender;
 
 public interface Child extends Prototype {
 

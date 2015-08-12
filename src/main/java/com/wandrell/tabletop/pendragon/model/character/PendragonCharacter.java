@@ -3,7 +3,6 @@ package com.wandrell.tabletop.pendragon.model.character;
 import java.util.Collection;
 
 import com.wandrell.pattern.prototype.Prototype;
-import com.wandrell.tabletop.character.Gender;
 import com.wandrell.tabletop.pendragon.model.character.background.BackgroundInfo;
 import com.wandrell.tabletop.pendragon.model.character.event.PendragonCharacterListener;
 import com.wandrell.tabletop.pendragon.model.character.stats.AttributesHolder;
