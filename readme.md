@@ -1,8 +1,8 @@
 # Tabletop's Pendragon Model API
 API defining the model for the RPG Pendragon.
 
-[![Maven Central](https://img.shields.io/maven-central/v/com.wandrell.tabletop.pendragon/pendragon-mode-api.svg)][maven-repo]
-[![Bintray](https://api.bintray.com/packages/bernardo-mg/tabletop-toolkits/pendragon-mode-api/images/download.svg)][bintray-repo]
+[![Maven Central](https://img.shields.io/maven-central/v/com.wandrell.tabletop.pendragon/pendragon-model-api.svg)][maven-repo]
+[![Bintray](https://api.bintray.com/packages/bernardo-mg/tabletop-toolkits/pendragon-model-api/images/download.svg)][bintray-repo]
 
 [![Release docs](https://img.shields.io/badge/docs-release-blue.svg)][site-release]
 [![Development docs](https://img.shields.io/badge/docs-develop-blue.svg)][site-develop]
@@ -72,8 +72,8 @@ If you wish to fork or modify the code, visit the [GitHub project page][scm], wh
 
 The project has been released under version 2.0 of the [Apache License][license].
 
-[bintray-repo]: https://bintray.com/bernardo-mg/tabletop-toolkits/tabletop-pendragon-model-api/view
-[maven-repo]: http://mvnrepository.com/artifact/com.wandrell.tabletop.pendragon/tabletop-pendragon-model-api
+[bintray-repo]: https://bintray.com/bernardo-mg/tabletop-toolkits/pendragon-model-api/view
+[maven-repo]: http://mvnrepository.com/artifact/com.wandrell.tabletop.pendragon/pendragon-model-api
 [issues]: https://github.com/Bernardo-MG/Tabletop-Pendragon-Model-API/issues
 [javadoc-develop]: http://docs.wandrell.com/development/maven/tabletop-pendragon-model-api/apidocs
 [javadoc-release]: http://docs.wandrell.com/maven/tabletop-pendragon-model-api/apidocs
