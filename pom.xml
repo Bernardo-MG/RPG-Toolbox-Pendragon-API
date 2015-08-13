@@ -112,10 +112,10 @@
 		<!-- Manifest data -->
 		<manifest.name>com/wandrell/tabletop/pendragon/model/api</manifest.name>
 		<!-- Dependencies versions -->
+		<log4j.version>2.3</log4j.version>
 		<tabletop.dice.version>0.1.0</tabletop.dice.version>
 		<tabletop.intervals.version>0.1.0</tabletop.intervals.version>
 		<tabletop.stats.version>0.1.1</tabletop.stats.version>
-		<tabletop.version>0.1.0-SNAPSHOT</tabletop.version>
 		<testng.version>6.8.8</testng.version>
 		<!-- Plugins versions -->
 		<plugin.ant.version>1.8</plugin.ant.version>
@@ -154,6 +154,13 @@
 
 	<dependencies>
 		<dependency>
+			<!-- Log4J -->
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
 			<!-- Tabletop Dice -->
 			<groupId>com.wandrell.tabletop</groupId>
 			<artifactId>dice</artifactId>
@@ -170,12 +177,6 @@
 			<groupId>com.wandrell.tabletop</groupId>
 			<artifactId>stats</artifactId>
 			<version>${tabletop.stats.version}</version>
-		</dependency>
-		<dependency>
-			<!-- Tabletop API -->
-			<groupId>com.wandrell.tabletop</groupId>
-			<artifactId>tabletop-api</artifactId>
-			<version>${tabletop.version}</version>
 		</dependency>
 		<dependency>
 			<!-- TestNG -->
