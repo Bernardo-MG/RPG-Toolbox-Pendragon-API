@@ -75,9 +75,9 @@ The project has been released under version 2.0 of the [Apache License][license]
 [bintray-repo]: https://bintray.com/bernardo-mg/tabletop-toolkits/pendragon-model-api/view
 [maven-repo]: http://mvnrepository.com/artifact/com.wandrell.tabletop.pendragon/pendragon-model-api
 [issues]: https://github.com/Bernardo-MG/Tabletop-Pendragon-Model-API/issues
-[javadoc-develop]: http://docs.wandrell.com/development/maven/tabletop-pendragon-model-api/apidocs
-[javadoc-release]: http://docs.wandrell.com/maven/tabletop-pendragon-model-api/apidocs
+[javadoc-develop]: http://docs.wandrell.com/development/maven/pendragon-model-api/apidocs
+[javadoc-release]: http://docs.wandrell.com/maven/pendragon-model-api/apidocs
 [license]: http://www.apache.org/licenses/LICENSE-2.0
 [scm]: https://github.com/bernardo-mg/tabletop-pendragon-model-api
-[site-develop]: http://docs.wandrell.com/development/maven/tabletop-pendragon-model-api
-[site-release]: http://docs.wandrell.com/maven/tabletop-pendragon-model-api
+[site-develop]: http://docs.wandrell.com/development/maven/pendragon-model-api
+[site-release]: http://docs.wandrell.com/maven/pendragon-model-api
