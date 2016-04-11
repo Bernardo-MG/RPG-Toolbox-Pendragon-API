@@ -1,14 +1,11 @@
+
 package com.wandrell.tabletop.pendragon.model.chargen.region;
 
 import java.util.Collection;
 
-import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.stats.valuebox.SkillBox;
 
-public interface HomelandTemplate extends Prototype {
-
-    @Override
-    public HomelandTemplate createNewInstance();
+public interface HomelandTemplate {
 
     public Collection<SkillBox> getDirectedTraits();
 

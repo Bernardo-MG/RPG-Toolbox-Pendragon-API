@@ -1,11 +1,7 @@
+
 package com.wandrell.tabletop.pendragon.model.character.background;
 
-import com.wandrell.pattern.prototype.Prototype;
-
-public interface BackgroundInfo extends Prototype {
-
-    @Override
-    public BackgroundInfo createNewInstance();
+public interface BackgroundInfo {
 
     public String getCulture();
 

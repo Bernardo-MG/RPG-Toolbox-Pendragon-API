@@ -1,3 +1,4 @@
+
 package com.wandrell.tabletop.pendragon.model.character.event;
 
 import java.util.EventListener;

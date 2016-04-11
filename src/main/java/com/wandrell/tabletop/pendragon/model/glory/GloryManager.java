@@ -1,3 +1,4 @@
+
 package com.wandrell.tabletop.pendragon.model.glory;
 
 import java.util.Collection;

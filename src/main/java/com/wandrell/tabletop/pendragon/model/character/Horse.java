@@ -1,11 +1,7 @@
+
 package com.wandrell.tabletop.pendragon.model.character;
 
-import com.wandrell.pattern.prototype.Prototype;
-
-public interface Horse extends Prototype, PendragonCharacter {
-
-    @Override
-    public Horse createNewInstance();
+public interface Horse extends PendragonCharacter {
 
     public String getHorseType();
 

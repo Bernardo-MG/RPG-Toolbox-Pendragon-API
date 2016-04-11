@@ -1,3 +1,4 @@
+
 package com.wandrell.tabletop.pendragon.model.character.stats;
 
 import com.wandrell.tabletop.stats.valuebox.SkillBox;

@@ -1,8 +1,8 @@
+
 package com.wandrell.tabletop.pendragon.model.character;
 
 import java.util.Collection;
 
-import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.pendragon.model.character.background.BackgroundInfo;
 import com.wandrell.tabletop.pendragon.model.character.event.PendragonCharacterListener;
 import com.wandrell.tabletop.pendragon.model.character.stats.AttributesHolder;
@@ -10,7 +10,7 @@ import com.wandrell.tabletop.pendragon.model.character.stats.DerivedAttributesHo
 import com.wandrell.tabletop.pendragon.model.character.stats.SkillsHolder;
 import com.wandrell.tabletop.pendragon.model.character.stats.TraitsHolder;
 
-public interface PendragonCharacter extends Prototype {
+public interface PendragonCharacter {
 
     public void addDistinctiveFeature(final DistinctiveFeature feature);
 
@@ -18,9 +18,6 @@ public interface PendragonCharacter extends Prototype {
             final PendragonCharacterListener listener);
 
     public void clearDistinctiveFeatures();
-
-    @Override
-    public PendragonCharacter createNewInstance();
 
     public AttributesHolder getAttributes();
 

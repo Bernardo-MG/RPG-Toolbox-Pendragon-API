@@ -13,6 +13,7 @@
  * License for the specific language governing permissions and limitations under
  * the License.
  */
+
 package com.wandrell.tabletop.pendragon.model.character;
 
 /**
@@ -28,8 +29,9 @@ public enum Gender {
     /**
      * Value representing the female gender.
      */
-    FEMALE, /**
-             * Value representing the male gender.
-             */
+    FEMALE,
+    /**
+     * Value representing the male gender.
+     */
     MALE
 }

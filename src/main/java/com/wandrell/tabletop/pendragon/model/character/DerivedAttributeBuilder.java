@@ -1,3 +1,4 @@
+
 package com.wandrell.tabletop.pendragon.model.character;
 
 import com.wandrell.tabletop.pendragon.model.character.stats.AttributesHolder;

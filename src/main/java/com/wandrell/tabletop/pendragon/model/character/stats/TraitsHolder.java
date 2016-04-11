@@ -1,14 +1,11 @@
+
 package com.wandrell.tabletop.pendragon.model.character.stats;
 
-import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.pendragon.model.character.stats.event.TraitsListener;
 
-public interface TraitsHolder extends Prototype {
+public interface TraitsHolder {
 
     public void addTraitsListener(final TraitsListener listener);
-
-    @Override
-    public TraitsHolder createNewInstance();
 
     public Integer getArbitrary();
 

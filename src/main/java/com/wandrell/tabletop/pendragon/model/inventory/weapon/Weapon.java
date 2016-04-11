@@ -1,3 +1,4 @@
+
 package com.wandrell.tabletop.pendragon.model.inventory.weapon;
 
 import java.util.Map;
@@ -6,9 +7,6 @@ import com.wandrell.tabletop.pendragon.model.inventory.Item;
 import com.wandrell.tabletop.pendragon.model.inventory.armor.ArmorType;
 
 public interface Weapon extends Item {
-
-    @Override
-    public Weapon createNewInstance();
 
     /**
      * Returns a map indicating the number of dice to be added or removed when

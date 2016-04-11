@@ -1,3 +1,4 @@
+
 package com.wandrell.tabletop.pendragon.model.util;
 
 import java.util.Collection;

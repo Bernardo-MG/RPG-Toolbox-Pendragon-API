@@ -1,11 +1,7 @@
+
 package com.wandrell.tabletop.pendragon.model.inventory;
 
-import com.wandrell.pattern.prototype.Prototype;
-
-public interface Money extends Prototype {
-
-    @Override
-    public Money createNewInstance();
+public interface Money {
 
     public Integer getDenarii();
 

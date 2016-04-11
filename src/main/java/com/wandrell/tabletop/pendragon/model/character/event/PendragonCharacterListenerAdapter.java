@@ -1,3 +1,4 @@
+
 package com.wandrell.tabletop.pendragon.model.character.event;
 
 import com.wandrell.tabletop.stats.event.ValueChangeEvent;

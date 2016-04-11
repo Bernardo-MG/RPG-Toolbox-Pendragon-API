@@ -1,14 +1,11 @@
+
 package com.wandrell.tabletop.pendragon.model.character.stats;
 
-import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.pendragon.model.character.stats.event.AttributesListener;
 
-public interface AttributesHolder extends Prototype {
+public interface AttributesHolder {
 
     public void addAttributesListener(final AttributesListener listener);
-
-    @Override
-    public AttributesHolder createNewInstance();
 
     public Integer getAppearance();
 

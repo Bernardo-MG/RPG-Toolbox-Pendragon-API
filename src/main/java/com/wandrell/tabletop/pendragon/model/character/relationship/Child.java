@@ -1,12 +1,9 @@
+
 package com.wandrell.tabletop.pendragon.model.character.relationship;
 
-import com.wandrell.pattern.prototype.Prototype;
 import com.wandrell.tabletop.pendragon.model.character.Gender;
 
-public interface Child extends Prototype {
-
-    @Override
-    public Child createNewInstance();
+public interface Child {
 
     public Gender getGender();
 
