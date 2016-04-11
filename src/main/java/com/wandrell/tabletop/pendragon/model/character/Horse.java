@@ -9,8 +9,6 @@ public interface Horse extends PendragonCharacter {
 
     /**
      * TODO: What is this armored flag for?
-     * 
-     * @return
      */
     public Boolean isArmored();
 
