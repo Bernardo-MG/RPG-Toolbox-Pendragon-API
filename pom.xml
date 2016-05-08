@@ -186,7 +186,6 @@
       <log4j.version>2.5</log4j.version>
       <tabletop.dice.version>0.3.0</tabletop.dice.version>
       <tabletop.intervals.version>0.1.0</tabletop.intervals.version>
-      <tabletop.stats.version>0.1.1</tabletop.stats.version>
       <testng.version>6.9.10</testng.version>
       <!-- Plugins versions -->
       <plugin.changes.version>2.11</plugin.changes.version>
@@ -213,12 +212,6 @@
          <groupId>com.wandrell.tabletop</groupId>
          <artifactId>intervals</artifactId>
          <version>${tabletop.intervals.version}</version>
-      </dependency>
-      <dependency>
-         <!-- Tabletop Stats -->
-         <groupId>com.wandrell.tabletop</groupId>
-         <artifactId>stats</artifactId>
-         <version>${tabletop.stats.version}</version>
       </dependency>
       <!-- ============================================== -->
       <!-- ======= TEST ENVIRONMENT DEPENDENCIES ======== -->

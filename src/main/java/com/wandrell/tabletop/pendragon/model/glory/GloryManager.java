@@ -3,22 +3,20 @@ package com.wandrell.tabletop.pendragon.model.glory;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.stats.valuebox.ValueBox;
-
 public interface GloryManager {
 
-    public ValueBox getChivaldryGlory();
+    public Integer getChivaldryGlory();
 
     public Collection<GloryEvent> getEvents();
 
-    public ValueBox getGentlewomanGlory();
+    public Integer getGentlewomanGlory();
 
-    public ValueBox getPassionsGlory();
+    public Integer getPassionsGlory();
 
-    public ValueBox getReligiousGlory();
+    public Integer getReligiousGlory();
 
-    public ValueBox getTraitsGlory();
+    public Integer getTraitsGlory();
 
-    public ValueBox getYearlyGlory();
+    public Integer getYearlyGlory();
 
 }

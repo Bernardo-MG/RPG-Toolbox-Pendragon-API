@@ -3,10 +3,12 @@ package com.wandrell.tabletop.pendragon.model.character.stats;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.stats.valuebox.SkillBox;
+public interface SpecialtySkill {
 
-public interface SpecialtySkillBox extends SkillBox {
+    public String getName();
 
     public Collection<String> getSurrogatedSkills();
+
+    public Integer getValue();
 
 }

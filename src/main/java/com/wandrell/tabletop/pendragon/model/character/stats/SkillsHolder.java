@@ -3,17 +3,15 @@ package com.wandrell.tabletop.pendragon.model.character.stats;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.stats.valuebox.SkillBox;
-
 public interface SkillsHolder {
 
-    public void addDirectedTrait(final SkillBox directedTrait);
+    public void addDirectedTrait(final DirectedTrait directedTrait);
 
-    public void addPassion(final SkillBox passion);
+    public void addPassion(final Passion passion);
 
-    public void addSkill(final PendragonSkillBox skill);
+    public void addSkill(final PendragonSkill skill);
 
-    public void addSpecialtySkill(final SpecialtySkillBox skill);
+    public void addSpecialtySkill(final SpecialtySkill skill);
 
     public void clearDirectedTraits();
 
@@ -23,28 +21,29 @@ public interface SkillsHolder {
 
     public void clearSpecialtySkills();
 
-    public Collection<SkillBox> getDirectedTraits();
+    public Collection<DirectedTrait> getDirectedTraits();
 
-    public Collection<SkillBox> getPassions();
+    public Collection<Passion> getPassions();
 
-    public Collection<PendragonSkillBox> getSkills();
+    public Collection<PendragonSkill> getSkills();
 
-    public Collection<SpecialtySkillBox> getSpecialtySkills();
+    public Collection<SpecialtySkill> getSpecialtySkills();
 
-    public void removeDirectedTrait(final SkillBox directedTrait);
+    public void removeDirectedTrait(final DirectedTrait directedTrait);
 
-    public void removePassion(final SkillBox passion);
+    public void removePassion(final Passion passion);
 
-    public void removeSkill(final PendragonSkillBox skill);
+    public void removeSkill(final PendragonSkill skill);
 
-    public void removeSpecialtySkill(final SpecialtySkillBox skill);
+    public void removeSpecialtySkill(final SpecialtySkill skill);
 
-    public void setDirectedTraits(final Collection<SkillBox> directedTraits);
+    public void
+            setDirectedTraits(final Collection<DirectedTrait> directedTraits);
 
-    public void setPassions(final Collection<SkillBox> passions);
+    public void setPassions(final Collection<Passion> passions);
 
-    public void setSkills(final Collection<PendragonSkillBox> skills);
+    public void setSkills(final Collection<PendragonSkill> skills);
 
-    public void setSpecialtySkills(final Collection<SpecialtySkillBox> skills);
+    public void setSpecialtySkills(final Collection<SpecialtySkill> skills);
 
 }

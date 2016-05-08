@@ -4,13 +4,15 @@ package com.wandrell.tabletop.pendragon.model.chargen.background;
 import java.util.Collection;
 
 import com.wandrell.tabletop.dice.notation.DiceNotationExpression;
-import com.wandrell.tabletop.stats.valuebox.SkillBox;
+import com.wandrell.tabletop.pendragon.model.character.stats.DirectedTrait;
+import com.wandrell.tabletop.pendragon.model.character.stats.PendragonSkill;
+import com.wandrell.tabletop.pendragon.model.character.stats.SpecialtySkill;
 
 public interface FatherClassTemplate {
 
-    public Collection<SkillBox> getDirectedTraits();
+    public Collection<DirectedTrait> getDirectedTraits();
 
-    public Collection<SkillBox> getDirectedTraitsBase();
+    public Collection<DirectedTrait> getDirectedTraitsBase();
 
     public DiceNotationExpression getMoney();
 
@@ -18,7 +20,7 @@ public interface FatherClassTemplate {
 
     public Integer getNonCombatSkillBonus();
 
-    public Collection<SkillBox> getSkillsGroup();
+    public Collection<PendragonSkill> getSkillsGroup();
 
     public Integer getSkillsGroupBonusPoints();
 
@@ -26,6 +28,6 @@ public interface FatherClassTemplate {
 
     public Integer getSkillsPoints();
 
-    public Collection<SkillBox> getSpecialtySkills();
+    public Collection<SpecialtySkill> getSpecialtySkills();
 
 }

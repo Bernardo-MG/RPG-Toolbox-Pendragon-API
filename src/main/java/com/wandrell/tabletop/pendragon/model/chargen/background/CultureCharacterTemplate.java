@@ -5,9 +5,12 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.pendragon.model.character.stats.AttributesHolder;
 import com.wandrell.tabletop.pendragon.model.character.stats.AttributesRandom;
+import com.wandrell.tabletop.pendragon.model.character.stats.DirectedTrait;
+import com.wandrell.tabletop.pendragon.model.character.stats.Passion;
+import com.wandrell.tabletop.pendragon.model.character.stats.PendragonSkill;
+import com.wandrell.tabletop.pendragon.model.character.stats.SpecialtySkill;
 import com.wandrell.tabletop.pendragon.model.character.stats.TraitsHolder;
 import com.wandrell.tabletop.pendragon.model.chargen.stats.RandomSkill;
-import com.wandrell.tabletop.stats.valuebox.SkillBox;
 
 public interface CultureCharacterTemplate {
 
@@ -15,15 +18,15 @@ public interface CultureCharacterTemplate {
 
     public AttributesRandom getAttributesRandom();
 
-    public Collection<SkillBox> getDirectedTraits();
+    public Collection<DirectedTrait> getDirectedTraits();
 
-    public Collection<SkillBox> getPassions();
+    public Collection<Passion> getPassions();
 
     public Collection<RandomSkill> getPassionsRandom();
 
-    public Collection<SkillBox> getSkills();
+    public Collection<PendragonSkill> getSkills();
 
-    public Collection<SkillBox> getSpecialtySkills();
+    public Collection<SpecialtySkill> getSpecialtySkills();
 
     public TraitsHolder getTraits();
 
