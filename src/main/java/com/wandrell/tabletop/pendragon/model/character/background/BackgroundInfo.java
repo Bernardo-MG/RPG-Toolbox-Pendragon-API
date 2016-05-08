@@ -9,9 +9,11 @@ public interface BackgroundInfo {
 
     public String getHomeland();
 
-    public String getPlayerName();
+    public String getLiegeLord();
 
     public Religion getReligion();
+
+    public Integer getSonNumber();
 
     public Boolean isKnight();
 
@@ -23,8 +25,10 @@ public interface BackgroundInfo {
 
     public void setKnight(final Boolean knight);
 
-    public void setPlayerName(final String name);
+    public void setLiegeLord(final String liege);
 
     public void setReligion(final Religion religion);
+
+    public void setSonNumber(final Integer son);
 
 }

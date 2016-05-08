@@ -1,9 +1,7 @@
 
-package com.wandrell.tabletop.pendragon.model.character.stats;
+package com.wandrell.tabletop.pendragon.model.character.stats.holder;
 
-public interface AttributesHolder {
-
-    public Integer getAppearance();
+public interface CreatureAttributes {
 
     public Integer getConstitution();
 
@@ -12,8 +10,6 @@ public interface AttributesHolder {
     public Integer getSize();
 
     public Integer getStrength();
-
-    public void setAppearance(final Integer appearance);
 
     public void setConstitution(final Integer constitution);
 

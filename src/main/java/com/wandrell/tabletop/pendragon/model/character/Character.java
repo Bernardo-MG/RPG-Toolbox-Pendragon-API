@@ -1,27 +1,30 @@
 
 package com.wandrell.tabletop.pendragon.model.character;
 
-import java.util.Collection;
-
 import com.wandrell.tabletop.pendragon.model.character.background.BackgroundInfo;
-import com.wandrell.tabletop.pendragon.model.character.stats.AttributesHolder;
-import com.wandrell.tabletop.pendragon.model.character.stats.DerivedAttributesHolder;
-import com.wandrell.tabletop.pendragon.model.character.stats.SkillsHolder;
-import com.wandrell.tabletop.pendragon.model.character.stats.TraitsHolder;
+import com.wandrell.tabletop.pendragon.model.character.stats.DirectedTrait;
+import com.wandrell.tabletop.pendragon.model.character.stats.DistinctiveFeature;
+import com.wandrell.tabletop.pendragon.model.character.stats.Passion;
+import com.wandrell.tabletop.pendragon.model.character.stats.Skill;
+import com.wandrell.tabletop.pendragon.model.character.stats.SpecialtySkill;
+import com.wandrell.tabletop.pendragon.model.character.stats.holder.Attributes;
+import com.wandrell.tabletop.pendragon.model.character.stats.holder.CharacteristicsHolder;
+import com.wandrell.tabletop.pendragon.model.character.stats.holder.DerivedAttributes;
+import com.wandrell.tabletop.pendragon.model.character.stats.holder.Traits;
 
 public interface Character {
 
-    public void addDistinctiveFeature(final DistinctiveFeature feature);
+    public Integer getAge();
 
-    public void clearDistinctiveFeatures();
-
-    public AttributesHolder getAttributes();
+    public Attributes getAttributes();
 
     public BackgroundInfo getBackgroundInfo();
 
-    public DerivedAttributesHolder getDerivedAttributes();
+    public DerivedAttributes getDerivedAttributes();
 
-    public Collection<DistinctiveFeature> getDistinctiveFeatures();
+    public CharacteristicsHolder<DirectedTrait> getDirectedTraits();
+
+    public CharacteristicsHolder<DistinctiveFeature> getDistinctiveFeatures();
 
     public Gender getGender();
 
@@ -29,15 +32,20 @@ public interface Character {
 
     public String getName();
 
-    public SkillsHolder getSkills();
+    public CharacteristicsHolder<Passion> getPassions();
 
-    public TraitsHolder getTraits();
+    public Traits getPersonalityTraits();
 
-    public void removeDistinctiveFeature(final DistinctiveFeature feature);
+    public String getPlayerName();
 
-    public void setDistinctiveFeatures(
-            final Collection<DistinctiveFeature> features);
+    public CharacteristicsHolder<Skill> getSkills();
+
+    public CharacteristicsHolder<SpecialtySkill> getSpecialtySkills();
+
+    public void setAge(final Integer age);
 
     public void setGlory(final Integer glory);
+
+    public void setPlayerName(final String name);
 
 }

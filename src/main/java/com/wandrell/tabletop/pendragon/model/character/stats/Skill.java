@@ -1,7 +1,7 @@
 
 package com.wandrell.tabletop.pendragon.model.character.stats;
 
-public interface PendragonSkill {
+public interface Skill {
 
     public String getName();
 

@@ -7,7 +7,7 @@ public interface SpecialtySkill {
 
     public String getName();
 
-    public Collection<String> getSurrogatedSkills();
+    public Collection<Skill> getSurrogatedSkills();
 
     public Integer getValue();
 

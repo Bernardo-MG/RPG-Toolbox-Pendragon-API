@@ -1,7 +1,7 @@
 
-package com.wandrell.tabletop.pendragon.model.character.stats;
+package com.wandrell.tabletop.pendragon.model.character.stats.holder;
 
-public interface TraitsHolder {
+public interface Traits {
 
     public Integer getArbitrary();
 

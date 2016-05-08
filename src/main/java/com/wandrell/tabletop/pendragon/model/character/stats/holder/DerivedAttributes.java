@@ -1,7 +1,7 @@
 
-package com.wandrell.tabletop.pendragon.model.character.stats;
+package com.wandrell.tabletop.pendragon.model.character.stats.holder;
 
-public interface DerivedAttributesHolder {
+public interface DerivedAttributes {
 
     public Integer getDamage();
 
@@ -20,7 +20,5 @@ public interface DerivedAttributesHolder {
     public Integer getUnconciousTreshold();
 
     public Integer getWeight();
-
-    public void setAttributesHolder(final AttributesHolder attributes);
 
 }

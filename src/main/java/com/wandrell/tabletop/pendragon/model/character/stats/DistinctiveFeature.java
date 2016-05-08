@@ -1,5 +1,5 @@
 
-package com.wandrell.tabletop.pendragon.model.character;
+package com.wandrell.tabletop.pendragon.model.character.stats;
 
 public interface DistinctiveFeature {
 

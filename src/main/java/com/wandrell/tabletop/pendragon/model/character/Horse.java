@@ -1,15 +1,12 @@
 
 package com.wandrell.tabletop.pendragon.model.character;
 
-public interface Horse extends Character {
+public interface Horse extends Creature {
 
     public String getHorseType();
 
     public Integer getNaturalArmor();
 
-    /**
-     * TODO: What is this armored flag for?
-     */
     public Boolean isArmored();
 
     public Boolean isCombatHorse();

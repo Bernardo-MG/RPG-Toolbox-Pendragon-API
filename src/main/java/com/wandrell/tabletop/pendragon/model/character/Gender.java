@@ -23,7 +23,6 @@ package com.wandrell.tabletop.pendragon.model.character;
  * character as a man or a woman.
  * 
  * @author Bernardo Martínez Garrido
- * @version 1.0.0
  */
 public enum Gender {
     /**
