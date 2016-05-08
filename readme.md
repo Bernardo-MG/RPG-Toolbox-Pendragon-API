@@ -1,5 +1,8 @@
-# Tabletop's Pendragon Model API
+# Pendragon Model API
+
 API defining the model for the RPG Pendragon.
+
+This covers just the main model, ignoring things such as character generation.
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.wandrell.tabletop.pendragon/pendragon-model-api.svg)][maven-repo]
 [![Bintray](https://api.bintray.com/packages/bernardo-mg/tabletop-toolkits/pendragon-model-api/images/download.svg)][bintray-repo]
