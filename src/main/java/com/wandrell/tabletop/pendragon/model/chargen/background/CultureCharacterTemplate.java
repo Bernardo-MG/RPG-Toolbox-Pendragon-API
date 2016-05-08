@@ -5,8 +5,8 @@ import java.util.Collection;
 
 import com.wandrell.tabletop.pendragon.model.character.stats.AttributesHolder;
 import com.wandrell.tabletop.pendragon.model.character.stats.AttributesRandom;
-import com.wandrell.tabletop.pendragon.model.character.stats.RandomSkill;
 import com.wandrell.tabletop.pendragon.model.character.stats.TraitsHolder;
+import com.wandrell.tabletop.pendragon.model.chargen.stats.RandomSkill;
 import com.wandrell.tabletop.stats.valuebox.SkillBox;
 
 public interface CultureCharacterTemplate {

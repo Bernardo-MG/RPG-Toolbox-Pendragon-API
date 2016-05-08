@@ -10,7 +10,7 @@ import com.wandrell.tabletop.pendragon.model.character.stats.DerivedAttributesHo
 import com.wandrell.tabletop.pendragon.model.character.stats.SkillsHolder;
 import com.wandrell.tabletop.pendragon.model.character.stats.TraitsHolder;
 
-public interface PendragonCharacter {
+public interface Character {
 
     public void addDistinctiveFeature(final DistinctiveFeature feature);
 

@@ -1,7 +1,7 @@
 
 package com.wandrell.tabletop.pendragon.model.character;
 
-public interface Horse extends PendragonCharacter {
+public interface Horse extends Character {
 
     public String getHorseType();
 

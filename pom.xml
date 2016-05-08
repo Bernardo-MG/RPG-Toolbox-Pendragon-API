@@ -183,11 +183,11 @@
       <!-- Manifest data -->
       <manifest.name>com/wandrell/tabletop/pendragon/model/api</manifest.name>
       <!-- Dependencies versions -->
-      <log4j.version>2.3</log4j.version>
-      <tabletop.dice.version>0.1.0</tabletop.dice.version>
+      <log4j.version>2.5</log4j.version>
+      <tabletop.dice.version>0.3.0</tabletop.dice.version>
       <tabletop.intervals.version>0.1.0</tabletop.intervals.version>
       <tabletop.stats.version>0.1.1</tabletop.stats.version>
-      <testng.version>6.8.8</testng.version>
+      <testng.version>6.9.10</testng.version>
       <!-- Plugins versions -->
       <plugin.changes.version>2.11</plugin.changes.version>
       <plugin.site.velocity.version>1.7</plugin.site.velocity.version>
@@ -202,13 +202,6 @@
    <!-- ********************************************** -->
 
    <dependencies>
-      <dependency>
-         <!-- Log4J -->
-         <groupId>org.apache.logging.log4j</groupId>
-         <artifactId>log4j-core</artifactId>
-         <version>${log4j.version}</version>
-         <scope>test</scope>
-      </dependency>
       <dependency>
          <!-- Tabletop Dice -->
          <groupId>com.wandrell.tabletop</groupId>
@@ -230,6 +223,13 @@
       <!-- ============================================== -->
       <!-- ======= TEST ENVIRONMENT DEPENDENCIES ======== -->
       <!-- ============================================== -->
+      <dependency>
+         <!-- Log4J -->
+         <groupId>org.apache.logging.log4j</groupId>
+         <artifactId>log4j-core</artifactId>
+         <version>${log4j.version}</version>
+         <scope>test</scope>
+      </dependency>
       <dependency>
          <!-- TestNG -->
          <groupId>org.testng</groupId>

@@ -3,7 +3,7 @@ package com.wandrell.tabletop.pendragon.model.chargen.background;
 
 import java.util.Collection;
 
-import com.wandrell.tabletop.dice.notation.DiceExpression;
+import com.wandrell.tabletop.dice.notation.DiceNotationExpression;
 import com.wandrell.tabletop.stats.valuebox.SkillBox;
 
 public interface FatherClassTemplate {
@@ -12,7 +12,7 @@ public interface FatherClassTemplate {
 
     public Collection<SkillBox> getDirectedTraitsBase();
 
-    public DiceExpression getMoney();
+    public DiceNotationExpression getMoney();
 
     public String getName();
 

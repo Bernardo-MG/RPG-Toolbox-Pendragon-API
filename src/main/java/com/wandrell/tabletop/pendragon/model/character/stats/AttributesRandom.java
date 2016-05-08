@@ -1,18 +1,18 @@
 
 package com.wandrell.tabletop.pendragon.model.character.stats;
 
-import com.wandrell.tabletop.dice.notation.DiceExpression;
+import com.wandrell.tabletop.dice.notation.DiceNotationExpression;
 
 public interface AttributesRandom {
 
-    public DiceExpression getAppearance();
+    public DiceNotationExpression getAppearance();
 
-    public DiceExpression getConstitution();
+    public DiceNotationExpression getConstitution();
 
-    public DiceExpression getDexterity();
+    public DiceNotationExpression getDexterity();
 
-    public DiceExpression getSize();
+    public DiceNotationExpression getSize();
 
-    public DiceExpression getStrength();
+    public DiceNotationExpression getStrength();
 
 }
