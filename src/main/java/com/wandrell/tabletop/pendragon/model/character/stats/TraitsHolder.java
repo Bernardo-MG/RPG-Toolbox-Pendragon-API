@@ -1,11 +1,7 @@
 
 package com.wandrell.tabletop.pendragon.model.character.stats;
 
-import com.wandrell.tabletop.pendragon.model.character.stats.event.TraitsListener;
-
 public interface TraitsHolder {
-
-    public void addTraitsListener(final TraitsListener listener);
 
     public Integer getArbitrary();
 
@@ -58,8 +54,6 @@ public interface TraitsHolder {
     public Integer getVengeful();
 
     public Integer getWorldly();
-
-    public void removeTraitsListener(final TraitsListener listener);
 
     public void setArbitrary(final Integer arbitrary);
 

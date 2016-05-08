@@ -1,12 +1,7 @@
 
 package com.wandrell.tabletop.pendragon.model.character.stats;
 
-import com.wandrell.tabletop.pendragon.model.character.stats.event.DerivedAttributesListener;
-
 public interface DerivedAttributesHolder {
-
-    public void addDerivedAttributesListener(
-            final DerivedAttributesListener listener);
 
     public Integer getDamage();
 
@@ -25,9 +20,6 @@ public interface DerivedAttributesHolder {
     public Integer getUnconciousTreshold();
 
     public Integer getWeight();
-
-    public void removeDerivedAttributesListener(
-            final DerivedAttributesListener listener);
 
     public void setAttributesHolder(final AttributesHolder attributes);
 
